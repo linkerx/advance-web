@@ -1,0 +1,22 @@
+section#home-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    color: #333;
+    z-index: 20;
+}
+
+section#home-menu ul {
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+}
+
+section#home-menu ul li {
+    margin-right: 15px;
+    margin-top: 15px;
+    list-style: none;
+    font-weight: bold;
+}

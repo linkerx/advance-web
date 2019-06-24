@@ -1,0 +1,19 @@
+section#home-top-bar{
+    position:absolute; 
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #62c9d8;
+    color: #fff;
+}
+
+section#home-top-bar > div {
+    float: right;
+    margin-top:10px;
+    margin-right:12px;
+}
+
+section#home-top-bar > div > i {
+    margin-right:8px;
+}
