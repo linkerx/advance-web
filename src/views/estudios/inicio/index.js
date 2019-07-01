@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Estudios extends React.Component {
+class EstudiosInicio extends React.Component {
     render(){
         return(
             <section id='estudios'>
@@ -9,3 +9,5 @@ class Estudios extends React.Component {
         )
     }
 }
+
+export default EstudiosInicio;

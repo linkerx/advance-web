@@ -7,9 +7,6 @@ class HomeSlider extends React.Component {
             <section id='home-slider'>
                 <div className='slider-container'>
                     <div className='image'></div>
-                    <div className='logo'>
-                        <img src='/images/logo.png' className="logo" alt="logo-advance" />
-                    </div>
                     <div className='texto'>
                         <h2>Tu salud en buenas manos</h2>
                         <p>

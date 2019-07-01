@@ -11,11 +11,11 @@ class HomeTopBar extends React.Component {
                 </div>
                 <div className='email'>
                     <i className="fas fa-envelope"></i>
-                    <span>info@diagnosticoadvance.com​</span>
+                    <span><a href='mailto:info@diagnosticoadvance.com​'>info@diagnosticoadvance.com</a></span>
                 </div>
                 <div className='telefono'>
                     <i className="fas fa-phone"></i>
-                    <span>+54 02920 XXXXXX</span>
+                    <span><a href='tel:+54 02920 XXXXXX'>+54 02920 XXXXXX</a></span>
                 </div>
             </section>
         )

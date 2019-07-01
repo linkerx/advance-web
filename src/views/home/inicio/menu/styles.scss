@@ -1,22 +1,41 @@
 section#home-menu {
     position: absolute;
-    top: 40px;
+    top: 60px;
     left: 0;
-    height: 60px;
+    height: 100px;
     width: 100%;
     color: #333;
     z-index: 20;
+}
+
+section#home-menu .logo {
+    position: absolute;
+    top: 12px;
+    left: 25px;
+    height: 90px;
+}
+
+section#home-menu .logo img {
+    height:100%;
 }
 
 section#home-menu ul {
     display: flex;
     float: right;
     flex-wrap: wrap;
+    margin-right: 25px;
 }
 
 section#home-menu ul li {
-    margin-right: 15px;
-    margin-top: 15px;
+    margin-right: 60px;
+    margin-top: 64px;
     list-style: none;
     font-weight: bold;
+    font-size: 1.2em;
+    color: #555;
+    cursor:pointer;
+}
+
+section#home-menu ul li:hover {
+    color: #62c9d8;
 }
