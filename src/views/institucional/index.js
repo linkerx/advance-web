@@ -4,7 +4,7 @@ import './styles.scss';
 class Institucional extends React.Component {
     render(){
         return(
-            <section id='Institucional'>
+            <section id='institucional'>
                 <div className='wrapper-central'>
 
                 <h2>Quiénes somos</h2>
