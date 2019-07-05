@@ -30,10 +30,17 @@ section#home-menu ul li {
     margin-right: 60px;
     margin-top: 64px;
     list-style: none;
+}
+
+section#home-menu ul li a {
     font-weight: bold;
     font-size: 1.2em;
     color: #555;
-    cursor:pointer;
+    text-decoration: none;
+}
+
+section#home-menu ul li a:hover {
+    color:#999;
 }
 
 section#home-menu ul li:hover {

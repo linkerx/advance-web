@@ -1,10 +1,15 @@
 import React from 'react';
+import TopBar from './topbar';
+import Menu from './menu';
 
 class Header extends React.Component {
     render(){
         return(
-            <section id='header'></section>
-        )
+            <section id='header'>
+                <TopBar />
+                <Menu />
+            </section>
+       )
     }
 }
 

@@ -1,0 +1,69 @@
+section#footer {
+    height: 300px;
+    background-color: #404040;
+    display:flex;
+    flex-wrap: nowrap;
+    position:relative;
+
+}
+
+section#footer .wrapper-central {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:50px;
+    height: auto;
+}
+
+section#footer .wrapper-central > div {
+    width: 31.3%;
+    margin: 1%;
+}
+
+section#footer .izq {
+    margin-top: 40px;
+}
+
+section#footer .izq > div {
+    margin:10px;
+}
+
+section#footer .izq > div span {
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+section#footer .izq > div a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+section#footer .izq > div i {
+    color: #62c9d8;
+    font-size: 20px;
+    margin:12px;
+}
+
+section#footer .cen {
+    margin-top: 80px;
+}
+
+section#footer .cen img {
+    width:80%;
+}
+
+section#footer .der {
+    margin-top: 40px;
+}
+
+section#footer .der li {
+    margin: 12px;
+    list-style: none;
+    margin-left:50px;
+}
+
+section#footer .der li a {
+    color: #ccc;
+    font-size: 1.3em;
+    text-decoration: none;
+}
