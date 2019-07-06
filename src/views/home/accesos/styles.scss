@@ -27,6 +27,15 @@ section#home-accesos li img {
     height: 100%;
 }
 
-section#home-accesos li img:hover {
+section#home-accesos li:hover img {
     opacity: 0.7;
+}
+
+section#home-accesos li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section#home-accesos li:hover a {
+    color: #999;
 }
