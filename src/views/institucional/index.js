@@ -5,6 +5,7 @@ class Institucional extends React.Component {
     render(){
         return(
             <section id='institucional'>
+                <h1>INSTITUCIONAL</h1>
                 <div className='wrapper-central'>
 
                 <h2>Quiénes somos</h2>

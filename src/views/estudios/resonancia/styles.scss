@@ -1,7 +1,4 @@
-section#institucional {
-}
-
-section#institucional h1 {
+section#estudio-resonancia h1 {
     background-color: #62c9d8;
     color: #fff;
     text-align: center;
@@ -10,6 +7,11 @@ section#institucional h1 {
     font-weight: bold;
 }
 
-section#institucional .wrapper-central {
+section#estudio-resonancia .wrapper-central {
     padding: 50px 0;
+}
+
+section#estudio-resonancia img {
+    width: 100%;
+    margin: 20px 0;
 }

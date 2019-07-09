@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles.scss';
 
 class EstudiosInicio extends React.Component {
     render(){
         return(
             <section id='estudios'>
-                <h1>Listado de Estudios</h1>
+                <h1>LISTADO DE ESTUDIOS</h1>
                 <ul>
                     <li>
                         <Link to='/estudios/tomografia'>

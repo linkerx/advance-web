@@ -7,7 +7,7 @@ import Institucional from 'views/institucional';
 import EstudiosInicio from 'views/estudios/inicio';
 import EstudioTomografia from 'views/estudios/tomografia';
 import EstudioResonancia from 'views/estudios/resonancia';
-import EstudioEcografia from 'views/estudios/inicio';
+import EstudioEcografia from 'views/estudios/ecografia';
 import './app.scss';
 
 function App() {

@@ -1,17 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles.scss';
 
 class EstudioEcografia extends React.Component {
     render(){
         return(
-            <div className='estudio-ecografia'>
+            <section id='estudio-ecografia'>
+                <h1>ECOGRAFÍA</h1>
                 <div className='wrapper-central'>
-                    <h1>ECOGRAFÍA</h1>
-                    <p>
-                    La ecografía es un método de diagnóstico que utiliza ondas de ultrasonidos
-                    para obtener imágenes de los órganos internos del cuerpo.
-                    Su técnica es sencilla, rápida, segura e indolora.
-                    </p>
+                    <div className='intro'>
+                        <p>
+                        La ecografía es un método de diagnóstico que utiliza ondas de ultrasonidos
+                        para obtener imágenes de los órganos internos del cuerpo.
+                        Su técnica es sencilla, rápida, segura e indolora.
+                        </p>
+                    </div>
+
+                    <img src='/images/estudios/ecografia.png' alt='Ecografías'/>
+
                     <h2>Antes del estudio</h2>
                     <ul>
                         <li>El día de la realización de cualquier estudio, deberás presentarte 15
@@ -54,7 +60,7 @@ class EstudioEcografia extends React.Component {
                         <li>¿En qué casos puede fallar una ecografía? ( ​ respuesta desplegable)</li>
                    </ul>
                 </div>
-            </div>
+            </section>
         )
     }
 }

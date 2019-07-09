@@ -1,20 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles.scss';
 
 class EstudioResonancia extends React.Component {
     render(){
         return(
-            <div className='estudio-resonancia'>
+            <section id='estudio-resonancia'>
+                <h1>RESONANCIA MAGNÉTICA</h1>
                 <div className='wrapper-central'>
-                    <h1>RESONANCIA MAGNÉTICA</h1>
-                    <p>
-                    La Resonancia Magnética (RM) es un método de diagnóstico que permite
-                    obtener imágenes detalladas de los órganos y tejidos internos sin utilizar
-                    rayos X.</p>
-                    <p>Utiliza un fuerte campo magnético y ondas de radiofrecuencia que permiten la
-                    formación de imágenes.</p>
-                    <p>El examen es simple y no produce efectos colaterales. Es un estudio de
-                    diagnóstico por imágenes moderno, inofensivo e indoloro.</p>
+                    <div className='intro'>
+                        <p>
+                        La Resonancia Magnética (RM) es un método de diagnóstico que permite
+                        obtener imágenes detalladas de los órganos y tejidos internos sin utilizar
+                        rayos X.</p>
+                        <p>Utiliza un fuerte campo magnético y ondas de radiofrecuencia que permiten la
+                        formación de imágenes.</p>
+                        <p>El examen es simple y no produce efectos colaterales. Es un estudio de
+                        diagnóstico por imágenes moderno, inofensivo e indoloro.</p>
+                    </div>
+
+                    <img src='/images/estudios/resonancia.jpg' alt='Resonancias Magnéticas' />
 
                     <h2>Antes del estudio</h2>
                     <ol>
@@ -152,7 +157,7 @@ class EstudioResonancia extends React.Component {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </section>
         )
     }
 }
