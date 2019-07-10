@@ -1,29 +1,41 @@
+@import 'styles/variables/mqueries.scss';
+
 section#home-top-bar{
-    position:absolute; 
-    top: 0;
-    left: 0;
-    height: 60px;
+    position:relative; 
     width: 100%;
     background-color: #62c9d8;
     color: #fff;
 }
 
-section#home-top-bar > div {
-    float: right;
-    margin-top: 20px;
+section#home-top-bar .datos-container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin-right: 40px;
+    @media #{$all-narrow} {
+        
+        margin: auto;
+        justify-content: space-around;
+        margin-right: 0;
+    }
+    
+}
+
+section#home-top-bar .datos-container > div {
+    margin: 20px;
     font-size:1.1em;
 }
 
-section#home-top-bar > div > i {
+section#home-top-bar .datos-container > div > i {
     margin-right:8px;
 }
 
-section#home-top-bar > div a{
+section#home-top-bar .datos-container > div a{
     text-decoration: none;
     color: #fff
 }
 
-section#home-top-bar > div a:hover {
+section#home-top-bar .datos-container > div a:hover {
     color: #ddd
 }

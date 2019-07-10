@@ -17,8 +17,15 @@ section#home-accesos li {
 }
 
 section#home-accesos li h2 {
-    margin: 10px;
-    text-align: center; 
+    margin: 10px 0;
+    text-align: left; 
+}
+
+section#home-accesos li .linea {
+    background-color: #62c9d8;
+    width: 70px;
+    height: 2px;
+    margin-bottom: 20px;
 }
 
 section#home-accesos li img {

@@ -6,23 +6,23 @@ class EstudiosInicio extends React.Component {
     render(){
         return(
             <section id='estudios'>
-                <h1>LISTADO DE ESTUDIOS</h1>
+                <h1>ESTUDIOS</h1>
                 <ul>
                     <li>
                         <Link to='/estudios/tomografia'>
-                            <h2>Tomografías Computadas</h2>
+                            <h2>Tomografía Computada</h2>
                             <img src='/images/estudios/tomografo.jpg' alt='Tomografías Computdas' />
                         </Link>
                     </li>
                     <li>
                         <Link to='/estudios/resonancia'>
-                            <h2>Resonancias Magnéticas</h2>
+                            <h2>Resonancia Magnética</h2>
                             <img src='/images/estudios/resonancia.jpg' alt='Resonancias Magnéticas' />
                         </Link>
                     </li>
                     <li>
                         <Link to='/estudios/ecografia'>
-                            <h2>Ecografías</h2>
+                            <h2>Ecografía</h2>
                             <img src='/images/estudios/ecografia.png' alt='Ecografías'/>
                         </Link>
                     </li>

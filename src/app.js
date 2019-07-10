@@ -8,6 +8,7 @@ import EstudiosInicio from 'views/estudios/inicio';
 import EstudioTomografia from 'views/estudios/tomografia';
 import EstudioResonancia from 'views/estudios/resonancia';
 import EstudioEcografia from 'views/estudios/ecografia';
+import Pacientes from 'views/pacientes';
 import './app.scss';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/estudios/tomografia' component={EstudioTomografia} />
           <Route exact path='/estudios/resonancia' component={EstudioResonancia} />
           <Route exact path='/estudios/ecografia' component={EstudioEcografia} />
+          <Route exact path='/pacientes' component={Pacientes} />
         </Switch>
         <Footer />
       </BrowserRouter>
