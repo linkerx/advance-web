@@ -1,4 +1,5 @@
 import React from 'react';
+import renderHTML from 'react-render-html';
 
 class WpSlider extends React.Component {
 
@@ -32,7 +33,7 @@ class WpSlider extends React.Component {
 
     var options = {
       autoListCount: true,
-      listCount: 0,
+      listCount: 3,
       listImgSize: 'thumbnail',
       pageCount: 1,
       pageImgSize: 'large',
@@ -58,18 +59,24 @@ class WpSlider extends React.Component {
     var items = [
       {
         id: 1,
-        texto: "prueba1",
-        link: "link1"
+        img: "/images/slider/equipo.jpg",
+        texto: "<h3>Tu salud en buenas manos</h3><div class='linea'></div>Trabajamos con la mejor tecnología y un equipo médico especializado en diagnóstico por imágenes para brindarte la atención que buscás.",
+        link: "/institucional",
+        textoLink: "Conocenos"
       },
       {
         id: 2,
-        texto: "prueba2",
-        link: "link2"
+        img: "/images/slider/telefono.jpg",
+        texto: "<h3>Turnos online</h3><div class='linea'></div>Reservá ahora un turno por 24 horas y recibí la atenciónpersonalizada que estás esperando.",
+        link: "/estudios",
+        textoLink: "Reservar turno"
       },
       {
         id: 3,
-        texto: "prueba3",
-        link: "link3"
+        img: "/images/slider/diagnostico.jpg",
+        texto: "<h3>Mirá tus estudios desde donde estés</h3><div class='linea'></div>Accedé a tus resultados de manera exclusiva y confidencial.",
+        link: "//portal.diagnosticoadvance.com.ar",
+        textoLink: "Ver mis estudios online"
       },
     ]
 
@@ -109,6 +116,7 @@ class WpSlider extends React.Component {
   }
 
   show(page){
+    console.log("mostrando slide",page);
     this.setState(function() {
       return {
         options: this.state.options,
@@ -190,7 +198,18 @@ class WpSlider extends React.Component {
             this.props.children
             :
             this.state.current.items.map(function (item, index) {
-              return (<div>chau</div>)
+              var background = {
+                backgroundImage: "url(" + item.img + ")"
+              };
+              return (
+                <div className='slider-container'>
+                  <div className='image' style={background} ></div>
+                  <div className='texto'>
+                    <span>{renderHTML(item.texto)}</span><br/>
+                    <a className="btn" href={item.link}>{item.textoLink}</a>
+                  </div>
+                </div>
+              )
             }.bind(this))
           }
         </div>

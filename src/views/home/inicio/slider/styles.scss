@@ -15,7 +15,6 @@ section#home-slider .slider-container .image {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('/images/estudios/equipo.jpg');
     background-position: center;
     background-size: cover;
     z-index: 5;
@@ -25,7 +24,7 @@ section#home-slider .slider-container .image {
 
 section#home-slider .slider-container .texto {
     position:absolute;
-    top: 40vh;
+    top: 30vh;
     left: 60px;
     z-index: 10;
     font-size: 1.5em;
@@ -37,6 +36,14 @@ section#home-slider .slider-container .texto {
     }
 
 }
+
+section#home-slider .slider-container .texto .linea {
+    background-color: #62c9d8;
+    width: 80px;
+    height: 5px;
+    margin: 20px 0;
+}
+
 
 section#home-slider .slider-container .btn {
     padding: 15px;
