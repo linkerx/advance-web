@@ -67,7 +67,7 @@ class WpSlider extends React.Component {
       {
         id: 2,
         img: "/images/slider/telefono.jpg",
-        texto: "<h3>Turnos online</h3><div class='linea'></div>Reservá ahora un turno por 24 horas y recibí la atenciónpersonalizada que estás esperando.",
+        texto: "<h3>Turnos online</h3><div class='linea'></div>Reservá ahora un turno por 24 horas y recibí la atención personalizada que esperás.",
         link: "/estudios",
         textoLink: "Reservar turno"
       },
