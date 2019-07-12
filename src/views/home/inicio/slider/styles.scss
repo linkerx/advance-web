@@ -38,11 +38,13 @@ section#home-slider .slider-container .texto {
     @media #{$narrow} {
         top: 12vh;
         width: 70%;
+        font-size: 1.3em;
     }
 
     @media #{$super-narrow} {
         top: 5vh;
         width: 70%;
+        font-size: 1.3em;
     }
 
 }
