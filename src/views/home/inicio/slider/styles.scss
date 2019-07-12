@@ -32,7 +32,8 @@ section#home-slider .slider-container .texto {
     color: #fff;
 
     @media #{$all-narrow} {
-        width: 100%;
+        top: 15vh;
+        width: 70%;
     }
 
 }

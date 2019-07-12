@@ -1,3 +1,5 @@
+@import 'styles/variables/mqueries.scss';
+
 section#footer {
     background-color: #404040;
     display:flex;
@@ -17,6 +19,11 @@ section#footer .wrapper-central {
 section#footer .wrapper-central > div {
     width: 31.3%;
     margin: 1%;
+
+    @media #{$all-narrow} {
+        width:98%;
+        text-align: center;
+    }
 }
 
 section#footer .izq {
@@ -49,6 +56,9 @@ section#footer .izq > .linea {
     width: 70px;
     height: 2px;
     margin: 30px 22px;
+    @media #{$all-narrow} {
+        margin:30px auto;
+    }
 }
 
 section#footer .izq > .horarios {
@@ -69,6 +79,10 @@ section#footer .cen img {
 
 section#footer .der {
     margin-top: 40px;
+
+    @media #{$all-narrow} {
+        display:none;
+    }
 }
 
 section#footer .der li {

@@ -1,6 +1,12 @@
+@import 'styles/variables/mqueries.scss';
+
 section#home-inicio {
     position: relative;
     height: 80vh;
     height: calc(100vh - 220px);
+
+    @media #{$all-narrow} {
+        height: calc(100vh - 270px);
+    }
 }
 

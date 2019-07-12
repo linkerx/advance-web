@@ -82,6 +82,11 @@ section#home-menu .estudios {
     background-color: #62c9d8;
     margin-top: 20px;
     display: inline-block;
+
+    @media #{$all-narrow}, #{$square}  {
+        display:none;
+    }
+
 }
 
 section#home-menu .estudios a {
