@@ -25,6 +25,16 @@ section#home-top-bar .datos-container {
 section#home-top-bar .datos-container > div {
     margin: 20px;
     font-size:1.1em;
+
+    @media #{$square} {
+        margin: 15px 20px;
+    }
+    @media #{$narrow} {
+        margin: 12px 20px;
+    }
+    @media #{$super-narrow} {
+        margin: 10px 20px;
+    }
 }
 
 section#home-top-bar .datos-container > div > i {

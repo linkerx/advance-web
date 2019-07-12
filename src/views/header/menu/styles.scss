@@ -7,6 +7,10 @@ section#home-menu {
     width: 100%;
     color: #333;
     z-index: 20;
+
+    @media #{$all-narrow} {
+        height: 130px;
+    }
 }
 
 section#home-menu .logo {
@@ -14,6 +18,12 @@ section#home-menu .logo {
     top: 18px;
     left: 25px;
     height: 90px;
+
+    @media #{$all-narrow} {
+        top: 12px;
+        left: 15px;
+        height: 80px;
+    }
 }
 
 section#home-menu .logo img {
@@ -62,9 +72,9 @@ section#home-menu .menu-trigger i {
         display:none;
     }
     position: absolute;
-    top: 65px;
+    top: 50px;
     right: 30px;
-    font-size: 40px;
+    font-size: 35px;
     color: #555;
     cursor: pointer;
 }

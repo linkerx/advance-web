@@ -5,12 +5,16 @@ section#home-inicio {
     height: 80vh;
     height: calc(100vh - 210px);
 
+    @media #{$square} {
+        height: calc(100vh - 200px);
+    }
+
     @media #{$narrow} {
-        height: calc(100vh - 250px);
+        height: calc(100vh - 210px);
     }
 
     @media #{$super-narrow} {
-        height: calc(100vh - 300px);
+        height: calc(100vh - 240px);
     }
 }
 

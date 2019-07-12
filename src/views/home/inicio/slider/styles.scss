@@ -31,8 +31,17 @@ section#home-slider .slider-container .texto {
     width: 40%;
     color: #fff;
 
-    @media #{$all-narrow} {
-        top: 15vh;
+    @media #{$square} {
+        top: 20vh;
+    }
+
+    @media #{$narrow} {
+        top: 12vh;
+        width: 70%;
+    }
+
+    @media #{$super-narrow} {
+        top: 5vh;
         width: 70%;
     }
 
