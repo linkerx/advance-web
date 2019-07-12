@@ -73,7 +73,7 @@ class WpSlider extends React.Component {
       },
       {
         id: 3,
-        img: "/images/slider/diagnostico.jpg",
+        img: "/images/slider/online.jpg",
         texto: "<h3>Mirá tus estudios desde donde estés</h3><div class='linea'></div>Accedé a tus resultados de manera exclusiva y confidencial.",
         link: "//portal.diagnosticoadvance.com.ar",
         textoLink: "Ver mis estudios online"
