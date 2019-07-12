@@ -1,8 +1,5 @@
 @import 'styles/variables/mqueries.scss';
 
-section#institucional {
-}
-
 section#institucional h1 {
     background-color: #62c9d8;
     color: #fff;
@@ -24,6 +21,11 @@ section#institucional .wrapper-central .imagen {
 
 section#institucional .wrapper-central .imagen img {
     width: 100%;    
+    @media #{$all-narrow}  {
+        height: 250px;
+        object-fit: cover;
+        object-position: 38%;
+    }
 }
 
 section#institucional .wrapper-central .cajas {
@@ -107,7 +109,7 @@ section#institucional .wrapper-central .directora a {
 
 section#institucional .wrapper-central .directora img {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
 }
 
 section#institucional .wrapper-central .directora h3 {
