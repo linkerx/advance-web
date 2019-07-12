@@ -7,7 +7,7 @@ class HomeTopBar extends React.Component {
             <section id='home-top-bar'>
                 <div className='datos-container'>
                     <div className='ubicacion'>
-                        <i className="fas fa-map-signs"></i>
+                        <i className="fas fa-map-marker-alt"></i>
                         <span>Alem 1360, Viedma, Río Negro</span>
                     </div>
                     <div className='email'>

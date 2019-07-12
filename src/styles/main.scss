@@ -13,19 +13,19 @@ body {
   overflow-x: hidden;
 
   @media #{$super-wide} {
-      font-size:16px;
+      font-size:14px;
   }
 
   @media #{$wide} {
-      font-size:14px;
-  }
-
-  @media #{$square} {
       font-size:12px;
   }
 
+  @media #{$square} {
+      font-size:10px;
+  }
+
   @media #{$all-narrow} {
-      font-size:14px;
+      font-size:12px;
   }
 
 }

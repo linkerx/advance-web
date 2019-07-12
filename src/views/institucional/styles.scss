@@ -14,3 +14,43 @@ section#institucional h1 {
 section#institucional .wrapper-central {
     padding: 50px 0;
 }
+
+section#institucional .wrapper-central .cajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+section#institucional .wrapper-central .cajas > div {
+    width:48%;
+}
+
+section#institucional .wrapper-central > h2:first-child {
+    font-size: 2.5em;
+}
+
+section#institucional .wrapper-central > h2:first-child + p{
+    font-size: 1.3em;
+}
+
+section#institucional .wrapper-central ul.valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#institucional .wrapper-central ul.valores li {
+    list-style: none;
+    background-color: #777;
+    color: #eee;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+section#institucional .wrapper-central li::before {
+    color: #62c9d8;
+}

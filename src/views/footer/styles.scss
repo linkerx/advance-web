@@ -1,5 +1,4 @@
 section#footer {
-    height: 300px;
     background-color: #404040;
     display:flex;
     flex-wrap: nowrap;
@@ -11,7 +10,7 @@ section#footer .wrapper-central {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top:50px;
+    margin:50px auto;
     height: auto;
 }
 
@@ -44,12 +43,28 @@ section#footer .izq > div i {
     margin:12px;
 }
 
+section#footer .izq > .linea {
+
+    background-color: #62c9d8;
+    width: 70px;
+    height: 2px;
+    margin: 30px 22px;
+}
+
+section#footer .izq > .horarios {
+    margin: 0 12px;
+
+}
+
 section#footer .cen {
-    margin-top: 80px;
+    margin-top: 27px !important;
+    text-align: center;
+    height: 300px;
 }
 
 section#footer .cen img {
-    width:80%;
+    height:90%;
+    margin:auto;
 }
 
 section#footer .der {
@@ -60,10 +75,16 @@ section#footer .der li {
     margin: 12px;
     list-style: none;
     margin-left:50px;
+    text-align: right;
 }
 
 section#footer .der li a {
     color: #ccc;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-decoration: none;
+    line-height: 1.7em;
+}
+
+section#footer .der li.ver a {
+    color: #62c9d8;
 }

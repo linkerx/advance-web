@@ -8,7 +8,7 @@ class Institucional extends React.Component {
                 <h1>INSTITUCIONAL</h1>
                 <div className='wrapper-central'>
 
-                <h2>Quiénes somos</h2>
+                <h2>Advance</h2>
                 <p>
                     Somos el primer Centro de Diagnóstico por Imágenes de Viedma, capital de
                     Río Negro. ​Nuestro​ equipo está ​conformado​ por médicos especialistas en
@@ -18,27 +18,34 @@ class Institucional extends React.Component {
                     prestaciones de vanguardia que buscás, contribuyendo a tu bienestar y al
                     desarrollo de la región.
                 </p>
-
+                <div className='cajas'>
+                    <div> 
                 <h2>Misión</h2>
-                <p>
-                Brindar un servicio de diagnóstico por imágenes de excelencia, acercando y
-                poniendo a disposición de la comunidad local y regional tecnología de última
-                generación y conocimiento médico especializado, a través de un trato cálido y
-                personalizado que priorice el bienestar del paciente.
-                Visión
-                Ser la institución líder en diagnóstico por imágenes en Viedma y en la región,
-                reconocida por la excelencia médica, la innovación tecnológica, la calidad de
-                la atención y el compromiso con la comunidad médica y los pacientes.
-                </p>
+                    <p>
+                    Brindar un servicio de diagnóstico por imágenes de excelencia, acercando y
+                    poniendo a disposición de la comunidad local y regional tecnología de última
+                    generación y conocimiento médico especializado, a través de un trato cálido y
+                    personalizado que priorice el bienestar del paciente.
+                    </p>
+                    </div>
+                    <div>
+                    <h2>Visión</h2>
+                    <p>
+                    Ser la institución líder en diagnóstico por imágenes en Viedma y en la región,
+                    reconocida por la excelencia médica, la innovación tecnológica, la calidad de
+                    la atención y el compromiso con la comunidad médica y los pacientes.
+                    </p>
+                    </div>
+                </div>
 
                 <h2>Valores</h2>
                 <p>
-                <ul>
-                    <li><strong>COMPROMISO</strong> con nuestros pacientes, la comunidad médica y la
+                <ul className='valores'>
+                    <li><strong>COMPROMISO</strong><br/> con nuestros pacientes, la comunidad médica y la
                 sociedad.</li>
-                    <li><strong>CALIDAD</strong> de nuestros servicios, equipamiento tecnológico y atención
+                    <li><strong>CALIDAD</strong><br/> de nuestros servicios, equipamiento tecnológico y atención
                 médica y administrativa.</li>
-                    <li><strong>PROFESIONALISMO</strong> de nuestro equipo médico, innovación y
+                    <li><strong>PROFESIONALISMO</strong><br/> de nuestro equipo médico, innovación y
                 capacitación continua.</li>
                 </ul>
                 </p>

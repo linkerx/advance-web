@@ -23,9 +23,24 @@ section#home-accesos li h2 {
 
 section#home-accesos li .linea {
     background-color: #62c9d8;
-    width: 70px;
-    height: 2px;
+    width: 80px;
+    height: 5px;
     margin-bottom: 20px;
+}
+
+section#home-accesos li:hover .linea {
+}
+
+section#home-accesos li.tomografia .linea {
+    background-color: #eb7832;
+}
+
+section#home-accesos li.resonancia .linea {
+    background-color: #5aa838;
+}
+
+section#home-accesos li.ecografia .linea {
+    background-color: #6f569f;
 }
 
 section#home-accesos li img {
@@ -35,7 +50,7 @@ section#home-accesos li img {
 }
 
 section#home-accesos li:hover img {
-    opacity: 0.7;
+    opacity: 0.7
 }
 
 section#home-accesos li a {
@@ -43,6 +58,14 @@ section#home-accesos li a {
     color: #333;
 }
 
-section#home-accesos li:hover a {
-    color: #999;
+section#home-accesos li.tomografia:hover a {
+    color: #eb7832;
+}
+
+section#home-accesos li.resonancia:hover a {
+    color: #5aa838;
+}
+
+section#home-accesos li.ecografia:hover a {
+    color: #6f569f;
 }

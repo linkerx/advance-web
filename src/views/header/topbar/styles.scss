@@ -3,8 +3,8 @@
 section#home-top-bar{
     position:relative; 
     width: 100%;
-    background-color: #62c9d8;
-    color: #fff;
+    background-color: #eee;
+    color: #7f7f7f;
 }
 
 section#home-top-bar .datos-container {
@@ -29,11 +29,12 @@ section#home-top-bar .datos-container > div {
 
 section#home-top-bar .datos-container > div > i {
     margin-right:8px;
+    color: #62c9d8;
 }
 
 section#home-top-bar .datos-container > div a{
     text-decoration: none;
-    color: #fff
+    color: #7f7f7f
 }
 
 section#home-top-bar .datos-container > div a:hover {
