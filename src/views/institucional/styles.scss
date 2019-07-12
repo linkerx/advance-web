@@ -1,3 +1,5 @@
+@import 'styles/variables/mqueries.scss';
+
 section#institucional {
 }
 
@@ -15,6 +17,15 @@ section#institucional .wrapper-central {
     padding: 50px 0;
 }
 
+section#institucional .wrapper-central .imagen {
+    width: 100%;
+    margin-top: 30px;
+}
+
+section#institucional .wrapper-central .imagen img {
+    width: 100%;    
+}
+
 section#institucional .wrapper-central .cajas {
     display: flex;
     flex-wrap: wrap;
@@ -23,14 +34,31 @@ section#institucional .wrapper-central .cajas {
 
 section#institucional .wrapper-central .cajas > div {
     width:48%;
+    @media #{$all-narrow}  {
+        width:100%;
+    }
 }
 
 section#institucional .wrapper-central > h2:first-child {
     font-size: 2.5em;
+    text-align: center;
+    @media #{$all-narrow}  {
+        text-align:left;
+    }
 }
 
 section#institucional .wrapper-central > h2:first-child + p{
+    max-width: 700px;
+    margin: auto;
     font-size: 1.3em;
+    text-align: center;
+    @media #{$all-narrow}  {
+        text-align: left;
+    }
+
+    @media #{$all-wide} {
+        max-width: 900px;
+    }
 }
 
 section#institucional .wrapper-central ul.valores {
@@ -41,16 +69,47 @@ section#institucional .wrapper-central ul.valores {
 
 section#institucional .wrapper-central ul.valores li {
     list-style: none;
-    background-color: #777;
-    color: #eee;
+    background-color: #eee;
+    color: #777;
     padding: 30px;
     width: 250px;
-    border-radius: 10px;
     font-size: 1.2em;
     text-align: center;
+    @media #{$all-narrow}  {
+        width:100%;
+        margin-bottom: 20px;
+    }
+}
 
+section#institucional .wrapper-central ul.valores li h3 {
+    color: #62c9d8;
+    margin-bottom: 10px;
 }
 
 section#institucional .wrapper-central li::before {
     color: #62c9d8;
+}
+
+section#institucional .wrapper-central .directora {
+    text-align:center;
+}
+
+section#institucional .wrapper-central .directora a {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #62c9d8;
+    margin-top: 20px;
+    display: block;
+    width: 120px;
+    color: #fff;
+    margin: 30px auto;
+}
+
+section#institucional .wrapper-central .directora img {
+    width: 100%;
+    max-width: 450px;
+}
+
+section#institucional .wrapper-central .directora h3 {
+    margin-top: 20px;
 }

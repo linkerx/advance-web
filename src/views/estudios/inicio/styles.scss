@@ -19,15 +19,37 @@ section#estudios ul {
 }
 
 section#estudios li {
-    width: 25vw;
+    width: 28vw;
     margin: 2vw;
-    height: 30vh;
+    height: 32vh;
     list-style: none;
 }
 
 section#estudios li h2 {
-    margin: 10px;
-    text-align: center; 
+    margin: 10px 0;
+    text-align: left; 
+}
+
+section#estudios li .linea {
+    background-color: #62c9d8;
+    width: 80px;
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+section#estudios li:hover .linea {
+}
+
+section#estudios li.tomografia .linea {
+    background-color: #eb7832;
+}
+
+section#estudios li.resonancia .linea {
+    background-color: #5aa838;
+}
+
+section#estudios li.ecografia .linea {
+    background-color: #6f569f;
 }
 
 section#estudios li img {
@@ -37,7 +59,7 @@ section#estudios li img {
 }
 
 section#estudios li:hover img {
-    opacity: 0.7;
+    opacity: 0.7
 }
 
 section#estudios li a {
@@ -45,6 +67,14 @@ section#estudios li a {
     color: #333;
 }
 
-section#estudios li:hover a {
-    color: #999;
+section#estudios li.tomografia:hover a {
+    color: #eb7832;
+}
+
+section#estudios li.resonancia:hover a {
+    color: #5aa838;
+}
+
+section#estudios li.ecografia:hover a {
+    color: #6f569f;
 }

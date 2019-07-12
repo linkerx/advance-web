@@ -18,6 +18,11 @@ class Institucional extends React.Component {
                     prestaciones de vanguardia que buscás, contribuyendo a tu bienestar y al
                     desarrollo de la región.
                 </p>
+
+                <div className='imagen'>
+                    <img src='/images/otras/frente.jpg' alt='frente' />
+                </div>
+
                 <div className='cajas'>
                     <div> 
                 <h2>Misión</h2>
@@ -41,21 +46,23 @@ class Institucional extends React.Component {
                 <h2>Valores</h2>
                 <p>
                 <ul className='valores'>
-                    <li><strong>COMPROMISO</strong><br/> con nuestros pacientes, la comunidad médica y la
+                    <li><h3>COMPROMISO</h3> con nuestros pacientes, la comunidad médica y la
                 sociedad.</li>
-                    <li><strong>CALIDAD</strong><br/> de nuestros servicios, equipamiento tecnológico y atención
+                    <li><h3>CALIDAD</h3> de nuestros servicios, equipamiento tecnológico y atención
                 médica y administrativa.</li>
-                    <li><strong>PROFESIONALISMO</strong><br/> de nuestro equipo médico, innovación y
+                    <li><h3>PROFESIONALISMO</h3> de nuestro equipo médico, innovación y
                 capacitación continua.</li>
                 </ul>
                 </p>
-
-                <h2>Directora Médica</h2>
-                <p>
-                <h3>Dra. Kathia J. Golab</h3>
-                Médica Especialista en Diagnóstico por Imágenes
-                <a>Ver CV</a>
-                </p>
+                <div className='directora'>
+                    <h2>Directora Médica</h2>
+                    <p>
+                    <img src='/images/otras/dra-golab.jpg' alt='Dra. Golab' />
+                    <h3>Dra. Kathia J. Golab</h3>
+                    Médica Especialista en Diagnóstico por Imágenes
+                    <a>Ver CV</a>
+                    </p>
+                </div>
 
                 <h2>Políticas de calidad</h2>
                 <p>

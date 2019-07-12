@@ -8,21 +8,24 @@ class EstudiosInicio extends React.Component {
             <section id='estudios'>
                 <h1>ESTUDIOS</h1>
                 <ul>
-                    <li>
+                <li className='tomografia'>
                         <Link to='/estudios/tomografia'>
                             <h2>Tomografía Computada</h2>
+                            <div className='linea'></div>
                             <img src='/images/estudios/tomografo.jpg' alt='Tomografías Computdas' />
                         </Link>
                     </li>
-                    <li>
+                    <li className='resonancia'>
                         <Link to='/estudios/resonancia'>
                             <h2>Resonancia Magnética</h2>
+                            <div className='linea'></div>
                             <img src='/images/estudios/resonancia.jpg' alt='Resonancias Magnéticas' />
                         </Link>
                     </li>
-                    <li>
+                    <li className='ecografia'>
                         <Link to='/estudios/ecografia'>
                             <h2>Ecografía</h2>
+                            <div className='linea'></div>
                             <img src='/images/estudios/ecografia.png' alt='Ecografías'/>
                         </Link>
                     </li>

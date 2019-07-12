@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './styles.scss';
 
 class HomeMenu extends React.Component {
@@ -16,11 +16,11 @@ class HomeMenu extends React.Component {
                         <li><NavLink to='/pacientes'>PACIENTES</NavLink></li>
                         <li><NavLink to='/equipos'>EQUIPOS</NavLink></li>
                         <li><NavLink to='/area-medica'>ÁREA MÉDICA</NavLink></li>
-                        <li><NavLink to='/area-medica'>CONTACTO</NavLink></li>
+                        <li><NavLink to='/contacto'>CONTACTO</NavLink></li>
                     </ul>
                 </div>
                 <div className='estudios'>
-                    VER MIS ESTUDIOS
+                    <a href='http://portal.diagnosticoadvance.com.ar' target='_blank'>VER MIS ESTUDIOS</a>
                 </div>
                 <div className='menu-trigger'>
                     <i className="fas fa-bars"></i>
