@@ -64,23 +64,25 @@ class Institucional extends React.Component {
                     </p>
                 </div>
 
-                <h2>Políticas de calidad</h2>
-                <p>
-                    Desde un primer momento, en Advance nos propusimos trabajar bajo los
-                    siguientes principios:
-                    <ul>
-                            <li>Atención médica y administrativa de acuerdo con patrones de calidad
-                            basados en normas internacionales.</li>
-                            <li>Capacitación continua del equipo médico.</li>
-                            <li>Equipo médico integrado por especialistas en diagnóstico por
-                            imágenes que están ​siempre presente​ y mantienen un diálogo directo
-                            con los pacientes.</li>
-                            <li>Empleo de equipamiento nuevo y de última generación.</li>
-                            <li>Mirada y abordaje integral de la salud y del paciente: tratamos con
-                            personas que necesitan una respuesta médica precisa a partir de un
-                            trato personalizado y cordial.</li>
-                    </ul>
-                </p>
+                <div className='politicas'>
+                    <h2>Políticas de calidad</h2>
+                    <p>
+                        Desde un primer momento, en Advance nos propusimos trabajar bajo los
+                        siguientes principios:
+                        <ul>
+                                <li>Atención médica y administrativa de acuerdo con patrones de calidad
+                                basados en normas internacionales.</li>
+                                <li>Capacitación continua del equipo médico.</li>
+                                <li>Equipo médico integrado por especialistas en diagnóstico por
+                                imágenes que están ​siempre presente​ y mantienen un diálogo directo
+                                con los pacientes.</li>
+                                <li>Empleo de equipamiento nuevo y de última generación.</li>
+                                <li>Mirada y abordaje integral de la salud y del paciente: tratamos con
+                                personas que necesitan una respuesta médica precisa a partir de un
+                                trato personalizado y cordial.</li>
+                        </ul>
+                    </p>
+                </div>
 
                 </div>
             </section>
