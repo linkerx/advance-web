@@ -14,6 +14,15 @@ section#institucional .wrapper-central {
     padding: 50px 0;
 }
 
+section#institucional .wrapper-central li::before{
+    content: "\2022";
+    color: #62c9d8;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
+}
+
 section#institucional .wrapper-central .imagen {
     width: 100%;
     margin-top: 35px;
@@ -32,7 +41,7 @@ section#institucional .wrapper-central .cajas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-} 
+}
 
 section#institucional .wrapper-central .cajas > div {
     width:48%;
@@ -84,6 +93,10 @@ section#institucional .wrapper-central ul.valores li {
         width:100%;
         margin-bottom: 20px;
     }
+}
+
+section#institucional .wrapper-central ul.valores li::before {
+    content: none;
 }
 
 section#institucional .wrapper-central ul.valores li h3 {
