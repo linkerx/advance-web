@@ -23,7 +23,7 @@ class HomeMenu extends React.Component {
                     <a href='http://portal.diagnosticoadvance.com.ar' target='_blank'>VER MIS ESTUDIOS</a>
                 </div>
                 <div className='menu-trigger'>
-                    <i className="fas fa-bars"></i>
+                    <i className="fas fa-bars" onClick={() => this.props.openMenu()}></i>
                 </div>
             </section>
         )
