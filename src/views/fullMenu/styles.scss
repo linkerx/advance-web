@@ -6,5 +6,75 @@
     width:100%;
     height:100%;
     background-color: #fff;
+}
+
+#full-menu.closed {
     display:none;
+}
+
+#full-menu.open {
+    display:block;
+}
+
+#full-menu .logo {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    height: 15%;
+}
+
+#full-menu .logo img {
+    height: 100px;
+    width:auto;
+}
+
+#full-menu .close-trigger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#full-menu .close-trigger i {
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+}
+
+#full-menu .close-trigger i:hover {
+    color: #aaa;
+}
+
+#full-menu .menu {
+    position: absolute;
+    top: 50px;
+    bottom: 100px;
+    width: 100%;
+}
+
+#full-menu .menu li {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 2em;
+    margin: 30px 0;
+}
+
+#full-menu .menu li a {
+    color: #333;
+}
+
+#full-menu .menu li a:hover {
+    color: #aaa;
+}
+
+#full-menu .estudios {
+    position: absolute;
+    bottom: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+#full-menu .estudios a {
+    color: #62c9d8;
+    font-size: 2.5em;
 }

@@ -8,7 +8,7 @@ class Header extends React.Component {
         return(
             <section id='header'>
                 <TopBar />
-                <Menu />
+                <Menu openMenu={this.props.openMenu}/>
             </section>
        )
     }
