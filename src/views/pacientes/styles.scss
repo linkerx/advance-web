@@ -1,7 +1,5 @@
-section#institucional {
-}
 
-section#institucional h1 {
+section#pacientes h1 {
     background-color: #62c9d8;
     color: #fff;
     text-align: center;
@@ -10,6 +8,34 @@ section#institucional h1 {
     font-weight: bold;
 }
 
-section#institucional .wrapper-central {
+section#pacientes .wrapper-central {
     padding: 50px 0;
+}
+
+section#pacientes .wrapper-central li::before{
+    content: "\2022";
+    color: #62c9d8;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
+}
+
+section#pacientes .wrapper-central .info {
+    margin:10px;
+}
+
+section#pacientes .wrapper-central .info > div span {
+    color: #333;
+}
+
+section#pacientes .wrapper-central .info > div a {
+    color: #333;
+    text-decoration: none;
+}
+
+section#pacientes .wrapper-central .info > div i {
+    color: #62c9d8;
+    font-size: 20px;
+    margin:12px;
 }

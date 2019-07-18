@@ -10,6 +10,9 @@ import EstudioTomografia from 'views/estudios/tomografia';
 import EstudioResonancia from 'views/estudios/resonancia';
 import EstudioEcografia from 'views/estudios/ecografia';
 import Pacientes from 'views/pacientes';
+import Equipamiento from 'views/equipamiento';
+import Contacto from 'views/contacto';
+import AreaMedica from 'views/area-medica';
 import './app.scss';
 
 class App extends React.Component {
@@ -48,6 +51,9 @@ class App extends React.Component {
             <Route exact path='/estudios/resonancia' component={EstudioResonancia} />
             <Route exact path='/estudios/ecografia' component={EstudioEcografia} />
             <Route exact path='/pacientes' component={Pacientes} />
+            <Route exact path='/equipamiento' component={Equipamiento} />
+            <Route exact path='/area-medica' component={AreaMedica} />
+            <Route exact path='/contacto' component={Contacto} />
           </Switch>
           <Footer />
         </BrowserRouter>

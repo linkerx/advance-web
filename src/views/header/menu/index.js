@@ -14,7 +14,7 @@ class HomeMenu extends React.Component {
                         <li><NavLink to='/institucional'>INSTITUCIONAL</NavLink></li>
                         <li><NavLink to='/estudios'>ESTUDIOS</NavLink></li>
                         <li><NavLink to='/pacientes'>PACIENTES</NavLink></li>
-                        <li><NavLink to='/equipos'>EQUIPOS</NavLink></li>
+                        <li><NavLink to='/equipamiento'>EQUIPAMIENTO</NavLink></li>
                         <li><NavLink to='/area-medica'>ÁREA MÉDICA</NavLink></li>
                         <li><NavLink to='/contacto'>CONTACTO</NavLink></li>
                     </ul>
