@@ -2,7 +2,9 @@ import React from 'react';
 import './styles.scss';
 
 class Pacientes extends React.Component {
+    
     render(){
+        var classPlano='btn plano';
         return(
             <section id='pacientes'>
                 <h1>GUÍA PARA PACIENTES</h1>
@@ -39,7 +41,7 @@ class Pacientes extends React.Component {
                     También podés solicitar información sobre alojamiento y datos de interés de la
                     ciudad de Viedma.
                     </p>
-                    <a className='btn' href=''>Plano de Viedma</a>
+                    <a className={classPlano} href=''><i className="fas fa-file-pdf"></i> Plano de Viedma</a>
 
                     <h2>Requisitos para tu atención</h2>
 
@@ -76,25 +78,25 @@ class Pacientes extends React.Component {
 
                     <div className='caja'>
                         <div className='izq'>
-                        <h2>Resultados online</h2>
-                        <p>
-                        Accedé a tus estudios desde donde estés, de manera rápida, exclusiva y
-                        segura.</p>
-                        <p>
-                        En Advance tenés la posibilidad de ver los resultados de tus estudios sin moverte de
-                        tu casa, ingresando a la plataforma VER MIS ESTUDIOS.</p>
-                        <p>
-                        Para acceder por primera vez, deberás generar un usuario y contraseña. Luego, con
-                        esos datos, podés iniciar sesión para consultar los informes e imágenes todas las
-                        veces que quieras.</p>
-                        <p>
-                        También podés compartilos online, guardarlos e imprimirlos desde tu computadora o
-                        cualquier dispositivo móvil, estés donde estés.
-                        </p>
-                        <a href='' target='_blank' className='btn' >VER MIS ESTUDIOS</a>
+                            <img src='/images/slider/online.jpg' />                      
                         </div>
                         <div className='der'>
-                            
+                        <h2>Resultados online</h2>
+                            <p>
+                            Accedé a tus estudios desde donde estés, de manera rápida, exclusiva y
+                            segura.</p>
+                            <p>
+                            En Advance tenés la posibilidad de ver los resultados de tus estudios sin moverte de
+                            tu casa, ingresando a la plataforma VER MIS ESTUDIOS.</p>
+                            <p>
+                            Para acceder por primera vez, deberás generar un usuario y contraseña. Luego, con
+                            esos datos, podés iniciar sesión para consultar los informes e imágenes todas las
+                            veces que quieras.</p>
+                            <p>
+                            También podés compartilos online, guardarlos e imprimirlos desde tu computadora o
+                            cualquier dispositivo móvil, estés donde estés.
+                            </p>
+                            <a href='http://portal.diagnosticoadvance.com.ar' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
                         </div>
                     </div>
 

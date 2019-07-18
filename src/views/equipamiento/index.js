@@ -8,72 +8,96 @@ class Equipamiento extends React.Component {
             <h1>EQUIPAMIENTO</h1>
             <div className='wrapper-central'>
 
-                <p>
+                <p className='subtitulo'>
                 Trabajamos con equipamiento nuevo y de última generación que
                 garantizan la calidad de nuestros servicios y posicionan a Advance al
                 nivel de los mejores centros de diagnósticos por imágenes del país.
                 </p>
 
-                FOTO y debajo el texto en caja gris
-                del mismo ancho (ejemplo
-                https://iradiologico.com.ar/novedades)
+                <div className='equipos'>  
+                <div className='izq'>
+                    <img src='/images/equipos/tomografo.jpg' />
 
-                RESONADOR
-                SIGNA CREATOR de 1.5 Tesla.
-                General Electric.
-                Año 2019 (a estrenar)
+                    <div className='info'>
 
-                ● Permite poder obtener imágenes más
-                profundas, mejor definidas.
-                ● Tiene una velocidad de proceso
-                mayor lo que permite acortar los
-                tiempos de los estudios para los
-                pacientes.
-                ● Contiene herramientas de software
-                precisas y poderosas que le permite a
-                los médicos realizar mejores informes
-                y con mejor calidad de detalle, con
-                imágenes disponibles de manera casi
-                instantánea.
-                ● Es un equipo de última generación
-                utilizado sólo en centros de imágenes
-                de excelencia.
+                    <h3>RESONADOR
+                    SIGNA CREATOR de 1.5 Tesla.</h3>
+                    <strong>
+                    General Electric. Año 2019
+                    </strong>
 
-                FOTO y debajo el texto en caja gris
-                del mismo ancho (ejemplo
-                https://iradiologico.com.ar/novedades)
+                    <ul>
+                    <li>
+                        Permite poder obtener imágenes más
+                        profundas, mejor definidas.
+                    </li>
+                    <li>
+                        Tiene una velocidad de proceso
+                        mayor lo que permite acortar los
+                        tiempos de los estudios para los
+                        pacientes.
+                    </li>
+                    <li>
+                        Contiene herramientas de software
+                        precisas y poderosas que le permite a
+                        los médicos realizar mejores informes
+                        y con mejor calidad de detalle, con
+                        imágenes disponibles de manera casi
+                        instantánea.
+                    </li>
+                    <li>
+                        Es un equipo de última generación
+                        utilizado sólo en centros de imágenes
+                        de excelencia.
+                    </li>
+                    </ul>
+                    </div>
 
-                TOMÓGRAFO
-                REVOLUCIÓN EVO de 128 canales.
-                General Electric.
-                Año 2019 (a estrenar)
+                </div>
 
-                ● Permite ver con mayor claridad. El
+                <div className='der'>
+
+                <img src='/images/equipos/tomografo.jpg' />
+                <div className='info'>
+                <h3>TOMÓGRAFO
+                REVOLUCIÓN EVO de 128 canales.</h3>
+                <strong>General Electric. Año 2019</strong>
+
+                <ul>
+                <li>Permite ver con mayor claridad. El
                 nuevo sistema de adquisición de
                 imágenes Clarity ofrece una mejora de
                 hasta un 100% de la resolución
                 espacial con respecto a los escáneres
                 de TC anteriores de GE1.
-                ● Con el innovador método de
+                </li>
+                <li>Con el innovador método de
                 reconstrucción iterativa ASiR-V* se
                 reduce la dosis hasta en un 82% en
                 pacientes de todas las edades, al
                 tiempo que conserva sus procesos de
                 trabajo.
-                ● Permite realizar más estudios en
+                </li>
+                <li>
+                Permite realizar más estudios en
                 menos tiempo. Con unos protocolos
                 más inteligentes y automatizados
                 desde la preparación del paciente
                 hasta el post procesado, puede
-
                 aumentar hasta en un 40% la eficacia
                 del flujo de trabajo.
-                ● Permite ampliar servicios con estudios
+                </li>
+                <li>
+                Permite ampliar servicios con estudios
                 avanzados como planificación de
                 TAVI, CCTA con ritmo cardíaco alto y
                 pacientes con implantes.
-
-        </div>
+                </li>
+                </ul>
+                </div>
+                </div>
+                </div>
+            </div>
         </section>
 
 

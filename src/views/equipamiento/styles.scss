@@ -11,3 +11,49 @@ section#equipamiento h1 {
 section#equipamiento .wrapper-central {
     padding: 50px 0;
 }
+
+section#equipamiento .wrapper-central li::before{
+    content: "\2022";
+    color: #62c9d8;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
+}
+
+section#equipamiento .wrapper-central p.subtitulo {
+    font-size: 1.3em;
+    width:800px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 80px;
+    line-height: 1.8em;
+}
+
+section#equipamiento .wrapper-central .equipos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top:30px;
+}
+
+section#equipamiento .wrapper-central .equipos li {
+    margin: 10px;
+    margin-top:15px;
+}
+
+section#equipamiento .wrapper-central .equipos > div {
+    width: 46%;
+    background-color: #eee;
+    color: #777;
+    box-sizing: border-box;
+}
+
+section#equipamiento .wrapper-central .equipos > div img {
+    width:100%;
+}
+
+section#equipamiento .wrapper-central .equipos > div .info {
+    box-sizing: border-box;
+    padding: 30px;
+}

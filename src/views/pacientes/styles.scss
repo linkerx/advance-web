@@ -39,3 +39,46 @@ section#pacientes .wrapper-central .info > div i {
     font-size: 20px;
     margin:12px;
 }
+
+section#pacientes .wrapper-central a.plano {
+    font-size: 1.2em;
+    background-color: #707070;
+}
+
+section#pacientes .wrapper-central a.plano i {
+    color: #fff;
+    margin-right: 5px;
+}
+
+section#pacientes .wrapper-central .caja {
+    list-style: none;
+    background-color: #eee;
+    color: #777;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    display:flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width:100%;
+}
+
+section#pacientes .wrapper-central .caja h2 {
+    margin:0;
+    color: #62c9d8;
+}
+
+section#pacientes .wrapper-central .caja > div {
+    width: 46%;
+    margin: 2%;
+}
+
+section#pacientes .wrapper-central .caja .izq img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+section#pacientes .wrapper-central .caja .der {
+    text-align: left;
+}

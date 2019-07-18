@@ -1,3 +1,4 @@
+@import 'styles/variables/mqueries.scss';
 
 section#area-medica h1 {
     background-color: #62c9d8;
@@ -11,3 +12,88 @@ section#area-medica h1 {
 section#area-medica .wrapper-central {
     padding: 50px 0;
 }
+
+section#area-medica .wrapper-central > h2:first-child {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+section#area-medica .wrapper-central > h2:first-child + h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #62c9d8;
+}
+
+section#area-medica .wrapper-central p.subtitulo {
+    font-size: 1.3em;
+    width:800px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    line-height: 1.8em;
+}
+
+section#area-medica .wrapper-central .imagen {
+    width: 100%;
+    margin-top: 35px;
+}
+
+section#area-medica .wrapper-central .imagen img {
+    width: 100%;    
+    height: 270px;
+    object-fit: cover;
+    object-position: 0 37%;
+}
+
+section#area-medica .wrapper-central .caja {
+    list-style: none;
+    background-color: #eee;
+    color: #777;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    box-sizing: border-box;
+    width:100%;
+    margin-top:40px;
+}
+
+section#area-medica .wrapper-central .caja p {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+section#area-medica .wrapper-central .caja label {
+    clear: both;
+    float: left;
+    width: 250px;
+    margin: 20px;
+    margin-top: 45px;
+    text-align: left;
+    font-size: 1.1em;
+    color: #62c9d8;
+}
+
+section#area-medica .wrapper-central .caja input {
+    float: left;
+    width: 500px;
+    border: 2px solid #62c9d8;
+    background-color: #fff;
+    padding: 8px;
+    margin: 20px;
+    margin-top:37px;
+}
+
+section#area-medica .wrapper-central .caja button {
+    clear: both;
+    box-shadow: none;
+    border: 0;
+    display: block;
+    margin: 20px;
+    margin-top: 40px;
+    padding: 15px 25px;
+}
+
+

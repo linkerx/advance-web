@@ -7,34 +7,41 @@ class AreaMedica extends React.Component {
             <section id='area-medica'>
                 <h1>ÁREA MEDICA</h1>
                 <div className='wrapper-central'>
-                    Actividades de formación profesional
-                    Somos parte de la misma solución
+                    <h2>Actividades de formación profesional</h2>
+                    <h3>Somos parte de la misma solución</h3>
 
+                    <p className='subtitulo'>
                     Creemos que la capacitación continua y el diálogo permanente con la
                     comunidad médica es clave para brindar respuestas integrales a
                     nuestros pacientes y contribuir al desarrollo del área de la salud en
-
                     nuestra región.
-
                     Por eso creamos un espacio dedicado a la formación, al debate de
-
                     casos y el intercambio de experiencias.
+                    </p>
 
-                    FOTO MÉDICOS HABLANDO (LA DEL SLIDE 1) A LO ANCHO DE LA PÁGINA
+                    <div className='imagen'>
+                        <img src='/images/slider/equipo.jpg' alt='frente' />
+                    </div>
 
-                    El siguiente texto y formulario, ponerlo en una caja con fondo gris claro, del mismo
-                    ancho que la foto de arriba:
+                    <div className='caja'>
+                    <p>
                     Estamos construyendo nuestra agenda de capacitaciones y ateneos. Para conocer
                     próximos eventos, hacer sugerencias o recibir novedades, escribinos a
                     secretaria​@diagnosticoadvance.com​ o dejanos tus datos.
-                    Formulario (campos a completar):
-                    Nombre:
-                    Profesión/Especialidad:
-                    Institución:
-                    Tema que te gustaría tratar:
-                    Mail:
-                    Whatsapp:
-                    Enviar ​ ​(botón de envío a secretaria@diagnosticoadvance.com)
+                    </p>
+
+                    <form>
+                        <label for='nombre'>NOMBRE:</label><input name='nombre' type='text' value=''/>
+                        <label for='profesion'>PROFESIÓN/ESPECIALIDAD:</label><input name='profesion' type='text' value='' />
+                        <label for='institucion'>INSTITUCIÓN:</label><input name='institucion' type='text' value='' />
+                        <label for='temas'>TEMÁTICAS DE INTERÉS:</label><input name='temas' type='text' value='' />
+                        <label for='email'>EMAIL:</label><input name='email' type='text' value='' />
+                        <label for='telefono'>TELÉFONO:</label><input name='telefono' type='text' value=''/>
+                        <div className='clearfix'></div>
+                        <button className='btn'>ENVIAR</button>
+                    </form>
+                    <div className='clearfix'></div>
+                    </div>
                 </div>
             </section>
         )
