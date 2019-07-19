@@ -11,18 +11,67 @@ section#estudio-resonancia .wrapper-central {
     padding: 50px 0;
 }
 
-section#estudio-resonancia .wrapper-central .izq {
-    width: 70%;
-    float: left;
+section#estudio-resonancia .wrapper-central p.subtitulo {
+    font-size: 1.3em;
+    width:800px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 80px;
+    line-height: 1.8em;
 }
 
-section#estudio-resonancia .wrapper-central .der {
-    width: 30%;
-    float: left;
+section#estudio-resonancia .wrapper-central img {
+    width:100%;
 }
 
+section#estudio-resonancia .wrapper-central ol > li {
+    list-style: decimal;
+    list-style-position: inside;
+}
 
-section#estudio-resonancia img {
-    width: 100%;
-    margin: 20px 0;
+section#estudio-resonancia .wrapper-central ol > li ul > li::before {
+    content: "\2022";
+    color: #62c9d8;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul > li::before {
+    content: "\2022";
+    color: #5aa838;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li {
+    margin-left: 20px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > span {
+    font-size: 1.2em;
+    color: #5aa838;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > i {
+    font-size: 1.2em;
+    color: #5aa838;
+    font-weight: bold;
+    margin-top: -15px;
+
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.closed {
+    display:none;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.open {
+    display:block;
 }
