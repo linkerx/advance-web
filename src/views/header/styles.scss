@@ -14,3 +14,6 @@
     display: none;
 }
 
+#header.fixed + div + section {
+    margin-top: 220px;
+}
