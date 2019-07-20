@@ -8,11 +8,14 @@ class EstudioResonancia extends React.Component {
         super(props);
 
         this.state = {
-            examenesOpen: 'none'
+            examenesOpen: null,
+            preguntaOpen: null,
+            examenes: null,
+            preguntas: null 
         }
 
         this.openExamenes = this.openExamenes.bind(this);
-
+        this.openPregunta = this.openPregunta.bind(this);
     }
 
     openExamenes(text){
@@ -22,7 +25,19 @@ class EstudioResonancia extends React.Component {
             })
         } else {
             this.setState({
-                examenesOpen: 'none'
+                examenesOpen: null
+            })
+        }
+    }
+
+    openPregunta(text){
+        if (this.state.preguntaOpen !== text){
+            this.setState({
+                preguntaOpen: text
+            })
+        } else {
+            this.setState({
+                preguntaOpen: null
             })
         }
     }
@@ -106,7 +121,14 @@ class EstudioResonancia extends React.Component {
                     <ul>
                         <li className='categoria' onClick={() => this.openExamenes('comunes')}>
                         <span>Estudios comunes </span>
-                        <i className="fas fa-sort-down"></i>
+                        <div>
+                            { this.state.examenesOpen === 'comunes'
+                            ?
+                                <i className="fas fa-sort-up"></i>
+                            :
+                                <i className="fas fa-sort-down"></i>
+                            }
+                        </div>
                             <ul className={classComunes}>
                                 <li>RM musculoesquelético sin contraste (gadolinio):
                                     <ul>
@@ -139,7 +161,14 @@ class EstudioResonancia extends React.Component {
                             </ul>
                         </li>
                         <li className='categoria' onClick={() => this.openExamenes('especiales')}><span>Estudios especiales</span>
-                        <i className="fas fa-sort-down"></i>
+                        <div>
+                            { this.state.examenesOpen === 'especiales'
+                            ?
+                                <i className="fas fa-sort-up"></i>
+                            :
+                                <i className="fas fa-sort-down"></i>
+                            }
+                        </div>
                             <ul className={classEspeciales}>
                                 <li>Neuroradiología:
                                     <ul>
@@ -177,7 +206,14 @@ class EstudioResonancia extends React.Component {
                         </li>
                         <li className='categoria' onClick={() => this.openExamenes('guiados')}>
                         <span>Estudios guiados por resonancia magnética</span>
-                        <i className="fas fa-sort-down"></i>
+                        <div>
+                            { this.state.examenesOpen === 'guiados'
+                            ?
+                                <i className="fas fa-sort-up"></i>
+                            :
+                                <i className="fas fa-sort-down"></i>
+                            }
+                        </div>
                             <ul className={classGuiados}>
                                   <li>Punción de próstata</li>  
                             </ul>
@@ -189,35 +225,35 @@ class EstudioResonancia extends React.Component {
                     <div className='preguntas'>
                         <ul>
                         <li>
-                                <div className='preg'>¿Qué sucede durante el procedimiento?</div>
-                                <div className='resp'>Durante el examen el paciente será monitoreado y observado por cámaras de
+                                <div className='preg' onClick={() => this.openPregunta(1)}>¿Qué sucede durante el procedimiento?</div>
+                                <div className={"resp "+(this.state.preguntaOpen === 1 ? 'open' : 'closed')}>Durante el examen el paciente será monitoreado y observado por cámaras de
                     video. Además, tendrá en su mano un timbre que lo podrá utilizar para
                     comunicarse con el técnico responsable de realizar el estudio.</div>
                             </li>
                             <li>
-                                <div className='preg'>¿Es peligroso o produce dolor realizarse una resonancia magnética?</div>
-                                <div className='resp'>La resonancia magnética es un estudio totalmente indoloro. Simplemente el
+                                <div className='preg' onClick={() => this.openPregunta(2)}>¿Es peligroso o produce dolor realizarse una resonancia magnética?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 2 ? 'open' : 'closed')}>La resonancia magnética es un estudio totalmente indoloro. Simplemente el
                     paciente debe permanecer inmóvil dentro del equipamiento, en forma horizontal.
                     Los campos magnéticos no producen ningún daño conocido a los tejidos al no
                     tratarse de radiaciones ionizantes tipo rayos X, así que no emite ningún tipo de
                     radiación peligrosa, ni surgen complicaciones posteriores.</div>
                             </li>
                             <li>
-                                <div className='preg'>¿El estudio es ruidoso?</div>
-                                <div className='resp'>La máquina emite un ruido fuerte como de martilleo o golpes en algunas fases
+                                <div className='preg' onClick={() => this.openPregunta(3)}>¿El estudio es ruidoso?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 3 ? 'open' : 'closed')}>La máquina emite un ruido fuerte como de martilleo o golpes en algunas fases
                     que es totalmente normal, por lo que el paciente no debe asustarse o preocuparse
                     por ello.</div>
                             </li>
                             <li>
-                                <div className='preg'>¿Qué pasa si soy claustrofóbico?</div>
-                                <div className='resp'>Al tener el resonador magnético forma de túnel, cualquier persona puede
+                                <div className='preg' onClick={() => this.openPregunta(4)}>¿Qué pasa si soy claustrofóbico?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 4 ? 'open' : 'closed')}>Al tener el resonador magnético forma de túnel, cualquier persona puede
                     experimentar cierta claustrofobia. Si sos propenso a sufrir este problema, previo al
                     estudio el médico podría administrarte un tranquilizante.</div>
                             </li>
                             <li>
-                                <div className='preg'>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?
+                                <div className='preg' onClick={() => this.openPregunta(5)}>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?
                     ¿Qué metales son peligrosos o están contraindicados?</div>
-                                <div className='resp'>
+                                <div className={'resp '+(this.state.preguntaOpen === 5 ? 'open' : 'closed')}>
                                     Los ​artículos peligrosos para la salud o que ​podrían causar otros problemas
                                     durante una resonancia magnética son:
                                     <ul>
@@ -253,8 +289,8 @@ class EstudioResonancia extends React.Component {
                                 </div>
                             </li>
                             <li>
-                                <div className='preg'>¿Las embarazadas pueden realizarse resonancias?</div>
-                                <div className='resp'>Las embarazadas o las mujeres que sospechen estar embarazadas deberán
+                                <div className='preg' onClick={() => this.openPregunta(6)}>¿Las embarazadas pueden realizarse resonancias?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 6 ? 'open' : 'closed')}>Las embarazadas o las mujeres que sospechen estar embarazadas deberán
                     informarlo a Advance al solicitar el turno, o al médico durante el procedimiento de
                     verificación que se lleva a cabo antes de comenzar el estudio. En general, no hay
                     riesgos conocidos de la resonancia magnética en mujeres embarazadas. Sin
@@ -264,8 +300,8 @@ class EstudioResonancia extends React.Component {
                     la tomografía computada (TC).</div>
                             </li>
                             <li>
-                                <div className='preg'>¿Las mujeres en período de lactancia pueden realizarse resonancias?</div>
-                                <div className='resp'>Las mujeres que se encuentren en período de lactancia -es decir, que estén
+                                <div className='preg' onClick={() => this.openPregunta(7)}>¿Las mujeres en período de lactancia pueden realizarse resonancias?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 7 ? 'open' : 'closed')}>Las mujeres que se encuentren en período de lactancia -es decir, que estén
                     amamantando- deben informarlo a Advance al solicitar el turno. Esto es
                     particularmente importante si es necesaria la inyección de un material de
                     contraste para realizar la resonancia. En ese caso, una opción es sacarse la leche

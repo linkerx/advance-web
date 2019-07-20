@@ -18,8 +18,15 @@ section#home-slider .slider-container .react-parallax {
     background-position: center;
     background-size: cover;
     z-index: 5;
-    //filter: blur(5px);
     opacity: 0.8;
+}
+
+section#home-slider .slider-container .react-parallax img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
 }
 
 section#home-slider .slider-container .texto {
@@ -55,7 +62,6 @@ section#home-slider .slider-container .texto .linea {
     height: 2px;
     margin: 20px 0;
 }
-
 
 section#home-slider .slider-container .btn {
     padding: 15px;

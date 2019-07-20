@@ -75,3 +75,18 @@ section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.clo
 section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.open {
     display:block;
 }
+
+section#estudio-resonancia .wrapper-central .preguntas .preg {
+    font-size: 1.2em;
+    color: #5aa838;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+section#estudio-resonancia .wrapper-central .preguntas .resp.open {
+    display:block;
+}
+
+section#estudio-resonancia .wrapper-central .preguntas .resp.closed {
+    display:none;
+}
