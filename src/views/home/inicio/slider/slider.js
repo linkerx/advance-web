@@ -1,5 +1,6 @@
 import React from 'react';
 import renderHTML from 'react-render-html';
+import { Parallax } from 'react-parallax';
 
 class WpSlider extends React.Component {
 
@@ -198,12 +199,13 @@ class WpSlider extends React.Component {
             this.props.children
             :
             this.state.current.items.map(function (item, index) {
-              var background = {
-                backgroundImage: "url(" + item.img + ")"
-              };
+             
               return (
                 <div className='slider-container'>
-                  <div className='image' style={background} ></div>
+                  
+                  <Parallax bgImage={item.img} strength={500}>
+                  </Parallax>
+
                   <div className='texto'>
                     <span>{renderHTML(item.texto)}</span><br/>
                     <a className="btn" href={item.link}>{item.textoLink}</a>
