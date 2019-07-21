@@ -254,8 +254,8 @@ class EstudioResonancia extends React.Component {
                                 <div className='preg' onClick={() => this.openPregunta(5)}>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?
                     ¿Qué metales son peligrosos o están contraindicados?</div>
                                 <div className={'resp '+(this.state.preguntaOpen === 5 ? 'open' : 'closed')}>
-                                    Los ​artículos peligrosos para la salud o que ​podrían causar otros problemas
-                                    durante una resonancia magnética son:
+                                    <h3>Los ​artículos peligrosos para la salud o que ​podrían causar otros problemas
+                                    durante una resonancia magnética son:</h3>
                                     <ul>
                                         <li>Marcapasos cardíaco o desfibrilador implantable</li>
                                         <li>Sujetador metálico puesto para evitar el sangrado en un aneurisma
@@ -266,8 +266,8 @@ class EstudioResonancia extends React.Component {
                                         insulina o analgésicos)</li>
                                         <li>Implante coclear (oído interno)</li>
                                     </ul>
-                                    Los objetos que ​podrían interferir un estudio de ​resonancia magnética ​y, por lo
-                                    tanto, están ​contraindicados​ son:
+                                    <h3>Los objetos que ​podrían interferir un estudio de ​resonancia magnética ​y, por lo
+                                    tanto, están ​contraindicados​ son:</h3>
                                     <ul>
                                         <li>Presencia de grapas quirúrgicas.</li>
                                         <li>Prótesis ortopédicas, de oído, de globo ocular, dental, vascular, biliar,

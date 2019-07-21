@@ -18,6 +18,7 @@ section#estudio-resonancia .wrapper-central p.subtitulo {
     margin: auto;
     margin-bottom: 80px;
     line-height: 1.8em;
+    max-width: 80%;
 }
 
 section#estudio-resonancia .wrapper-central img {
@@ -60,12 +61,27 @@ section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > span {
     cursor: pointer;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > i {
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div {
+    display: inline-block;
+    position:relative;
+    width: 10px;
+    height: 17px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div i {
     font-size: 1.2em;
     color: #5aa838;
     font-weight: bold;
-    margin-top: -15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
 
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div i.fa-sort-up {
+    top:8px;
 }
 
 section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.closed {
@@ -85,6 +101,7 @@ section#estudio-resonancia .wrapper-central .preguntas .preg {
 
 section#estudio-resonancia .wrapper-central .preguntas .resp.open {
     display:block;
+    margin: 20px;
 }
 
 section#estudio-resonancia .wrapper-central .preguntas .resp.closed {
