@@ -2,6 +2,7 @@ import React from 'react';
 import renderHTML from 'react-render-html';
 import { Parallax } from 'react-parallax';
 
+
 class WpSlider extends React.Component {
 
     constructor(props) {
@@ -124,7 +125,8 @@ class WpSlider extends React.Component {
         items: this.state.items,
         current: {
           items: this.getPageItems(page),
-          page: page
+          page: page,
+          timer: setTimeout(function(){this.next()}.bind(this),10000)
         }
       }
     }.bind(this));
@@ -132,19 +134,21 @@ class WpSlider extends React.Component {
 
   start(){
     this.show(1);
-    timer: setTimeout(function(){this.next()}.bind(this),10000);
+  }
+
+  change(page){
+    clearTimeout(this.state.timer);
+    this.show(page);
   }
 
   next(){
     var page = this.nextPage();
     this.show(page);
-    timer: setTimeout(function(){this.next()}.bind(this),10000);
   }
 
   back(){
     var page = this.backPage();
     this.show(page);
-    timer: setTimeout(function(){this.next()}.bind(this),10000);
   }
 
 
@@ -216,7 +220,7 @@ class WpSlider extends React.Component {
           }
         </div>
         <div className='navigation'>
-          <div className='pages'>
+          <ul className='pages'>
           {
             Array.apply(null,{length: this.lastPage()}).map(Number.call,Number).map(function(item, index){
               var activeClass = 'inactive';
@@ -224,12 +228,13 @@ class WpSlider extends React.Component {
                 activeClass = 'active';
               }
 
-              return (<div key={index} className={["page-"+(item+1),activeClass].join(' ')} >{item+1}</div>)
+              return (<li key={index} className={["page-"+(item+1),activeClass].join(' ')} onClick={() => this.change(item+1)} >{item+1}</li>)
             }.bind(this))
           }
-          </div>
-
+          </ul>
         </div>
+        <div className='arrowLeft' onClick={this.back}><i class="fas fa-chevron-left"></i></div>
+        <div className='arrowRight' onClick={this.next}><i class="fas fa-chevron-right"></i></div>
       </div>
     )
   }

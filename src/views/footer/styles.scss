@@ -112,3 +112,28 @@ section#footer .der li a {
 section#footer .der li.ver a {
     color: #62c9d8;
 }
+
+section#footer .subir {
+    display: inline-block;
+    background-color: #707070;
+    width: 42px;
+    height: 42px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    /*border: $font-1 solid 1px;*/
+    border-radius: 3px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .4s;
+    z-index: 30;
+    &:hover {
+      background-color: #aaa;
+    }
+    & span{
+      text-decoration: none;
+      margin: 13px auto;
+      text-align: center;
+    }  
+}

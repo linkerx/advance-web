@@ -35,6 +35,7 @@ class Footer extends React.Component {
                             </span>
                         </div>
                     </div>
+                    <a href="#" className="subir"><span className="fas fa-arrow-up"></span></a>
                 </div>             
             </section>
         )
