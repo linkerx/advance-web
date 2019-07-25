@@ -98,6 +98,7 @@ section#home-slider .navigation ul.pages li {
     color: #fff;
     cursor: pointer;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 section#home-slider .navigation ul.pages li.active {
@@ -120,7 +121,7 @@ section#home-slider .arrowRight {
     z-index: 50;
     position: absolute;
     top: 45%;
-    left:20px;
+    right:20px;
 }
 
 section#home-slider .arrowRight i{
