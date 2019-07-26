@@ -99,10 +99,17 @@ section#home-slider .navigation ul.pages li {
     cursor: pointer;
     font-size: 1.2em;
     font-weight: bold;
+
+
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
 section#home-slider .navigation ul.pages li.active {
     color: #62c9d8;
+    background-color: #62c9d8;
 }
 
 section#home-slider .arrowLeft {

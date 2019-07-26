@@ -7,6 +7,25 @@ class AreaMedica extends React.Component {
             <section id='area-medica'>
                 <h1>ÁREA MEDICA</h1>
                 <div className='wrapper-central'>
+
+                    <div className='resultados'>
+                        <h2>Resultados online</h2>
+                            <p className='accede'>
+                            <strong>Accedé a los estudios que indicaste a tus pacientes de manera rápida, exclusiva y segura.</strong></p>
+                            <p>
+                            Para ingresar por primera vez, deberás generar un usuario y contraseña. Luego, con esos datos, 
+                            podés iniciar sesión para consultar los informes e imágenes todas las veces que quieras.</p>
+                            <p>
+                            También podés compartilos online, guardarlos e imprimirlos desde tu computadora o cualquier dispositivo móvil, estés donde estés.
+                            </p>
+                            <a href='http://portal.diagnosticoadvance.com.ar' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
+                    </div>
+                    
+                    <div className='imagen'>
+                        <img src='/images/slider/equipo.jpg' alt='frente' />
+                    </div>
+
+                    <div className='prof'>
                     <h2>Actividades de formación profesional</h2>
                     <h3>Somos parte de la misma solución</h3>
 
@@ -19,10 +38,8 @@ class AreaMedica extends React.Component {
                     casos y el intercambio de experiencias.
                     </p>
 
-                    <div className='imagen'>
-                        <img src='/images/slider/equipo.jpg' alt='frente' />
                     </div>
-
+                    
                     <div className='caja'>
                     <p>
                     Estamos construyendo nuestra agenda de capacitaciones y ateneos. Para conocer

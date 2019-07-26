@@ -6,7 +6,6 @@ class Equipamiento extends React.Component {
         return(
             <section id='equipamiento'>
             <h1>EQUIPAMIENTO</h1>
-            <div className='wrapper-central'>
 
                 <p className='subtitulo'>
                 Trabajamos con equipamiento nuevo y de última generación que
@@ -14,8 +13,9 @@ class Equipamiento extends React.Component {
                 nivel de los mejores centros de diagnósticos por imágenes del país.
                 </p>
 
-                <div className='equipos'>  
-                <div className='izq'>
+                <div className='equipos'>
+                <ul>
+                <li>
                     <img src='/images/equipos/tomografo.jpg' />
 
                     <div className='info'>
@@ -53,9 +53,9 @@ class Equipamiento extends React.Component {
                     </ul>
                     </div>
 
-                </div>
+                </li>
 
-                <div className='der'>
+                <li>
 
                 <img src='/images/equipos/tomografo.jpg' />
                 <div className='info'>
@@ -95,8 +95,31 @@ class Equipamiento extends React.Component {
                 </li>
                 </ul>
                 </div>
-                </div>
-                </div>
+                </li>
+
+
+                <li>
+
+<img src='/images/equipos/ecografo.jpg' />
+<div className='info'>
+<h3>ECÓGRAFO TOSHIBA Aplio 300.</h3>
+
+<ul>
+<li>La arquitectura revolucionaria de formación de la imagen “High Density Beamforming” 
+    brinda imágenes de resolución y detalles excepcionales, que permiten obtener diagnósticos en forma rápida y confiable.
+</li>
+<li>Los sistemas están equipados con un amplio abanico de herramientas clínicas para visualización avanzada, 
+cuantificación e intervencionismo tanto para la rutina diaria como para la investigación clínica.</li>
+<li>
+Entre las herramientas de visualización avanzada se encuentran: Differential Tissue Harmonics (diff-THI);  
+Speckle Reduction (SR); Precision Imaging;  Aplipure+; y Tissue Specific Optimization (TSO).
+</li>
+</ul>
+</div>
+</li>
+
+
+                </ul>
             </div>
         </section>
 

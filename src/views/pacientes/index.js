@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.scss';
 
 class Pacientes extends React.Component {
@@ -7,11 +8,12 @@ class Pacientes extends React.Component {
         var classPlano='btn plano';
         return(
             <section id='pacientes'>
-                <h1>GUÍA PARA PACIENTES</h1>
+                <h1>PACIENTES</h1>
                 <div className='wrapper-central'>
+                    <div className='turnos'>
                     <h2>Gestión de turnos</h2>
                     <p>
-                        Para solicitar turnos, contactarse de lunes a viernes de 08.00 a 20.00 horas
+                        <strong>Para solicitar turnos, contactarse de lunes a viernes de 08.00 a 20.00 horas.</strong>
                     </p>
 
                     <div className='info'>
@@ -28,54 +30,49 @@ class Pacientes extends React.Component {
                             <span><a href='tel:+54 02920 429957'>+54 02920 429957</a></span>
                         </div>
                     </div>
+                </div>
+                    <div id='abono'><i className="fas fa-credit-card"></i>Los estudios se pueden abonar con trajeta de débito o crédito hasta 12 cuotas.</div>
+                    <div id='lugar'><i className="fas fa-user-clock"></i>El lugar es guardado para vos, rogamos puntualidad. Si no podés acudir en el día y
+                    horarios convenidos, por favor avisar con anticipación.</div>
+                </div>
 
-                    <p>
-                    El lugar es guardado para vos, rogamos puntualidad. Si no podés acudir en el día y
-                    horarios convenidos, por favor avisar con anticipación.</p>
-
-                    <h2>Pacientes de otras ciudades</h2>
-                    <p>
-                    Si vivís en el interior de Río Negro o en otra provincia, queremos brindarte la
-                    posibilidad de gestionar turnos y coordinar estudios para realizarlos en una sola
-                    visita.
-                    También podés solicitar información sobre alojamiento y datos de interés de la
-                    ciudad de Viedma.
-                    </p>
-                    <a className={classPlano} href=''><i className="fas fa-file-pdf"></i> Plano de Viedma</a>
-
-                    <h2>Requisitos para tu atención</h2>
-
-                    Para concretar tu turno y atención médica, es necesario que presentes:
+                <div className='fixedimg'>
                     <ul>
-                        <li><strong>DNI</strong></li>
-                        <li><strong>Orden Médica:</strong> La orden médica tiene una validez de treinta (30) días desde la fecha de su
-                    prescripción. Vencido ese plazo, deberás concurrir nuevamente a tu médico
-                    para confeccionar una nueva. Verificá que contenga los siguientes datos:
-                        <ul>
-                            <li>Nombre y apellido del paciente</li>
-                            <li>Nombre de la obra social y plan de cobertura</li>
-                            <li>Número de afiliado del paciente</li>
-                            <li>Fecha de emisión</li>
-                            <li>Diagnóstico</li>
-                            <li>Detalle del estudio que se solicita</li>
-                            <li>Firma, sello y número de matrícula del médico</li>
-                            <li>Si hay enmiendas deben ser salvadas con firma y sello, usando la misma
-                            lapicera y respetando el trazo</li>
-                        </ul>
+                        <li>
+                            <h2>Requisitos para tu atención</h2>
+                            Para concretar tu turno y atención médica, es necesario que presentes:
+                            <ul>
+                                <li><strong>DNI, cédula de identidad o carnet de conducir </strong></li>
+                                <li><strong>Orden médica</strong></li>
+                                <li><strong>Estudios previos</strong></li>
+                            </ul>
                         </li>
-                        <li><strong>Estudios previos:</strong> Si previo a tu nueva consulta te realizaste estudios referentes a los mismos
-                            motivos, traelos para que nuestro médico especialista en diagnóstico por imágenes
-                            pueda conocer los antecedentes.
+                        <li>
+                            <h2>Seguridad del paciente</h2>
+                            <p>
+                            Para estudios de alta complejidad, si estás o creés estar embarazada, o si poseés
+                            prótesis, operaciones cardíacas u otros elementos extraños en tu
+                            organismo, por favor informalo al momento de solicitar turno.
+                            </p>
+                            <p>
+                            En caso de poseer marcapasos, estos estudios están contraindicados por lo que no se podrán otorgar turnos.
+                            </p>
+                            </li>
+                            <li>
+                            <h2>Pacientes de otras ciudades</h2>
+                            <p>
+                            Si vivís en el interior de Río Negro o en otra provincia, queremos brindarte la
+                            posibilidad de gestionar turnos y coordinar estudios para realizarlos en una sola
+                            visita.
+                            También podés solicitar información sobre alojamiento y datos de interés de la
+                            ciudad de Viedma.
+                            </p>
+                            <a className={classPlano} href=''><i className="fas fa-file-pdf"></i> Plano de Viedma</a>
                         </li>
                     </ul>
-   
-                    <h2>Seguridad del paciente</h2>
-                    <p>
-                    Para estudios de alta complejidad, si estás o creés estar embarazada, o si poseés
-                    prótesis, marcapasos, operaciones cardíacas u otros elementos extraños en tu
-                    organismo, por favor informalo al momento de solicitar turno.
-                    </p>
+                </div>
 
+                <div className='wrapper-central'>
                     <div className='caja'>
                         <div className='izq'>
                             <img src='/images/slider/online.jpg' />                      
@@ -83,8 +80,8 @@ class Pacientes extends React.Component {
                         <div className='der'>
                         <h2>Resultados online</h2>
                             <p>
-                            Accedé a tus estudios desde donde estés, de manera rápida, exclusiva y
-                            segura.</p>
+                            <strong>Accedé a tus estudios desde donde estés, de manera rápida, exclusiva y
+                            segura.</strong></p>
                             <p>
                             En Advance tenés la posibilidad de ver los resultados de tus estudios sin moverte de
                             tu casa, ingresando a la plataforma VER MIS ESTUDIOS.</p>
@@ -100,18 +97,25 @@ class Pacientes extends React.Component {
                         </div>
                     </div>
 
+                    <div className='preguntas'>
                     <h2>Preguntas Frecuentes</h2>
+                        <p>
+                        En Advance queremos despejar tus dudas y brindarte la información que necesitás
+                        para llegar a realizarte el estudio con seguridad, confianza y tranquilidad. 
+                        Accedé a las preguntas frecuentes de cada estudio y, si aún tenés dudas, ponete en contacto con nosotros.
 
-                    En Advance queremos despejar tus dudas y brindarte la información que necesitás
-                    para llegar a realizarte el estudio con seguridad, confianza y tranquilidad.
-                    Descargar Preguntas Frecuentes (botón descarga pdf)
-
-                    Si aún tenés dudas, ponete en contacto con nosotros.
-
-                    ¡Estamos para atenderte!
-
-                    Contactarme (botón a Contacto)
-
+                        ¡Estamos para atenderte!
+                        
+                        </p>
+                        
+                        <ul>
+                            <li>Tomografía Computada</li>
+                            <li>Resonancia Magnética</li>
+                            <li>Ecografía</li>
+                        </ul>
+                        
+                    </div>
+                    
                 </div>
             </section>
         )

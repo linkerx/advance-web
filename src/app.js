@@ -13,6 +13,7 @@ import Pacientes from 'views/pacientes';
 import Equipamiento from 'views/equipamiento';
 import Contacto from 'views/contacto';
 import AreaMedica from 'views/area-medica';
+import FlechaArriba from 'views/flecha-arriba';
 import './app.scss';
 
 class App extends React.Component {
@@ -56,6 +57,7 @@ class App extends React.Component {
             <Route exact path='/contacto' component={Contacto} />
           </Switch>
           <Footer />
+          <FlechaArriba />
         </BrowserRouter>
       </div>
     );

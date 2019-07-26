@@ -35,7 +35,7 @@ class WpSlider extends React.Component {
 
     var options = {
       autoListCount: true,
-      listCount: 3,
+      listCount: 2,
       listImgSize: 'thumbnail',
       pageCount: 1,
       pageImgSize: 'large',
@@ -66,6 +66,7 @@ class WpSlider extends React.Component {
         link: "/institucional",
         textoLink: "Conocenos"
       },
+      /*
       {
         id: 2,
         img: "/images/slider/telefono.jpg",
@@ -73,8 +74,9 @@ class WpSlider extends React.Component {
         link: "/estudios",
         textoLink: "Reservar turno"
       },
+      */
       {
-        id: 3,
+        id: 2,
         img: "/images/slider/online.jpg",
         texto: "<h3>Mirá tus estudios desde donde estés</h3><div class='linea'></div>Accedé a tus resultados de manera exclusiva y confidencial.",
         link: "//portal.diagnosticoadvance.com.ar",
@@ -228,7 +230,7 @@ class WpSlider extends React.Component {
                 activeClass = 'active';
               }
 
-              return (<li key={index} className={["page-"+(item+1),activeClass].join(' ')} onClick={() => this.change(item+1)} >{item+1}</li>)
+              return (<li key={index} className={["page-"+(item+1),activeClass].join(' ')} onClick={() => this.change(item+1)} >{/*item+1*/}</li>)
             }.bind(this))
           }
           </ul>

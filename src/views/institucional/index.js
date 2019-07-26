@@ -43,7 +43,7 @@ class Institucional extends React.Component {
                     </div>
                 </div>
 
-                <h2>Valores</h2>
+                <h2>Nuestros Valores</h2>
                 <p>
                 <ul className='valores'>
                     <li><h3>COMPROMISO</h3> con nuestros pacientes, la comunidad médica y la
@@ -69,6 +69,7 @@ class Institucional extends React.Component {
                     <p>
                         Desde un primer momento, en Advance nos propusimos trabajar bajo los
                         siguientes principios:
+                    </p>
                         <ul>
                                 <li>Atención médica y administrativa de acuerdo con patrones de calidad
                                 basados en normas internacionales.</li>
@@ -81,7 +82,6 @@ class Institucional extends React.Component {
                                 personas que necesitan una respuesta médica precisa a partir de un
                                 trato personalizado y cordial.</li>
                         </ul>
-                    </p>
                 </div>
 
                 </div>

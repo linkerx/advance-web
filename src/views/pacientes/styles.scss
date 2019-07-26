@@ -21,6 +21,22 @@ section#pacientes .wrapper-central li::before{
     font-size: 1.3em;
 }
 
+section#pacientes .wrapper-central #abono,
+section#pacientes .wrapper-central #lugar {
+    text-align: center;
+}
+
+section#pacientes #abono i,
+section#pacientes #lugar i {
+    font-size: 20px;
+    color: #707070;
+    margin:12px;
+}
+
+section#pacientes .wrapper-central .turnos {
+    text-align: center;
+}
+
 section#pacientes .wrapper-central .info {
     margin:10px;
 }
@@ -81,4 +97,70 @@ section#pacientes .wrapper-central .caja .izq img {
 
 section#pacientes .wrapper-central .caja .der {
     text-align: left;
+}
+
+section#pacientes .wrapper-central .preguntas {
+    margin-top:50px;
+    text-align:center;
+}
+
+section#pacientes .wrapper-central .preguntas p {
+    font-size: 1.1em;
+}
+
+section#pacientes .wrapper-central .contacto {
+    width:100%;
+    text-align: center;
+    margin-top:50px;
+}
+
+section#pacientes .wrapper-central .contacto a{
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #707070;
+    margin:auto;
+}
+
+section#pacientes .fixedimg {
+    width: 100%;
+    margin: 50px 0;
+    background-image: url("/images/slider/diagnostico.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#pacientes .fixedimg > ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section#pacientes .fixedimg > ul > li {
+    background-color: #fff;
+    padding: 50px;
+    margin: 20px;
+    width: 250px;
+}
+
+section#pacientes .fixedimg > ul > li h2 {
+    margin:0;
+    margin-bottom: 20px;
+}
+
+section#pacientes .fixedimg > ul > li ul {
+    margin: 0;
+}
+
+section#pacientes .fixedimg > ul > li li {
+    margin: 20px 0;
+}
+
+section#pacientes .fixedimg > ul > li li::before{
+    content: "\2022";
+    color: #62c9d8;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
 }
