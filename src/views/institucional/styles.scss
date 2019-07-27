@@ -29,12 +29,10 @@ section#institucional .wrapper-central .imagen {
 }
 
 section#institucional .wrapper-central .imagen img {
-    width: 100%;    
-    @media #{$all-narrow}  {
-        height: 250px;
-        object-fit: cover;
-        object-position: 38%;
-    }
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0 74%;
 }
 
 section#institucional .wrapper-central .cajas {

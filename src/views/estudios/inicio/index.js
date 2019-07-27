@@ -12,7 +12,7 @@ class EstudiosInicio extends React.Component {
                         <Link to='/estudios/tomografia'>
                             <h2>Tomografía Computada</h2>
                             <div className='linea'></div>
-                            <img src='/images/estudios/tomografo.jpg' alt='Tomografías Computdas' />
+                            <img src='/images/comp/8304.jpg' alt='Tomografías Computdas' />
                         </Link>
                     </li>
                     <li className='resonancia'>

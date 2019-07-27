@@ -81,7 +81,7 @@ class EstudioTomografia extends React.Component {
                         angiografía coronaria no invasiva, broncoscopía e imágenes odontológicas.</p>
                     </div>
 
-                    <img src='/images/estudios/tomografo.jpg' alt='Tomografías Computdas' />
+                    <img src='/images/comp/8304.jpg' alt='Tomografías Computdas' />
 
                     <h2>Antes del estudio:</h2>
 
@@ -89,14 +89,14 @@ class EstudioTomografia extends React.Component {
                     <li>
                         Al momento de solicitar el turno es importante que avises:
                         <ul>
-                            <li>Si tu peso supera los 180 kg.</li>
-                            <li>Si estás embarazada o sospechás estarlo, o si te encontrás en periodo de lactancia.</li>
+                            <li>Si tu peso supera los 180 kg. (depende del perímetro)</li>
+                            <li>Si estás embarazada o sospechás estarlo.</li>
                         </ul>
                     </li>
                     <li>
                         Si el estudio fue solicitado con contraste endovenoso, como paciente deberás:
                         <ul>
-                            <li>Completar y firmar el interrogatorio clínico y el consentimiento informado.</li>
+                            <li>Completar y firmar el consentimiento informado.</li>
                             <li>Avisar si padecés de insuficiencia renal. Si la respuesta es afirmativa,
                             se solicitará previamente un examen de creatininemia.</li>
                             <li>Avisar si sufriste reacciones adversas al gadolinio en estudios previos.</li>
@@ -295,19 +295,61 @@ class EstudioTomografia extends React.Component {
                     </div>
 
                     <h2>Preguntas frecuentes</h2>
-                    <ul>
-                        <li>¿Cómo es el procedimiento? ​(respuesta desplegable)</li>
-                        <li>¿Es peligroso o produce dolor? ( ​ respuesta desplegable)</li>
-                        <li>¿Es ruidoso? ​(respuesta desplegable)</li>
-                        <li>¿Qué pasa si soy claustrofóbico? ​(respuesta desplegable)</li>
-                        <li>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o
-                        marcapasos? ¿Qué metales son peligrosos o están contraindicados?
-                        (respuesta desplegable)</li>
-                        <li>¿Las embarazadas pueden realizarse una tomografía computada?
-                        (respuesta desplegable)</li>
-                        <li>¿Las mujeres en período de lactancia pueden realizarse una
-                        tomografía computada? ( ​ respuesta desplegable)</li>
-                    </ul>
+                    <div className='preguntas'>
+                        <ul>
+                        <li>
+                                <div className='preg' onClick={() => this.openPregunta(1)}>¿Cuánto demora el procedimiento?</div>
+                                <div className={"resp "+(this.state.preguntaOpen === 1 ? 'open' : 'closed')}>El tomógrafo nuevo y de última generación disponible en Advance permite
+                                optimizar los tiempos. Cada estudio demora, en promedio, entre 15 y 20 minutos.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(2)}>¿Es peligroso o produce dolor?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 2 ? 'open' : 'closed')}>El estudio no es peligroso. Es indoloro, rápido y sencillo.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(3)}>¿Es ruidoso?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 3 ? 'open' : 'closed')}>La realización del estudio no genera ruidos.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(4)}>¿Qué pasa si soy claustrofóbico o sufro la sensación de encierro?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 4 ? 'open' : 'closed')}>No hay ningún inconveniente, ya que el tomógrafo es un equipamiento con forma
+                                de anillo, pero abierto.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(5)}>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 5 ? 'open' : 'closed')}>No hay contraindicaciones. Los estudios se pueden realizar sin inconvenientes.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(6)}>¿Las embarazadas pueden realizarse una tomografía computada?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 6 ? 'open' : 'closed')}>En caso de embarazo o sospecha de embarazo, se deberá informar al momento
+                                de solicitar el turno. La posibilidad de realizar el estudio dependerá de cada caso en particular.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(7)}>¿Las mujeres en período de lactancia pueden realizarse una tomografía
+                                computada?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 7 ? 'open' : 'closed')}>Sí, las mujeres en período de lactancia pueden realizar el estudio.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(8)}>¿Debo hacer el test de alergia?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 8 ? 'open' : 'closed')}>No es necesario realizar un test de alergia.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(9)}>¿Cómo es el tomógrafo?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 9 ? 'open' : 'closed')}>El tomógrafo disponible en Advance es el REVOLUCIÓN EVO de 128 canales, de
+                                General Electric. Es un equipamiento nuevo y de última generación, que permite
+                                realizar estudios más rápido y con mejores resultados. Es un anillo abierto, por lo
+                                tanto no genera sensación de encierro, y es cómodo para pacientes de todas las
+                                edades.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(10)}>¿Se usan rayos X?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 10 ? 'open' : 'closed')}>Sí, la tomografía computada es un procedimiento no invasivo que utiliza rayos X.
+                                Gracias a la tecnología de última generación disponible en Advance, se reduce la
+                                dosis hasta en un 82% en pacientes de todas las edades.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='clearfix'></div>
                 </div>
             </section>
         )

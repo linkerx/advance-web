@@ -61,7 +61,7 @@ class WpSlider extends React.Component {
     var items = [
       {
         id: 1,
-        img: "/images/slider/equipo.jpg",
+        img: "/images/comp/3186.jpg",
         texto: "<h3>Tu salud en buenas manos</h3><div class='linea'></div>Trabajamos con la mejor tecnología y un equipo médico especializado en diagnóstico por imágenes para brindarte la atención que buscás.",
         link: "/institucional",
         textoLink: "Conocenos"

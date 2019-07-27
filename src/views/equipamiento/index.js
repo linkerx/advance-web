@@ -16,7 +16,7 @@ class Equipamiento extends React.Component {
                 <div className='equipos'>
                 <ul>
                 <li>
-                    <img src='/images/equipos/tomografo.jpg' />
+                    <img src='/images/equipos/resonador.jpg' />
 
                     <div className='info'>
 
@@ -57,7 +57,7 @@ class Equipamiento extends React.Component {
 
                 <li>
 
-                <img src='/images/equipos/tomografo.jpg' />
+                <img src='/images/comp/3072.jpg' />
                 <div className='info'>
                 <h3>TOMÓGRAFO
                 REVOLUCIÓN EVO de 128 canales.</h3>

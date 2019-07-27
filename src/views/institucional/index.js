@@ -20,7 +20,7 @@ class Institucional extends React.Component {
                 </p>
 
                 <div className='imagen'>
-                    <img src='/images/otras/frente.jpg' alt='frente' />
+                    <img src='/images/comp/8315.jpg' alt='frente' />
                 </div>
 
                 <div className='cajas'>
