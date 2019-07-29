@@ -1,3 +1,4 @@
+@import 'styles/variables/mqueries.scss';
 
 section#pacientes h1 {
     background-color: #62c9d8;
@@ -82,6 +83,9 @@ section#pacientes .wrapper-central .caja {
     flex-wrap: nowrap;
     box-sizing: border-box;
     width:100%;
+    @media #{$all-narrow} {
+        display:block;
+    }
 }
 
 section#pacientes .wrapper-central .caja h2 {
@@ -92,6 +96,9 @@ section#pacientes .wrapper-central .caja h2 {
 section#pacientes .wrapper-central .caja > div {
     width: 46%;
     margin: 2%;
+    @media #{$all-narrow} {
+        width:96%;
+    }
 }
 
 section#pacientes .wrapper-central .caja .izq img {

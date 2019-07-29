@@ -179,7 +179,6 @@ class EstudioResonancia extends React.Component {
                                 <li>Angio RM de cuello</li>
                                 <li>Angio RM de miembros superiores</li>
                                 <li>Angio RM de miembros inferiores</li>
-                                <li></li>
                                 <li>Entero RM</li>
                                 <li>RM de mama sin contraste (para implantes)</li>
                                 <li>RM de mama con contraste</li>
