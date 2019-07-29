@@ -71,11 +71,11 @@ class EstudioTomografia extends React.Component {
                 <h1>TOMOGRAFÍA COMPUTADA</h1>
                 <div className='wrapper-central'>
                     <div className='intro'>
-                        <p>La Tomografía Computada Multislice es un procedimiento no invasivo que
-                        utiliza rayos X para obtener imágenes de distintos tipos de tejidos.</p>
-                        <p>Es indoloro, rápido y sencillo, y puede ser utilizado como guía para biopsias,
-                        marcaciones para radioterapia, bloqueos radiculares y otros procedimientos.</p>
-                        <p>Las ventajas son el tiempo que dura la realización de los estudios, la mejora
+                        <p className='subtitulo'>La Tomografía Computada Multislice es un procedimiento no invasivo que
+                        utiliza rayos X para obtener imágenes de distintos tipos de tejidos.
+                        Es indoloro, rápido y sencillo, y puede ser utilizado como guía para biopsias,
+                        marcaciones para radioterapia, bloqueos radiculares y otros procedimientos.
+                        Las ventajas son el tiempo que dura la realización de los estudios, la mejora
                         de la caracterización de estructuras vasculares, y la posibilidad de las
                         reconstrucciones en 3D y 2D. Además, permite realizar colonoscopía,
                         angiografía coronaria no invasiva, broncoscopía e imágenes odontológicas.</p>

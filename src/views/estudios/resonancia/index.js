@@ -70,7 +70,7 @@ class EstudioResonancia extends React.Component {
                     El examen es simple y no produce efectos colaterales. Es un estudio de
                     diagnóstico por imágenes moderno, inofensivo e indoloro.
                     </p>
-                    <img src='/images/estudios/resonancia.jpg' alt='Resonancia Magnética' />
+                    <img src='/images/equipos/resonador.jpg' alt='Resonancia Magnética' />
                     <h2>Antes del estudio</h2>
                     <ol>
                         <li>

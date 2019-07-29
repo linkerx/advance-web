@@ -169,3 +169,33 @@ section#pacientes .fixedimg > ul > li li::before{
     width: 16px;
     font-size: 1.3em;
 }
+
+section#pacientes ul.estudios {
+    display: flex;
+    margin: auto;
+    max-width: 600px;
+    justify-content: space-around;
+}
+
+section#pacientes ul.estudios li {
+    margin:20px;
+    list-style: none;
+    font-weight: bold;
+    cursor: pointer
+}
+
+section#pacientes ul.estudios li.tomo a {
+    color: #eb7832
+}
+
+section#pacientes ul.estudios li.reso a{
+    color: #5aa838
+}
+
+section#pacientes ul.estudios li.eco a{
+    color: #6f569f
+}
+
+section#pacientes ul.estudios li::before {
+    content: none;
+}

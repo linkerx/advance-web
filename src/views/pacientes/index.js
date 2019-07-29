@@ -32,9 +32,8 @@ class Pacientes extends React.Component {
                     </div>
                     </div>
                     <div id='abono'><i className="fas fa-credit-card"></i>Los estudios se pueden abonar con trajeta de débito o crédito hasta 12 cuotas.</div>
-                    <div id='lugar'><i className="fas fa-user-clock"></i>El lugar es guardado para vos, rogamos puntualidad. Si no podés acudir en el día y
-                    horarios convenidos, por favor avisar con anticipación.</div>
-                    <p className='frase'>El día de la realización de cualquier estudio, deberás presentarte 15 minutos antes del turno en la recepción de Advance. El lugar es guardado para vos, rogamos puntualidad. Si no podés acudir en el día y horarios convenidos, por favor avisar con anticipación.</p>
+                    <div id='lugar'><i className="fas fa-user-clock"></i>El día de la realización de cualquier estudio, deberás presentarte 15 minutos antes del turno en la recepción de Advance. 
+                    El lugar es guardado para vos, rogamos puntualidad. Si no podés acudir en el día y horarios convenidos, por favor avisar con anticipación.</div>
                 </div>
 
                 <div className='fixedimg'>
@@ -56,7 +55,8 @@ class Pacientes extends React.Component {
                             organismo, por favor informalo al momento de solicitar turno.
                             </p>
                             <p>
-                            En caso de poseer marcapasos, estos estudios están contraindicados por lo que no se podrán otorgar turnos.
+                            En caso de poseer marcapasos, las resonancias magnéticas están contraindicadas 
+                            por lo que para esos estudios no se podrán otorgar turnos.
                             </p>
                             </li>
                             <li>
@@ -109,10 +109,10 @@ class Pacientes extends React.Component {
                         
                         </p>
                         
-                        <ul>
-                            <li>Tomografía Computada</li>
-                            <li>Resonancia Magnética</li>
-                            <li>Ecografía</li>
+                        <ul className='estudios'>
+                            <li className='tomo'><Link to='/estudios/tomografia'>Tomografía Computada</Link></li>
+                            <li className='reso'><Link to='/estudios/resonancia'>Resonancia Magnética</Link></li>
+                            <li className='eco'><Link to='/estudios/ecografia'>Ecografía</Link></li>
                         </ul>
                         
                     </div>

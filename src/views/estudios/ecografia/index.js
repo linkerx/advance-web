@@ -66,7 +66,7 @@ class EstudioEcografia extends React.Component {
                 <h1>ECOGRAFÍA</h1>
                 <div className='wrapper-central'>
                     <div className='intro'>
-                        <p>
+                        <p className='subtitulo'>
                         La ecografía es un método de diagnóstico que utiliza ondas de ultrasonidos
                         para obtener imágenes de los órganos internos del cuerpo.
                         Su técnica es sencilla, rápida, segura e indolora.
