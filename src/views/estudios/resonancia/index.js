@@ -81,19 +81,16 @@ class EstudioResonancia extends React.Component {
                     aneurisma, implantes auditivos, válvulas artificiales,
                     neuroestimulantes, bombas para medicamentos, proyectiles o
                     cuerpos extraños metálicos.</li>
-                                <li>Si sos claustrofóbico.</li>
-                                <li>Si estás embarazada, sospechás estarlo o te encontrás en período
-                    de lactancia</li>
+                                <li>Si estás transitando el primer trimestre de embarazo o sospechás estar embarazada.</li>
                             </ul>
                         </li>
                         <li>
                         Si su estudio fue solicitado con contraste endovenoso, como paciente
                     deberás:
                             <ul>
-                                <li>Completar y firmar el interrogatorio clínico y el consentimiento
-                                informado.</li>
-                                <li>Avisar si padecés de insuficiencia renal. Si la respuesta es
-                    afirmativa, se te solicitará previamente un examen de creatininemia.</li>
+                                <li>Completar y firmar el consentimiento informado.</li>
+                                <li>Avisar si padecés de insuficiencia renal. Si la respuesta es afirmativa y no estás en diálisis, 
+                                    se te solicitará previamente un examen de creatininemia. Si estás en diálisis, no será necesario.</li>
                                 <li>Avisar si sufriste reacciones adversas al gadolinio en estudios
                     previos.</li>
                                 <li>Avisar si tenés antecedentes de reacciones alérgicas que requieran
@@ -102,8 +99,8 @@ class EstudioResonancia extends React.Component {
                     abundante líquido (agua).</li>
                             </ul>
                         </li>
-                        <li>El día del turno, concurrir sin maquillaje y sin cualquier objeto metálico
-                    como: joyas, anillos, pinzas de pelo, lentes de contacto, reloj, etc.          
+                        <li>El día del turno, concurrir con ropa cómoda y sin maquillaje y sin cualquier objeto metálico como: 
+                            joyas, anillos, pinzas de pelo, lentes de contacto, reloj, etc.
                         </li>
                         <li>Deberás presentarte 15 minutos antes del turno en la recepción de
                     Advance, excepto en el caso de la Enteroresonancia que deberás
@@ -111,10 +108,8 @@ class EstudioResonancia extends React.Component {
                         <li>Traer los últimos estudios previos relacionados a la práctica.</li>
                         <li>Recordá que este tiempo ha sido reservado para vos. Si no es posible
                     acudir en día y hora convenidos, por favor avisar anticipadamente.
-                    Ante cualquier duda o inquietud, ​c​ontactanos​.</li>
-                    </ol>
-                                        
-                    <a className='btn' href='/contacto'>Contactarme</a>​ 
+                    Ante cualquier duda o inquietud, <a href='/contacto'>contactanos</a>​.</li>
+                    </ol> 
 
                     <div className='examenes'>
                     <h2>Tipo de exámenes</h2>
@@ -184,7 +179,7 @@ class EstudioResonancia extends React.Component {
                                 <li>Angio RM de cuello</li>
                                 <li>Angio RM de miembros superiores</li>
                                 <li>Angio RM de miembros inferiores</li>
-                                <li>RM del seno</li>
+                                <li></li>
                                 <li>Entero RM</li>
                                 <li>RM de mama sin contraste (para implantes)</li>
                                 <li>RM de mama con contraste</li>

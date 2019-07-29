@@ -110,11 +110,11 @@ class EstudioTomografia extends React.Component {
                         Traer los últimos estudios previos relacionados a la práctica.
                     </li>
                     <li>
-                        Recordá que este tiempo ha sido reservado para vos. Si no es posible acudir en día 
-                        y hora convenidos, por favor avisar anticipadamente.
+                    El día de la realización de cualquier estudio, deberás presentarte 15 minutos antes del turno en la recepción de Advance. 
+                    Recordá que este tiempo ha sido reservado para vos. Si no es posible acudir en día y hora convenidos, por favor avisar anticipadamente.
                     </li>
                     <li>
-                        Ante cualquier duda o inquietud, <Link to='/contacto'>Contactanos</Link>.
+                        Ante cualquier duda o inquietud, <Link to='/contacto'>contactanos</Link>.
                     </li>
                     </ol>
 

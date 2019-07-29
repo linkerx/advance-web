@@ -30,10 +30,11 @@ class Pacientes extends React.Component {
                             <span><a href='tel:+54 02920 429957'>+54 02920 429957</a></span>
                         </div>
                     </div>
-                </div>
+                    </div>
                     <div id='abono'><i className="fas fa-credit-card"></i>Los estudios se pueden abonar con trajeta de débito o crédito hasta 12 cuotas.</div>
                     <div id='lugar'><i className="fas fa-user-clock"></i>El lugar es guardado para vos, rogamos puntualidad. Si no podés acudir en el día y
                     horarios convenidos, por favor avisar con anticipación.</div>
+                    <p className='frase'>El día de la realización de cualquier estudio, deberás presentarte 15 minutos antes del turno en la recepción de Advance. El lugar es guardado para vos, rogamos puntualidad. Si no podés acudir en el día y horarios convenidos, por favor avisar con anticipación.</p>
                 </div>
 
                 <div className='fixedimg'>

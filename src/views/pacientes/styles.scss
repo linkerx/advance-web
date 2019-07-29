@@ -22,7 +22,8 @@ section#pacientes .wrapper-central li::before{
 }
 
 section#pacientes .wrapper-central #abono,
-section#pacientes .wrapper-central #lugar {
+section#pacientes .wrapper-central #lugar,
+section#pacientes .wrapper-central .frase {
     text-align: center;
 }
 
@@ -31,6 +32,10 @@ section#pacientes #lugar i {
     font-size: 20px;
     color: #707070;
     margin:12px;
+}
+
+section#pacientes .wrapper-central .frase {
+    font-weight: bold;
 }
 
 section#pacientes .wrapper-central .turnos {

@@ -76,13 +76,21 @@ class EstudioEcografia extends React.Component {
                     <img src='/images/estudios/ecografia.png' alt='Ecografías'/>
 
                     <h2>Antes del estudio</h2>
-                    <ul>
-                        <li>El día de la realización de cualquier estudio, deberás presentarte 15
-                        minutos antes del turno en la recepción de Advance.</li>
+                    <ol>
+                        <li>El día de la realización de cualquier estudio, deberás presentarte 15 minutos antes del turno en la recepción de Advance. 
+                            Recordá que este tiempo ha sido reservado para vos. Si no es posible acudir en día y hora convenidos, 
+                            por favor avisar anticipadamente.</li>
                         <li>Traer los últimos estudios previos relacionados a la práctica.</li>
-                        <li>Recordá que este tiempo ha sido reservado para vos. Si no es posible
-                        acudir en día y hora convenidos, por favor avisar anticipadamente.</li>
                         <li>Ante cualquier duda o inquietud, contactanos​ (link a “Contacto”).</li>
+                    </ol>
+
+                    <h2>Preparaciones ecográficas</h2>
+                    <ul>
+                        <li>En el caso de ecografía ginecológica (suprapública o endovaginal), renal, vesical vesicoprostática u obstétrica del primer trimestre (hasta la semana 12 de embarazo), 
+                            se requiere tomar 1 litro de agua 1 hora antes del estudio.</li>
+                        <li>En el caso de ecografía mamaria, no usar desodorante.</li>
+                        <li>Para ecografía abdominal, los adultos deberán acudir al estudio con 8 horas de ayunas, los niños con 6 horas de ayunas y los lactantes con 3 horas de ayunas.</li>
+                    
                     </ul>
 
                     <div className='examenes'>
