@@ -256,38 +256,36 @@ podría llevar adelante el procedimiento sin inconvenientes.</div>
                                 <div className='preg' onClick={() => this.openPregunta(6)}>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?
                     ¿Qué metales son peligrosos o están contraindicados?</div>
                                 <div className={'resp '+(this.state.preguntaOpen === 6 ? 'open' : 'closed')}>
-                                    <h3>Los ​artículos peligrosos para la salud o que ​podrían causar otros problemas
-                                    durante una resonancia magnética son:</h3>
-                                    <ul>
-                                        <li>Marcapasos cardíaco o desfibrilador implantable</li>
-                                        <li>Sujetador metálico puesto para evitar el sangrado en un aneurisma
-                                        intracraneal</li>
-                                        <li>Catéter con componentes metálicos que pueden tener el riesgo de
-                                        producir quemaduras</li>
-                                        <li>Bomba para medicamentos (por ejemplo, las utilizadas para administrar
-                                        insulina o analgésicos)</li>
-                                        <li>Implante coclear (oído interno)</li>
-                                    </ul>
-                                    <h3>Los objetos que ​podrían interferir un estudio de ​resonancia magnética ​y, por lo
-                                    tanto, están ​contraindicados​ son:</h3>
-                                    <ul>
-                                        <li>Presencia de grapas quirúrgicas.</li>
-                                        <li>Prótesis ortopédicas, de oído, de globo ocular, dental, vascular, biliar,
-                                        cardiaca.</li>
-                                        <li>Suturas o catéteres metálicos.</li>
-                                        <li>Presencia de dispositivo intrauterino o diafragma.</li>
-                                        <li>Existencia en el interior del cuerpo de trozos de balas, perdigón, metralla,
-                                        u algún tipo de esquirla metálica ocular y orbitaria.</li>
-                                        <li>Válvulas de derivación.</li>
-                                        <li>Filtros vasculares.</li>
-                                        <li>Alambres de embolización.</li>
-                                        <li>Presencia de neuroestimulador.</li>
-                                        <li>Existencia de tatuaje.</li>
-                                        <li>Presencia de estimulador de crecimiento óseo.</li>
-                                        <li>Los ​empastes dentales metálicos y los ​aparatos de ortodoncia en
-                                        general no son afectados por el campo magnético, pero sí pueden
-                                        distorsionar las imágenes de la cara o el cerebro.</li>
-                                    </ul>
+                                <ul>
+                                <li>El marcapasos cardíaco o desfibrilador implantable está contraindicado. Es
+decir, en estos casos no se puede realizar una resonancia magnética.</li>
+<li>Los ​artículos peligrosos para la salud o que ​podrían causar otros problemas
+durante una resonancia magnética son:
+● Sujetador metálico puesto para evitar el sangrado en un aneurisma
+intracraneal.
+● Catéter con componentes metálicos que pueden tener el riesgo de producir
+quemaduras.
+● Bomba para medicamentos (por ejemplo, las utilizadas para administrar
+insulina o analgésicos)
+● Existencia en el interior del cuerpo de trozos de balas, perdigón, metralla, u
+algún tipo de esquirla metálica ocular y orbitaria
+En estos casos, se deberá informar al momento de solicitar el turno y concurrir al
+estudio con autorización médica.</li>
+<li>La presencia de los siguientes objetos no genera inconvenientes para la
+realización de una resonancia magnética:
+
+● Piercing (sólo se calienta la zona)
+● Válvulas de derivación.
+● Filtros vasculares.
+● Alambres de embolización.
+● Presencia de neuroestimulador.
+● Existencia de tatuaje.
+
+● Presencia de estimulador de crecimiento óseo.
+● Los ​empastes dentales metálicos y los ​aparatos de ortodoncia en
+general no son afectados por el campo magnético, pero sí pueden
+distorsionar las imágenes de la cara o el cerebro.</li>
+</ul>
                                 </div>
                             </li>
                             <li>
