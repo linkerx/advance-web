@@ -226,36 +226,36 @@ class EstudioResonancia extends React.Component {
                             </li>
 
                             <li>
-                                <div className='preg' onClick={() => this.openPregunta(1)}>¿Cuanto tarda el procedimiento?</div>
+                                <div className='preg' onClick={() => this.openPregunta(2)}>¿Cuanto tarda el procedimiento?</div>
                                 <div className={"resp "+(this.state.preguntaOpen === 2 ? 'open' : 'closed')}>En promedio, el procedimiento demora entre 15 y 20 minutos, dependiendo del
 estudio.</div>
                             </li>
 
                             <li>
-                                <div className='preg' onClick={() => this.openPregunta(2)}>¿Es peligroso o produce dolor realizarse una resonancia magnética?</div>
-                                <div className={'resp '+(this.state.preguntaOpen === 2 ? 'open' : 'closed')}>La resonancia magnética es un estudio totalmente indoloro. Simplemente el
+                                <div className='preg' onClick={() => this.openPregunta(3)}>¿Es peligroso o produce dolor realizarse una resonancia magnética?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 3 ? 'open' : 'closed')}>La resonancia magnética es un estudio totalmente indoloro. Simplemente el
                     paciente debe permanecer inmóvil dentro del equipamiento, en forma horizontal.
                     Los campos magnéticos no producen ningún daño conocido a los tejidos al no
                     tratarse de radiaciones ionizantes tipo rayos X, así que no emite ningún tipo de
                     radiación peligrosa, ni surgen complicaciones posteriores.</div>
                             </li>
                             <li>
-                                <div className='preg' onClick={() => this.openPregunta(3)}>¿El estudio es ruidoso?</div>
-                                <div className={'resp '+(this.state.preguntaOpen === 3 ? 'open' : 'closed')}>La máquina emite un ruido fuerte como de martilleo o golpes en algunas fases
+                                <div className='preg' onClick={() => this.openPregunta(4)}>¿El estudio es ruidoso?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 4 ? 'open' : 'closed')}>La máquina emite un ruido fuerte como de martilleo o golpes en algunas fases
                     que es totalmente normal, por lo que el paciente no debe asustarse o preocuparse
                     por ello.</div>
                             </li>
                             <li>
-                                <div className='preg' onClick={() => this.openPregunta(4)}>¿Qué pasa si siento sensación de encierro?</div>
-                                <div className={'resp '+(this.state.preguntaOpen === 4 ? 'open' : 'closed')}>Al tener el resonador magnético forma de túnel, cualquier persona puede
+                                <div className='preg' onClick={() => this.openPregunta(5)}>¿Qué pasa si siento sensación de encierro?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 5 ? 'open' : 'closed')}>Al tener el resonador magnético forma de túnel, cualquier persona puede
 experimentar cierta sensación de encierro. Si es tu caso, podés hablarlo con el
 médico o técnico a cargo del estudio. Esto no constituye una contraindicación y se
 podría llevar adelante el procedimiento sin inconvenientes.</div>
                             </li>
                             <li>
-                                <div className='preg' onClick={() => this.openPregunta(5)}>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?
+                                <div className='preg' onClick={() => this.openPregunta(6)}>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?
                     ¿Qué metales son peligrosos o están contraindicados?</div>
-                                <div className={'resp '+(this.state.preguntaOpen === 5 ? 'open' : 'closed')}>
+                                <div className={'resp '+(this.state.preguntaOpen === 6 ? 'open' : 'closed')}>
                                     <h3>Los ​artículos peligrosos para la salud o que ​podrían causar otros problemas
                                     durante una resonancia magnética son:</h3>
                                     <ul>
@@ -291,8 +291,8 @@ podría llevar adelante el procedimiento sin inconvenientes.</div>
                                 </div>
                             </li>
                             <li>
-                                <div className='preg' onClick={() => this.openPregunta(6)}>¿Las embarazadas pueden realizarse resonancias?</div>
-                                <div className={'resp '+(this.state.preguntaOpen === 6 ? 'open' : 'closed')}>Las embarazadas o las mujeres que sospechen estar embarazadas deberán
+                                <div className='preg' onClick={() => this.openPregunta(7)}>¿Las embarazadas pueden realizarse resonancias?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 7 ? 'open' : 'closed')}>Las embarazadas o las mujeres que sospechen estar embarazadas deberán
                     informarlo a Advance al solicitar el turno, o al médico durante el procedimiento de
                     verificación que se lleva a cabo antes de comenzar el estudio. En general, no hay
                     riesgos conocidos de la resonancia magnética en mujeres embarazadas. Sin
@@ -302,8 +302,8 @@ podría llevar adelante el procedimiento sin inconvenientes.</div>
                     la tomografía computada (TC).</div>
                             </li>
                             <li>
-                                <div className='preg' onClick={() => this.openPregunta(7)}>¿Las mujeres en período de lactancia pueden realizarse resonancias?</div>
-                                <div className={'resp '+(this.state.preguntaOpen === 7 ? 'open' : 'closed')}>Las mujeres que se encuentren en período de lactancia -es decir, que estén
+                                <div className='preg' onClick={() => this.openPregunta(8)}>¿Las mujeres en período de lactancia pueden realizarse resonancias?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 8 ? 'open' : 'closed')}>Las mujeres que se encuentren en período de lactancia -es decir, que estén
                     amamantando- deben informarlo a Advance al solicitar el turno. Esto es
                     particularmente importante si es necesaria la inyección de un material de
                     contraste para realizar la resonancia. En ese caso, una opción es sacarse la leche
