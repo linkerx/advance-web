@@ -35,7 +35,7 @@ class WpSlider extends React.Component {
 
     var options = {
       autoListCount: true,
-      listCount: 2,
+      listCount: 3,
       listImgSize: 'thumbnail',
       pageCount: 1,
       pageImgSize: 'large',
@@ -62,6 +62,13 @@ class WpSlider extends React.Component {
       {
         id: 1,
         img: "/images/comp/3186.jpg",
+        texto: "<h3>Servicios de vanguardia</h3><div class='linea'></div>Ya podés reservar tu lugar para estudios de Resonancia y Tomografía.",
+        link: "/pacientes",
+        textoLink: "Solicitar turno"
+      },
+      {
+        id: 2,
+        img: "/images/comp/3214.jpg",
         texto: "<h3>Tu salud en buenas manos</h3><div class='linea'></div>Trabajamos con la mejor tecnología y un equipo médico especializado en diagnóstico por imágenes para brindarte la atención que buscás.",
         link: "/institucional",
         textoLink: "Conocenos"
@@ -76,7 +83,7 @@ class WpSlider extends React.Component {
       },
       */
       {
-        id: 2,
+        id: 3,
         img: "/images/slider/online.jpg",
         texto: "<h3>Mirá tus estudios desde donde estés</h3><div class='linea'></div>Accedé a tus resultados de manera exclusiva y confidencial.",
         link: "//portal.diagnosticoadvance.com.ar",

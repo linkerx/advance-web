@@ -50,7 +50,6 @@ class AreaMedica extends React.Component {
                         <label for='email'>EMAIL:</label><input name='email' type='text' value='' />
                         <label for='telefono'>TELÉFONO:</label><input name='telefono' type='text' value=''/>
                         <div className='clearfix'></div>
-                        <button className='btn'>ENVIAR</button>
                     </form>
                     <div className='clearfix'></div>
                     </div>

@@ -34,7 +34,7 @@ class Contacto extends React.Component {
                             </select>
                         <label for='consulta'>CONSULTA:</label>
                         <textarea name='consulta' rows='10'></textarea>
-                        <button className='btn'>ENVIAR</button>
+
                 </div>
                 <div className='der'>
 
