@@ -256,59 +256,50 @@ podría llevar adelante el procedimiento sin inconvenientes.</div>
                                 <div className='preg' onClick={() => this.openPregunta(6)}>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?
                     ¿Qué metales son peligrosos o están contraindicados?</div>
                                 <div className={'resp '+(this.state.preguntaOpen === 6 ? 'open' : 'closed')}>
-                                <ul>
+                                <ol>
                                 <li>El marcapasos cardíaco o desfibrilador implantable está contraindicado. Es
 decir, en estos casos no se puede realizar una resonancia magnética.</li>
 <li>Los ​artículos peligrosos para la salud o que ​podrían causar otros problemas
-durante una resonancia magnética son:
-● Sujetador metálico puesto para evitar el sangrado en un aneurisma
-intracraneal.
-● Catéter con componentes metálicos que pueden tener el riesgo de producir
-quemaduras.
-● Bomba para medicamentos (por ejemplo, las utilizadas para administrar
-insulina o analgésicos)
-● Existencia en el interior del cuerpo de trozos de balas, perdigón, metralla, u
+durante una resonancia magnética son:<ul>
+
+<li>Sujetador metálico puesto para evitar el sangrado en un aneurisma
+intracraneal.</li>
+<li>Catéter con componentes metálicos que pueden tener el riesgo de producir
+quemaduras.</li>
+<li>Bomba para medicamentos (por ejemplo, las utilizadas para administrar
+insulina o analgésicos)</li>
+<li>Existencia en el interior del cuerpo de trozos de balas, perdigón, metralla, u
 algún tipo de esquirla metálica ocular y orbitaria
 En estos casos, se deberá informar al momento de solicitar el turno y concurrir al
 estudio con autorización médica.</li>
+</ul>
+
+</li>
 <li>La presencia de los siguientes objetos no genera inconvenientes para la
 realización de una resonancia magnética:
-
-● Piercing (sólo se calienta la zona)
-● Válvulas de derivación.
-● Filtros vasculares.
-● Alambres de embolización.
-● Presencia de neuroestimulador.
-● Existencia de tatuaje.
-
-● Presencia de estimulador de crecimiento óseo.
-● Los ​empastes dentales metálicos y los ​aparatos de ortodoncia en
+<ul>
+<li>Piercing (sólo se calienta la zona)</li>
+<li>Válvulas de derivación</li>
+<li>Filtros vasculares</li>
+<li>Alambres de embolización</li>
+<li>Presencia de neuroestimulador</li>
+<li>Existencia de tatuaje</li>
+<li>Presencia de estimulador de crecimiento óseo</li>
+<li>Los ​empastes dentales metálicos y los ​aparatos de ortodoncia en
 general no son afectados por el campo magnético, pero sí pueden
-distorsionar las imágenes de la cara o el cerebro.</li>
-</ul>
+distorsionar las imágenes de la cara o el cerebro</li></ul>
+</li>
+</ol>
                                 </div>
                             </li>
                             <li>
                                 <div className='preg' onClick={() => this.openPregunta(7)}>¿Las embarazadas pueden realizarse resonancias?</div>
-                                <div className={'resp '+(this.state.preguntaOpen === 7 ? 'open' : 'closed')}>Las embarazadas o las mujeres que sospechen estar embarazadas deberán
-                    informarlo a Advance al solicitar el turno, o al médico durante el procedimiento de
-                    verificación que se lleva a cabo antes de comenzar el estudio. En general, no hay
-                    riesgos conocidos de la resonancia magnética en mujeres embarazadas. Sin
-                    embargo, en pacientes embarazadas, este tipo de estudio se reserva sólo para
-                    problemas muy serios o anomalías sospechadas. En todo caso, es muy probable
-                    que la resonancia magnética sea menos peligrosa para el feto que los rayos X o
-                    la tomografía computada (TC).</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 7 ? 'open' : 'closed')}>En caso de embarazo o sospecha de embarazo, 
+                                se deberá informar al momento de solicitar el turno. La posibilidad de realizar el estudio dependerá de cada caso en particular.</div>
                             </li>
                             <li>
                                 <div className='preg' onClick={() => this.openPregunta(8)}>¿Las mujeres en período de lactancia pueden realizarse resonancias?</div>
-                                <div className={'resp '+(this.state.preguntaOpen === 8 ? 'open' : 'closed')}>Las mujeres que se encuentren en período de lactancia -es decir, que estén
-                    amamantando- deben informarlo a Advance al solicitar el turno. Esto es
-                    particularmente importante si es necesaria la inyección de un material de
-                    contraste para realizar la resonancia. En ese caso, una opción es sacarse la leche
-                    antes del estudio, que puede ser utilizada para alimentar al bebé hasta que se
-                    haya eliminado el medio de contraste del cuerpo. Generalmente, eso demora
-                    unas 24 horas. El médico proporcionará a cada paciente información adicional
-                    con respecto a este tema.</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 8 ? 'open' : 'closed')}>Sí, las mujeres en período de lactancia pueden realizar el estudio.</div>
                             </li>
                         </ul>
                     </div>
