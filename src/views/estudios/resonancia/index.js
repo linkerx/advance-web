@@ -224,6 +224,13 @@ class EstudioResonancia extends React.Component {
                     video. Además, tendrá en su mano un timbre que lo podrá utilizar para
                     comunicarse con el técnico responsable de realizar el estudio.</div>
                             </li>
+
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(1)}>¿Cuanto tarda el procedimiento?</div>
+                                <div className={"resp "+(this.state.preguntaOpen === 2 ? 'open' : 'closed')}>En promedio, el procedimiento demora entre 15 y 20 minutos, dependiendo del
+estudio.</div>
+                            </li>
+
                             <li>
                                 <div className='preg' onClick={() => this.openPregunta(2)}>¿Es peligroso o produce dolor realizarse una resonancia magnética?</div>
                                 <div className={'resp '+(this.state.preguntaOpen === 2 ? 'open' : 'closed')}>La resonancia magnética es un estudio totalmente indoloro. Simplemente el
@@ -239,10 +246,11 @@ class EstudioResonancia extends React.Component {
                     por ello.</div>
                             </li>
                             <li>
-                                <div className='preg' onClick={() => this.openPregunta(4)}>¿Qué pasa si soy claustrofóbico?</div>
+                                <div className='preg' onClick={() => this.openPregunta(4)}>¿Qué pasa si siento sensación de encierro?</div>
                                 <div className={'resp '+(this.state.preguntaOpen === 4 ? 'open' : 'closed')}>Al tener el resonador magnético forma de túnel, cualquier persona puede
-                    experimentar cierta claustrofobia. Si sos propenso a sufrir este problema, previo al
-                    estudio el médico podría administrarte un tranquilizante.</div>
+experimentar cierta sensación de encierro. Si es tu caso, podés hablarlo con el
+médico o técnico a cargo del estudio. Esto no constituye una contraindicación y se
+podría llevar adelante el procedimiento sin inconvenientes.</div>
                             </li>
                             <li>
                                 <div className='preg' onClick={() => this.openPregunta(5)}>¿Qué sucede si tengo piercing, prótesis, tatuaje, ortodoncia o marcapasos?
