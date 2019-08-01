@@ -27,6 +27,16 @@ section#estudio-ecografia .wrapper-central img {
     object-fit: cover;
 }
 
+section#estudio-ecografia .wrapper-central .preparaciones li::before {
+    content: "\2022";
+    color: #62c9d8;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+
 section#estudio-ecografia .wrapper-central ol > li {
     list-style: decimal;
     list-style-position: inside;

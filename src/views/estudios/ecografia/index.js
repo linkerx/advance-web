@@ -85,7 +85,7 @@ class EstudioEcografia extends React.Component {
                     </ol>
 
                     <h2>Preparaciones ecográficas</h2>
-                    <ul>
+                    <ul className='preparaciones'>
                         <li>En el caso de ecografía ginecológica (suprapública o endovaginal), renal, vesical vesicoprostática u obstétrica del primer trimestre (hasta la semana 12 de embarazo), 
                             se requiere tomar 1 litro de agua 1 hora antes del estudio.</li>
                         <li>En el caso de ecografía mamaria, no usar desodorante.</li>
