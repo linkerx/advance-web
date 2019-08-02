@@ -47,10 +47,11 @@ class AreaMedica extends React.Component {
             alert("Mensaje enviado con éxito.");
             this.setState({
                 nombre: '',
-                apellido: '',
-                lugar: '',
-                tipo: '',
-                consulta: ''
+                profesion: '',
+                institucion: '',
+                temas: '',
+                email: '',
+                telefono: '',
             });
         }.bind(this));
     }
