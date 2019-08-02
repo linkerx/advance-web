@@ -1,3 +1,4 @@
+@import 'styles/variables/mqueries.scss';
 
 section#equipamiento h1 {
     background-color: #62c9d8;
@@ -27,12 +28,20 @@ section#equipamiento .equipos > ul {
     flex-wrap: nowrap;
     justify-content: space-around;
     margin-top:30px;
+    @media #{$all-narrow} {
+        display:block;
+        margin-top: 0;
+    }
 }
 
 section#equipamiento .equipos > ul > li {
     width: 400px;
     color: #777;
     box-sizing: border-box;
+    @media #{$all-narrow} {
+        width:100%;
+        margin-bottom:50px;
+    }
 }
 
 section#equipamiento .equipos > ul > li img {

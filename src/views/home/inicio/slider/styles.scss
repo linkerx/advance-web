@@ -26,8 +26,10 @@ section#home-slider .slider-container .react-parallax img {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
-        margin-top: 310px;
         display: block;
+        transform: none !important;
+        left: 0 !important;
+        margin: 0 !important;
     }
 }
 

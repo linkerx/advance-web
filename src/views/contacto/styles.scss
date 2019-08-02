@@ -20,6 +20,7 @@ section#contacto .wrapper-central p.subtitulo {
     margin: auto;
     margin-bottom: 30px;
     line-height: 1.8em;
+    max-width: 100%;;
 }
 
 section#contacto .wrapper-central .imagen {
@@ -43,6 +44,9 @@ section#contacto .wrapper-central .cajas {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top:30px;
+    @media #{$all-narrow} {
+        display:block;
+    }
 }
 
 section#contacto .wrapper-central .cajas > div {
@@ -51,6 +55,9 @@ section#contacto .wrapper-central .cajas > div {
     color: #777;
     box-sizing: border-box;
     padding: 30px;
+    @media #{$all-narrow} {
+        width:100%;
+    }
 }
 
 section#contacto .wrapper-central .cajas label {
@@ -93,10 +100,12 @@ section#contacto .wrapper-central .cajas h3 {
 
 section#contacto .wrapper-central .cajas .der {   
    text-align: left;
-    @media #{$all-narrow} {
-        display:none;
-    }
-    margin-left: 30px;
+   margin-left: 30px;
+   @media #{$all-narrow} {
+    margin: 0;
+    margin-top: 10px;
+   }
+
 }
 
 section#contacto .wrapper-central .cajas .der .horarios {

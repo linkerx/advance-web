@@ -22,6 +22,23 @@ section#pacientes .wrapper-central li::before{
     font-size: 1.3em;
 }
 
+section#pacientes .wrapper-central .tarjetas {
+    margin-left: 25%;
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+}
+
+section#pacientes .wrapper-central .tarjetas li::before {
+    content:none;
+}
+
+section#pacientes .wrapper-central .tarjetas li{
+    color: #62c9d8;
+    margin: 20px 50px;
+    font-size: 40px;
+}
+
 section#pacientes .wrapper-central #abono,
 section#pacientes .wrapper-central #lugar,
 section#pacientes .wrapper-central .frase {

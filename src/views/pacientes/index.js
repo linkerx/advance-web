@@ -32,6 +32,10 @@ class Pacientes extends React.Component {
                     </div>
                     </div>
                     <div id='abono'><i className="fas fa-credit-card"></i>Los estudios se pueden abonar con trajeta de débito o crédito hasta 12 cuotas.</div>
+                    <ul className='tarjetas'>
+                        <li><i className="fab fa-cc-visa"></i></li>
+                        <li><i className="fab fa-cc-mastercard"></i></li>
+                    </ul>
                     <div id='lugar'><i className="fas fa-user-clock"></i>El día de la realización de cualquier estudio, deberás presentarte 15 minutos antes del turno en la recepción de Advance. 
                     El lugar es guardado para vos, rogamos puntualidad. Si no podés acudir en el día y horarios convenidos, por favor avisar con anticipación.</div>
                 </div>
