@@ -1,7 +1,60 @@
 import React from 'react';
+import Axios from 'axios';
 import './styles.scss';
 
 class AreaMedica extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            nombre: '',
+            profesion: '',
+            institucion: '',
+            temas: '',
+            email: '',
+            telefono: '',
+        };
+    
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+    
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        
+        var url = 'https://ws.diagnosticoadvance.com.ar/sender/area-medica';
+        //url = 'http://localhost:8110/sender/contacto';
+        
+        var data = new FormData();
+        data.append('nombre',this.state.nombre);
+        data.append('profesion',this.state.profesion);
+        data.append('institucion',this.state.institucion);
+        data.append('temas',this.state.temas);
+        data.append('email',this.state.email);
+        data.append('telefono',this.state.telefono);
+        
+        Axios.post(url,data).then(function(response){
+            alert("Mensaje enviado con éxito.");
+            this.setState({
+                nombre: '',
+                apellido: '',
+                lugar: '',
+                tipo: '',
+                consulta: ''
+            });
+        });
+    }
+
     render(){
         return(
             <section id='area-medica'>
@@ -42,14 +95,15 @@ class AreaMedica extends React.Component {
                     info​@diagnosticoadvance.com​ o dejanos tus datos.
                     </p>
 
-                    <form>
-                        <label for='nombre'>NOMBRE:</label><input name='nombre' type='text' value=''/>
-                        <label for='profesion'>PROFESIÓN/ESPECIALIDAD:</label><input name='profesion' type='text' value='' />
-                        <label for='institucion'>INSTITUCIÓN:</label><input name='institucion' type='text' value='' />
-                        <label for='temas'>TEMÁTICAS DE INTERÉS:</label><input name='temas' type='text' value='' />
-                        <label for='email'>EMAIL:</label><input name='email' type='text' value='' />
-                        <label for='telefono'>TELÉFONO:</label><input name='telefono' type='text' value=''/>
+                    <form onSubmit={this.handleSubmit}>
+                        <label for='nombre'>NOMBRE:</label><input name='nombre' type='text' value={this.state.nombre} onChange={this.handleInputChange}/>
+                        <label for='profesion'>PROFESIÓN/ESPECIALIDAD:</label><input name='profesion' type='text' value={this.state.profesion} onChange={this.handleInputChange} />
+                        <label for='institucion'>INSTITUCIÓN:</label><input name='institucion' type='text' value={this.state.institucion} onChange={this.handleInputChange} />
+                        <label for='temas'>TEMÁTICAS DE INTERÉS:</label><input name='temas' type='text' value={this.state.temas} onChange={this.handleInputChange} />
+                        <label for='email'>EMAIL:</label><input name='email' type='text' value={this.state.email} onChange={this.handleInputChange} />
+                        <label for='telefono'>TELÉFONO:</label><input name='telefono' type='text' value={this.state.telefono} onChange={this.handleInputChange}/>
                         <div className='clearfix'></div>
+                        <button className='btn'>Enviar</button>
                     </form>
                     <div className='clearfix'></div>
                     </div>

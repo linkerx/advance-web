@@ -1,7 +1,57 @@
 import React from 'react';
+import Axios from 'axios';
 import './styles.scss';
 
 class Contacto extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            nombre: '',
+            apellido: '',
+            lugar: '',
+            tipo: '',
+            consulta: ''
+        };
+    
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+    
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        
+        var url = 'https://ws.diagnosticoadvance.com.ar/sender/contacto';
+        //url = 'http://localhost:8110/sender/contacto';
+        
+        var data = new FormData();
+        data.append('nombre',this.state.nombre);
+        data.append('apellido',this.state.apellido);
+        data.append('lugar',this.state.lugar);
+        data.append('tipo',this.state.tipo);
+        data.append('consulta',this.state.consulta);
+        
+        Axios.post(url,data).then(function(response){
+            alert("Mensaje enviado con éxito.");
+            this.setState({
+                nombre: '',
+                apellido: '',
+                lugar: '',
+                tipo: '',
+                consulta: ''
+            });
+        });
+    }
+
     render(){
         return(
             <section id='contacto'>
@@ -22,18 +72,21 @@ class Contacto extends React.Component {
                 <div className='cajas'>
                     <div className='izq'>
                         <h3>Contactanos</h3>
-                        <label for='nombre'>NOMBRE:</label><input name='nombre' type='text' value=''/>
-                        <label for='apellido'>APELLIDO:</label><input name='apellido' type='text' value=''/>
-                        <label for='lugar'>LUGAR DE RESIDENCIA:</label><input name='lugar' type='text' value=''/>
-                        <label for='tipo'>TIPO DE CONSULTA:</label>
-                            <select name='tipo' type='text' value=''>
-                                <option value=''>Estudios Médicos</option>
-                                <option value=''>Área Médica</option>
-                                <option value=''>Administrativa</option>
-                                <option value=''>RRHH</option>
-                            </select>
-                        <label for='consulta'>CONSULTA:</label>
-                        <textarea name='consulta' rows='10'></textarea>
+                        <form onSubmit={this.handleSubmit}>
+                            <label for='nombre'>NOMBRE:</label><input name='nombre' type='text' value={this.state.nombre} onChange={this.handleInputChange}/>
+                            <label for='apellido'>APELLIDO:</label><input name='apellido' type='text' value={this.state.apellido} onChange={this.handleInputChange}/>
+                            <label for='lugar'>LUGAR DE RESIDENCIA:</label><input name='lugar' type='text' value={this.state.lugar} onChange={this.handleInputChange}/>
+                            <label for='tipo'>TIPO DE CONSULTA:</label>
+                                <select name='tipo' type='text' value={this.state.tipo} onChange={this.handleInputChange}>
+                                    <option value='estudios-medicos'>Estudios Médicos</option>
+                                    <option value='area-medica'>Área Médica</option>
+                                    <option value='administrativa'>Administrativa</option>
+                                    <option value='rrhh'>RRHH</option>
+                                </select>
+                            <label for='consulta'>CONSULTA:</label>
+                            <textarea name='consulta' rows='10' value={this.state.consulta} onChange={this.handleInputChange}></textarea>
+                            <button className='btn'>Enviar</button>
+                        </form>
 
                 </div>
                 <div className='der'>
