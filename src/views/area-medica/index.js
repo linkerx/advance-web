@@ -52,7 +52,7 @@ class AreaMedica extends React.Component {
                 tipo: '',
                 consulta: ''
             });
-        });
+        }.bind(this));
     }
 
     render(){

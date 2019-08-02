@@ -49,7 +49,7 @@ class Contacto extends React.Component {
                 tipo: '',
                 consulta: ''
             });
-        });
+        }.bind(this));
     }
 
     render(){
