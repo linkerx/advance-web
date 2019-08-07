@@ -38,6 +38,8 @@ class Contacto extends React.Component {
         data.append('apellido',this.state.apellido);
         data.append('lugar',this.state.lugar);
         data.append('tipo',this.state.tipo);
+        data.append('email',this.state.email);
+        data.append('telefono',this.state.telefono);        
         data.append('consulta',this.state.consulta);
         
         Axios.post(url,data).then(function(response){
@@ -47,7 +49,9 @@ class Contacto extends React.Component {
                 apellido: '',
                 lugar: '',
                 tipo: '',
-                consulta: ''
+                consulta: '',
+                email: '',
+                telefono: '',
             });
         }.bind(this));
     }
@@ -76,6 +80,8 @@ class Contacto extends React.Component {
                             <label for='nombre'>NOMBRE:</label><input name='nombre' type='text' value={this.state.nombre} onChange={this.handleInputChange}/>
                             <label for='apellido'>APELLIDO:</label><input name='apellido' type='text' value={this.state.apellido} onChange={this.handleInputChange}/>
                             <label for='lugar'>LUGAR DE RESIDENCIA:</label><input name='lugar' type='text' value={this.state.lugar} onChange={this.handleInputChange}/>
+                            <label for='email'>EMAIL:</label><input name='email' type='text' value={this.state.email} onChange={this.handleInputChange}/>
+                            <label for='telefono'>TELÉFONO:</label><input name='telefono' type='text' value={this.state.telefono} onChange={this.handleInputChange}/>
                             <label for='tipo'>TIPO DE CONSULTA:</label>
                                 <select name='tipo' type='text' value={this.state.tipo} onChange={this.handleInputChange}>
                                     <option value='estudios-medicos'>Estudios Médicos</option>
