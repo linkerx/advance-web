@@ -66,7 +66,7 @@ class Contacto extends React.Component {
                 de cada Estudio Médico, completá el formulario y un representante de Advance te responderá a la brevedad.
                 </p>
 
-                <div className='est'><a className='btn' href='//portal.diagnosticadvance.com.ar' target='_blank'> Ver Estudios Médicos</a>
+                <div className='est'><a className='btn' href='https://portal.diagnosticadvance.com.ar' target='_blank'> Ver Estudios Médicos</a>
                 </div>
 
                 <div className='imagen'>

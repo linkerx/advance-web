@@ -98,7 +98,7 @@ class Pacientes extends React.Component {
                             También podés compartilos online, guardarlos e imprimirlos desde tu computadora o
                             cualquier dispositivo móvil, estés donde estés.
                             </p>
-                            <a href='http://portal.diagnosticoadvance.com.ar' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
+                            <a href='https://portal.diagnosticoadvance.com.ar' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
                         </div>
                     </div>
 

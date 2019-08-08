@@ -31,7 +31,7 @@ class FullMenu extends React.Component {
                     </ul>
                 </div>
                 <div className='estudios'>
-                    <a href='http://portal.diagnosticoadvance.com.ar' target='_blank'>VER MIS ESTUDIOS</a>
+                    <a href='https://portal.diagnosticoadvance.com.ar' target='_blank'>VER MIS ESTUDIOS</a>
                 </div>
             </div>
         )
