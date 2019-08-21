@@ -67,7 +67,7 @@ class AreaMedica extends React.Component {
                             <p className='accede'>
                             <strong>Accedé a los estudios que indicaste a tus pacientes de manera rápida, exclusiva y segura.</strong></p>
                             
-                            <a href='https://portal.diagnosticoadvance.com.ar' target='_blank' className='btn'>VER ESTUDIOS</a>
+                            <a href='http://portal.diagnosticoadvance.com.ar/portal/Login.aspx?ReturnUrl=/portal/default.aspx' target='_blank' className='btn'>VER ESTUDIOS</a>
                     </div>
                     
                     <div className='imagen'>

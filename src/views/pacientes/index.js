@@ -23,7 +23,7 @@ class Pacientes extends React.Component {
                         </div>
                         <div className='email'>
                             <i className="fas fa-envelope"></i>
-                            <span><a href='mailto:info@diagnosticoadvance.com​'>info@diagnosticoadvance.com</a></span>
+                            <span><a href='mailto:info@diagnosticoadvance.com​.ar'>info@diagnosticoadvance.com.ar</a></span>
                         </div>
                         <div className='telefono'>
                             <i className="fas fa-phone"></i>
@@ -98,7 +98,7 @@ class Pacientes extends React.Component {
                             También podés compartilos online, guardarlos e imprimirlos desde tu computadora o
                             cualquier dispositivo móvil, estés donde estés.
                             </p>
-                            <a href='https://portal.diagnosticoadvance.com.ar' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
+                            <a href='http://portal.diagnosticoadvance.com.ar/portal/WebLogin.aspx?ReturnUrl=/portal/default.aspx' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
                         </div>
                     </div>
 
