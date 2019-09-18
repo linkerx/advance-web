@@ -82,7 +82,9 @@ class EstudioTomografia extends React.Component {
                     </div>
 
                     <img src='/images/comp/8304.jpg' alt='Tomografías Computdas' />
-
+                    <div className='atencion'>
+                        Atencion: Las tomografías sin contraste se hacen sin turno.
+                    </div>
                     <h2>Antes del estudio:</h2>
 
                     <ol>

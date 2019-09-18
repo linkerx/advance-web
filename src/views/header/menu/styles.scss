@@ -47,6 +47,9 @@ section#home-menu .menu ul li {
     margin-right: 40px;
     margin-top: 64px;
     list-style: none;
+    @media #{$wide} {
+        margin-right: 20px;
+    }
 }
 
 section#home-menu .menu ul li a {

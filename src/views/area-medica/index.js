@@ -13,10 +13,13 @@ class AreaMedica extends React.Component {
             temas: '',
             email: '',
             telefono: '',
+            mostrarVideo: false
         };
     
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.verVideo = this.verVideo.bind(this);
+        this.ocultarVideo = this.ocultarVideo.bind(this);        
       }
     
     handleInputChange(event) {
@@ -44,7 +47,7 @@ class AreaMedica extends React.Component {
         data.append('telefono',this.state.telefono);
         
         Axios.post(url,data).then(function(response){
-            alert("Mensaje enviado con éxito.");
+            alert("Mensaje</div> enviado con éxito.");
             this.setState({
                 nombre: '',
                 profesion: '',
@@ -54,6 +57,18 @@ class AreaMedica extends React.Component {
                 telefono: '',
             });
         }.bind(this));
+    }
+
+    verVideo() {
+        this.setState({
+            mostrarVideo: true
+        });
+    }
+
+    ocultarVideo() {
+        this.setState({
+            mostrarVideo: false
+        });
     }
 
     render(){
@@ -68,6 +83,16 @@ class AreaMedica extends React.Component {
                             <strong>Accedé a los estudios que indicaste a tus pacientes de manera rápida, exclusiva y segura.</strong></p>
                             
                             <a href='http://portal.diagnosticoadvance.com.ar/portal/Login.aspx?ReturnUrl=/portal/default.aspx' target='_blank' className='btn'>VER ESTUDIOS</a>
+                            <a href='javascript:void(0)' className='btn' onClick={this.verVideo}>TUTORIAL</a>
+
+                            <div className='video'>
+                            { this.state.mostrarVideo &&
+                                <div>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/2XoKiCZXkJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  
+                                    <a href='javascript:void(0)' onClick={this.ocultarVideo} ><i className='fa fa-times'></i></a>
+                                </div>
+                            }
+                            </div>
                     </div>
                     
                     <div className='imagen'>

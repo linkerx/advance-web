@@ -3,6 +3,29 @@ import { Link } from 'react-router-dom';
 import './styles.scss';
 
 class Pacientes extends React.Component {
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            estudiosVideo: false
+        }
+
+        this.verVideo = this.verVideo.bind(this);
+        this.ocultarVideo = this.ocultarVideo.bind(this);        
+    }
+
+    verVideo(){
+        this.setState({
+            estudiosVideo: true
+        });
+    }
+    
+    ocultarVideo(){
+        this.setState({
+            estudiosVideo: false
+        });
+    }
     
     render(){
         var classPlano='btn plano';
@@ -79,27 +102,37 @@ class Pacientes extends React.Component {
 
                 <div className='wrapper-central'>
                     <div className='caja'>
-                        <div className='izq'>
-                            <img src='/images/slider/online.jpg' />                      
-                        </div>
-                        <div className='der'>
-                        <h2>Resultados online</h2>
-                            <p>
-                            <strong>Accedé a tus estudios desde donde estés, de manera rápida, exclusiva y
-                            segura.</strong></p>
-                            <p>
-                            En Advance tenés la posibilidad de ver los resultados de tus estudios sin moverte de
-                            tu casa, ingresando a la plataforma VER MIS ESTUDIOS.</p>
-                            <p>
-                            Para acceder por primera vez, deberás generar un usuario y contraseña. Luego, con
-                            esos datos, podés iniciar sesión para consultar los informes e imágenes todas las
-                            veces que quieras.</p>
-                            <p>
-                            También podés compartilos online, guardarlos e imprimirlos desde tu computadora o
-                            cualquier dispositivo móvil, estés donde estés.
-                            </p>
-                            <a href='http://portal.diagnosticoadvance.com.ar/portal/WebLogin.aspx?ReturnUrl=/portal/default.aspx' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
-                        </div>
+                        {!this.state.estudiosVideo ?
+                            <div className='wrp'>
+                                <div className='izq'>
+                                    <img src='/images/slider/online.jpg' />                      
+                                </div>
+                                <div className='der'>
+                                <h2>Resultados online</h2>
+                                    <p>
+                                    <strong>Accedé a tus estudios desde donde estés, de manera rápida, exclusiva y
+                                    segura.</strong></p>
+                                    <p>
+                                    En Advance tenés la posibilidad de ver los resultados de tus estudios sin moverte de
+                                    tu casa, ingresando a la plataforma VER MIS ESTUDIOS.</p>
+                                    <p>
+                                    Para acceder por primera vez, deberás generar un usuario y contraseña. Luego, con
+                                    esos datos, podés iniciar sesión para consultar los informes e imágenes todas las
+                                    veces que quieras.</p>
+                                    <p>
+                                    También podés compartilos online, guardarlos e imprimirlos desde tu computadora o
+                                    cualquier dispositivo móvil, estés donde estés.
+                                    </p>
+                                    <a href='http://portal.diagnosticoadvance.com.ar/portal/WebLogin.aspx?ReturnUrl=/portal/default.aspx' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
+                                    <a href='javascript:void(0)' onClick={this.verVideo} className='btn'>TUTORIAL</a>
+                                </div>
+                            </div>
+                        :
+                            <div className='tutorial'>
+                                <iframe src="https://www.youtube-nocookie.com/embed/osAl97ZemGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <a href='javascript:void(0)' onClick={this.ocultarVideo} ><i className='fa fa-times'></i></a>
+                            </div>
+                        }
                     </div>
 
                     <div className='preguntas'>

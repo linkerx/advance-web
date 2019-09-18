@@ -42,6 +42,14 @@ section#estudio-tomografia .wrapper-central ol > li ul > li::before {
     margin-left: 15px;
 }
 
+section#estudio-tomografia .wrapper-central .atencion {
+    width:90%;
+    margin: 10px;
+    padding: 20px;
+    color: #AA0000;
+    border: 1px solid #AA0000;
+}
+
 section#estudio-tomografia .wrapper-central .examenes ul > li.categoria > ul > li::before {
     content: "\2022";
     color: #eb7832;
@@ -51,6 +59,7 @@ section#estudio-tomografia .wrapper-central .examenes ul > li.categoria > ul > l
     font-size: 1.3em;
     margin-left: 15px;
 }
+
 
 section#estudio-tomografia .wrapper-central .examenes ul > li {
     margin-left: 20px;

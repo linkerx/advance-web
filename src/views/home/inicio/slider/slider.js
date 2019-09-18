@@ -120,7 +120,7 @@ class WpSlider extends React.Component {
   isActive(id) {
     if(this.state.current){
       return this.state.current.items.find(function(item) {
-          return item.id == id;
+          return item.id === id;
       })
     }
     return false;
@@ -163,7 +163,7 @@ class WpSlider extends React.Component {
 
   lastPage(){
     var response = Math.floor(this.state.options.listCount / this.state.options.pageCount);
-    if(((this.state.options.listCount / this.state.options.pageCount) - response) == 0) {
+    if(((this.state.options.listCount / this.state.options.pageCount) - response) === 0) {
       return response;
     } else {
       return response + 1;
@@ -171,7 +171,7 @@ class WpSlider extends React.Component {
   }
 
   nextPage(){
-    if(this.state.current.page == this.lastPage()) {
+    if(this.state.current.page === this.lastPage()) {
       return 1;
     } else {
       return this.state.current.page + 1;
@@ -179,7 +179,7 @@ class WpSlider extends React.Component {
   }
 
   backPage(){
-    if(this.state.current.page == 1) {
+    if(this.state.current.page === 1) {
       return this.lastPage();
     } else {
       return this.state.current.page - 1;
@@ -196,9 +196,8 @@ class WpSlider extends React.Component {
             this.props.children
             :
             this.state.items.map(function (item, index) {
-              var active = false;
               if(this.isActive(item.id)){
-                active = true;
+                return (<div>active</div>)
               }
               return (<div>hola</div>)
             }.bind(this))
@@ -233,7 +232,7 @@ class WpSlider extends React.Component {
           {
             Array.apply(null,{length: this.lastPage()}).map(Number.call,Number).map(function(item, index){
               var activeClass = 'inactive';
-              if(this.state.current && this.state.current.page == item+1){
+              if(this.state.current && this.state.current.page === item+1){
                 activeClass = 'active';
               }
 
