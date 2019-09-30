@@ -14,6 +14,7 @@ import Equipamiento from 'views/equipamiento';
 import Contacto from 'views/contacto';
 import AreaMedica from 'views/area-medica';
 import FlechaArriba from 'views/flecha-arriba';
+import ObrasSociales from 'views/obras-sociales';
 import './app.scss';
 
 class App extends React.Component {
@@ -54,6 +55,7 @@ class App extends React.Component {
             <Route exact path='/pacientes' component={Pacientes} />
             <Route exact path='/equipamiento' component={Equipamiento} />
             <Route exact path='/area-medica' component={AreaMedica} />
+            <Route exact path='/obras-sociales' component={ObrasSociales} />
             <Route exact path='/contacto' component={Contacto} />
           </Switch>
           <Footer />

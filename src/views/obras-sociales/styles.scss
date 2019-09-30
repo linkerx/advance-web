@@ -1,0 +1,28 @@
+@import 'styles/variables/mqueries.scss';
+
+section#obras-sociales h1 {
+    background-color: #62c9d8;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+section#obras-sociales .wrapper-central {
+    padding: 50px 0;
+}
+
+section#obras-sociales ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#obras-sociales ul li {
+    text-align: center;
+    font-size: 24px;
+    color: #62c9d8;
+    width:300px;
+    margin: 30px;
+}

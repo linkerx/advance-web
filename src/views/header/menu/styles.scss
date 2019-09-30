@@ -38,17 +38,20 @@ section#home-menu .menu {
 
 section#home-menu .menu ul {
     display: flex;
-    float: right;
     flex-wrap: wrap;
-    margin-right: 210px;
+    position: absolute;
+    justify-content: flex-end;
+    top: 55px;
+    left: 332px;
+    right: 200px;
 }
 
 section#home-menu .menu ul li {
-    margin-right: 40px;
-    margin-top: 64px;
-    list-style: none;
+    margin: 5px 10px;
+    width: 140px;
+    text-align: center;
     @media #{$wide} {
-        margin-right: 20px;
+        width: 120px;
     }
 }
 
@@ -56,6 +59,9 @@ section#home-menu .menu ul li a {
     font-size: 1.2em;
     color: #555;
     text-decoration: none;
+    @media #{$wide} {
+        font-size: 1em;
+    }
 }
 
 
