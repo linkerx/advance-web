@@ -26,6 +26,7 @@ class FullMenu extends React.Component {
                         <li onClick={() => this.props.closeMenu()}><NavLink to='/estudios'>ESTUDIOS</NavLink></li>
                         <li onClick={() => this.props.closeMenu()}><NavLink to='/pacientes'>PACIENTES</NavLink></li>
                         <li onClick={() => this.props.closeMenu()}><NavLink to='/equipamiento'>EQUIPAMIENTO</NavLink></li>
+                        <li onClick={() => this.props.closeMenu()}><NavLink to='/obras-sociales'>OBRAS SOCIALES</NavLink></li>
                         <li onClick={() => this.props.closeMenu()}><NavLink to='/area-medica'>ÁREA MÉDICA</NavLink></li>
                         <li onClick={() => this.props.closeMenu()}><NavLink to='/contacto'>CONTACTO</NavLink></li>
                     </ul>
