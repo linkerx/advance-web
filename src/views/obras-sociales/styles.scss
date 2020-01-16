@@ -9,6 +9,17 @@ section#obras-sociales h1 {
     font-weight: bold;
 }
 
+section#obras-sociales p.subtitulo {
+    font-size: 1.3em;
+    width:800px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    line-height: 1.8em;
+    max-width: 96%;
+}
+
 section#obras-sociales .wrapper-central {
     padding: 50px 0;
 }
@@ -20,9 +31,20 @@ section#obras-sociales ul {
 }
 
 section#obras-sociales ul li {
+    list-style: none;
     text-align: center;
-    font-size: 24px;
+    color: #777;
+    padding: 30px;
+    width: 250px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section#obras-sociales ul li::before{
+    content: "\2022";
     color: #62c9d8;
-    width:300px;
-    margin: 30px;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
 }

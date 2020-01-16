@@ -7,7 +7,7 @@ class ObrasSociales extends React.Component {
             <section id='obras-sociales'>
                 <h1>OBRAS SOCIALES</h1>
                 <div className='wrapper-central'>
-
+                    <p className='subtitulo'>Trabajamos con las siguientes obras sociales, prepagas y mutuales. Estamos ampliando nuestra cartilla. Si tenés dudas, contactanos.</p>
                     <ul>
                         <li>ACA SALUD</li>
                         <li>FEDERADA SALUD</li>
