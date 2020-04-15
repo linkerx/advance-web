@@ -1,0 +1,111 @@
+section#estudio-resonancia h1 {
+    background-color: #62c9d8;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+section#estudio-resonancia .wrapper-central {
+    padding: 50px 0;
+}
+
+section#estudio-resonancia .wrapper-central p.subtitulo {
+    font-size: 1.3em;
+    width:800px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 80px;
+    line-height: 1.8em;
+    max-width: 80%;
+}
+
+section#estudio-resonancia .wrapper-central img {
+    width:100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+section#estudio-resonancia .wrapper-central ol > li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+section#estudio-resonancia .wrapper-central ol > li ul > li::before {
+    content: "\2022";
+    color: #62c9d8;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul > li::before {
+    content: "\2022";
+    color: #5aa838;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li {
+    margin-left: 20px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > span {
+    font-size: 1.2em;
+    color: #5aa838;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div {
+    display: inline-block;
+    position:relative;
+    width: 10px;
+    height: 17px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div i {
+    font-size: 1.2em;
+    color: #5aa838;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div i.fa-sort-up {
+    top:8px;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.closed {
+    display:none;
+}
+
+section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.open {
+    display:block;
+}
+
+section#estudio-resonancia .wrapper-central .preguntas .preg {
+    font-size: 1.2em;
+    color: #5aa838;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+section#estudio-resonancia .wrapper-central .preguntas .resp.open {
+    display:block;
+    margin: 20px;
+}
+
+section#estudio-resonancia .wrapper-central .preguntas .resp.closed {
+    display:none;
+}

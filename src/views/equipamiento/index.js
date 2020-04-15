@@ -118,6 +118,37 @@ Speckle Reduction (SR); Precision Imaging;  Aplipure+; y Tissue Specific Optimiz
 </div>
 </li>
 
+<li>
+
+<img src='/images/equipos/mamografo.jpg' />
+<div className='info'>
+
+<h3>MAMÓGRAFO Pristina Dueta - General Electric.</h3>
+Seleccionado por la revista Time como uno de los mejores inventos científicos del 2019.
+
+<ul>
+<li>Primer dispositivo de la industria a nivel mundial que permite a las propias pacientes 
+    determinar el nivel de compresión mamaria, con la ayuda de un control remoto y bajo la supervisión de un técnico.
+</li>
+<li>4 de cada 5 pacientes que usaron Pristina Dueta dijeron que hizo que el examen fuera más cómodo, 
+    y más de la mitad dijo que el dispositivo disminuyó la ansiedad.
+</li>
+<li>
+Diseñado por mujeres, el innovador equipo cuenta con apoyabrazos y con un protector facial 
+que ofrece un apoyo para la cabeza, permitiendo relajar cuello y hombros.
+</li>
+<li>Al lograr que la paciente se sienta más cómoda y relajada, se agiliza y facilita todo el proceso y 
+    se obtienen imágenes más profundas y definidas que permiten realizar diagnósticos más precisos.
+</li>
+<li>
+El equipo posee partes móviles que ayudan a los técnicos a colocar a 
+la paciente en la posición correcta sin hacer esfuerzos físicos.
+
+</li>
+</ul>
+</div>
+</li>
+
 
                 </ul>
             </div>

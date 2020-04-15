@@ -16,23 +16,20 @@ section#estudios h1 {
 
 section#estudios ul {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-
     @media #{$all-narrow} {
-        display:block;
+        flex-wrap: wrap;
     }
 }
 
 section#estudios li {
-    width: 28vw;
-    margin: 2vw;
-    height: 32vh;
+    width: 350px;
+    margin: 20px;
+    height: 300px;
     list-style: none;
     @media #{$all-narrow} {
-        width: 96%;
-        height:auto;
-        margin-top: 20px;
+        width: 96vw;
     }
 }
 
@@ -63,10 +60,17 @@ section#estudios li.ecografia .linea {
     background-color: #6f569f;
 }
 
+section#estudios li.mamografia .linea {
+    background-color: #d21d72;
+}
+
 section#estudios li img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 250px;
+    @media #{$all-narrow} {
+        height: 80%;
+    }
 }
 
 section#estudios li:hover img {
@@ -88,4 +92,8 @@ section#estudios li.resonancia:hover a {
 
 section#estudios li.ecografia:hover a {
     color: #6f569f;
+}
+
+section#estudios li.mamografia:hover a {
+    color: #d21d72;
 }

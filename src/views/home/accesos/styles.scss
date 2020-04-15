@@ -7,7 +7,7 @@ section#home-accesos {
 
 section#home-accesos ul {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     @media #{$all-narrow} {
         flex-wrap: wrap;
@@ -15,8 +15,8 @@ section#home-accesos ul {
 }
 
 section#home-accesos li {
-    width: 28vw;
-    margin: 2vw;
+    width: 350px;
+    margin: 20px;
     height: 300px;
     list-style: none;
     @media #{$all-narrow} {
@@ -36,8 +36,6 @@ section#home-accesos li .linea {
     margin-bottom: 20px;
 }
 
-section#home-accesos li:hover .linea {
-}
 
 section#home-accesos li.tomografia .linea {
     background-color: #eb7832;
@@ -51,10 +49,14 @@ section#home-accesos li.ecografia .linea {
     background-color: #6f569f;
 }
 
+section#home-accesos li.mamografia .linea {
+    background-color: #d21d72;
+}
+
 section#home-accesos li img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 250px;
     @media #{$all-narrow} {
         height: 80%;
     }
@@ -79,4 +81,8 @@ section#home-accesos li.resonancia:hover a {
 
 section#home-accesos li.ecografia:hover a {
     color: #6f569f;
+}
+
+section#home-accesos li.mamografia:hover a {
+    color: #d21d72;
 }
