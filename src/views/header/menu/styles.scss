@@ -112,3 +112,18 @@ section#home-menu .estudios {
 section#home-menu .estudios a {
     color: #fff;
 }
+
+section#home-menu .covid {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width:100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+section#home-menu .covid a {
+    color: #aa0000
+}

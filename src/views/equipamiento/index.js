@@ -118,7 +118,7 @@ Speckle Reduction (SR); Precision Imaging;  Aplipure+; y Tissue Specific Optimiz
 </div>
 </li>
 
-<li>
+{/*<li>
 
 <img src='/images/equipos/mamografo.jpg' />
 <div className='info'>
@@ -147,7 +147,7 @@ la paciente en la posición correcta sin hacer esfuerzos físicos.
 </li>
 </ul>
 </div>
-</li>
+</li>*/}
 
 
                 </ul>

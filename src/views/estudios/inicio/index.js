@@ -29,13 +29,13 @@ class EstudiosInicio extends React.Component {
                             <img src='/images/estudios/ecografia.png' alt='Ecografías'/>
                         </Link>
                     </li>
-                    <li className='mamografia'>
+                    {/*<li className='mamografia'>
                         <Link to='/estudios/mamografia'>
                             <h2>Mamografía</h2>
                             <div className='linea'></div>
                             <img src='/images/estudios/mamografia.jpg' alt='Mamografías'/>
                         </Link>
-                    </li>
+                    </li>*/}
                 </ul>
             </section>
         )

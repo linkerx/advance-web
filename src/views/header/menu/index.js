@@ -26,6 +26,9 @@ class HomeMenu extends React.Component {
                 <div className='menu-trigger'>
                     <i className="fas fa-bars" onClick={() => this.props.openMenu()}></i>
                 </div>
+                <div className='covid'>
+                    <NavLink to='/covid-19'>COVID-19 | INFORMACIÓN IMPORTANTE | CONOCÉ NUESTRO PROTOCOLO DE TRABAJO</NavLink>
+                </div>
             </section>
         )
     }
