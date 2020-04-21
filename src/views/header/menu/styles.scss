@@ -121,9 +121,12 @@ section#home-menu .covid {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-
+    @media #{$all-narrow} {
+        bottom: 5px;
+        font-size: 0.6em;
+    }
 }
 
 section#home-menu .covid a {
-    color: #aa0000
+    color: #aa0000;
 }
