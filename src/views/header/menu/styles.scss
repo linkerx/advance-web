@@ -3,13 +3,13 @@
 section#home-menu {
     position:relative;
     left: 0;
-    height: 160px;
+    height: 190px;
     width: 100%;
     color: #333;
     z-index: 20;
 
     @media #{$all-narrow} {
-        height: 130px;
+        height: 140px;
     }
 }
 
@@ -115,18 +115,19 @@ section#home-menu .estudios a {
 
 section#home-menu .covid {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 0;
     width:100%;
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
+    padding: 5px;
     @media #{$all-narrow} {
-        bottom: 5px;
         font-size: 0.6em;
     }
+    background-color: #aa0000;
 }
 
 section#home-menu .covid a {
-    color: #aa0000;
+    color: #fff;
 }

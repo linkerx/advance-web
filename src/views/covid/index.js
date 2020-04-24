@@ -12,15 +12,14 @@ class Covid extends React.Component {
 
                     <h2>Conocé nuestro protocolo de trabajo</h2>
 
-                    
-                    <div className='imagen'>
-                        <img src='/images/otras/advance-entrada-low.jpg' alt='frente' />
-                    </div>
-
                     <p className='subtitulo'>
                     En Advance seguimos atendiendo bajo estrictas normas de seguridad e higiene.<br/><br/>
                     <strong>Nuestra prioridad es cuidarnos entre todos.</strong>
                     </p>
+                    
+                    <div className='imagen'>
+                        <img src='/images/otras/advance-entrada-low.jpg' alt='frente' />
+                    </div>
 
                     <h3>Seguridad e higiene</h3>
                     <ul>

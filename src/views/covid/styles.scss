@@ -22,10 +22,11 @@ section#covid .wrapper-central h2 {
 
 section#covid .wrapper-central .imagen {
     width: 100%;
+    text-align: center;
 }
 
 section#covid .wrapper-central .imagen img {
-    width: 100%;    
+    width: 60%;    
 
 }
 
@@ -51,7 +52,7 @@ section#covid .wrapper-central li {
 
 section#covid .wrapper-central p.final {
     text-align:center;
-    font-style: italic;
+    margin-top:80px;
 }
 
 section#covid .wrapper-central p.firma {
