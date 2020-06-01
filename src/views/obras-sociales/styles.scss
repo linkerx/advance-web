@@ -36,15 +36,13 @@ section#obras-sociales ul li {
     color: #777;
     padding: 30px;
     width: 250px;
+    height: 150px;
     font-size: 1.2em;
     text-align: center;
 }
 
-section#obras-sociales ul li::before{
-    content: "\2022";
-    color: #62c9d8;
-    font-weight: bold;
-    display: inline-block;
-    width: 16px;
-    font-size: 1.3em;
+section#obras-sociales ul li img {
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
 }
