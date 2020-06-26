@@ -20,9 +20,9 @@ section#home-menu .logo {
     height: 90px;
 
     @media #{$all-narrow} {
-        top: 12px;
-        left: 15px;
-        height: 80px;
+        top: 15px;
+        left: 12px;
+        height: 60px;
     }
 }
 
@@ -78,8 +78,8 @@ section#home-menu .menu-trigger i {
         display:none;
     }
     position: absolute;
-    top: 50px;
-    right: 30px;
+    top: 45px;
+    right: 20px;
     font-size: 35px;
     color: #555;
     cursor: pointer;
@@ -91,7 +91,7 @@ section#home-menu .menu-trigger i:hover {
 
 section#home-menu .estudios {
     position: absolute;
-    top: 40px;
+    top: 35px;
     right: 30px;
     padding: 15px;
     border-radius: 10px;
@@ -102,7 +102,9 @@ section#home-menu .estudios {
 
     @media #{$all-narrow}, #{$square}  {
         top: 25px;
-        right: 80px;
+        right: 65px;
+        padding: 10px;
+        border-radius: 8px;
     }
 
 }
