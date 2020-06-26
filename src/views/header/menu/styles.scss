@@ -100,7 +100,7 @@ section#home-menu .estudios {
     display: inline-block;
     transition: 0.5s top;
 
-    @media #{$narrow}, #{$square}  {
+    @media #{$all-narrow}, #{$square}  {
         top: 25px;
         right: 80px;
     }
