@@ -19,6 +19,11 @@ section#home-accesos li {
     margin: 20px;
     height: 300px;
     list-style: none;
+
+    @media #{$wide} {
+        width: 40%;
+    }
+
     @media #{$all-narrow} {
         width: 96vw;
     }
@@ -55,7 +60,7 @@ section#home-accesos li.mamografia .linea {
 
 section#home-accesos li img {
     object-fit: cover;
-    width: 350px;
+    width: 100%;
     height: 250px;
     @media #{$all-narrow} {
         height: 80%;
