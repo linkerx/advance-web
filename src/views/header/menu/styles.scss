@@ -41,22 +41,19 @@ section#home-menu .menu ul {
     flex-wrap: wrap;
     position: absolute;
     justify-content: flex-end;
-    top: 55px;
+    top: 60px;
     left: 332px;
-    right: 200px;
+    right: 190px;
 }
 
 section#home-menu .menu ul li {
     margin: 5px 10px;
-    width: 140px;
     text-align: center;
-    @media #{$wide} {
-        width: 120px;
-    }
 }
 
 section#home-menu .menu ul li a {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: bold;
     color: #555;
     text-decoration: none;
     @media #{$wide} {
@@ -104,7 +101,8 @@ section#home-menu .estudios {
     transition: 0.5s top;
 
     @media #{$all-narrow}, #{$square}  {
-        display:none;
+        top: 25px;
+        right: 80px;
     }
 
 }
