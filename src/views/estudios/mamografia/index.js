@@ -63,14 +63,19 @@ class EstudioResonancia extends React.Component {
                 <div className='wrapper-central'>
                     <p className='subtitulo'>
                     
-                    La mamografía es el estudio radiológico de las glándulas mamarias. Permite prevenir el cáncer de mama y anticipar en años su diagnóstico, 
-ya que a partir de chequeos de rutina es posible detectarlo en sus estadíos iniciales, incluso antes de que sea palpable o se presenten síntomas.
-
-<strong>Más comodidad. Mejores resultados.</strong>
-
-Contamos con el equipamiento que revoluciona la mamografía a nivel mundial. 
-Se trata de Pristina Dueta de General Electric, el primer mamógrafo de la industria que permite a las propias pacientes determinar el nivel de compresión mamaria, con la ayuda de un control remoto y bajo la supervisión de un técnico. Al brindar mayor comodidad y confianza se obtienen imágenes más profundas y definidas, a partir de las cuales los médicos pueden realizar diagnósticos más precisos.
-<br /><br /><a href='/equipamiento'>Más información</a>​
+                    La mamografía es el estudio radiológico de las glándulas mamarias. 
+                    Permite anticipar en años el diagnóstico de cáncer de mama, 
+                    ya que a partir de chequeos de rutina es posible detectarlo en sus estadíos iniciales, 
+                    incluso antes de que sea palpable o se presenten síntomas.
+<br /><br />
+<h4>Más comodidad. Mejores resultados.</h4>
+<br />
+           Contamos con el equipamiento que revoluciona la mamografía a nivel mundial. 
+            Se trata de Pristina Dueta de General Electric, 
+            el primer mamógrafo de la industria que permite a las propias pacientes determinar el nivel de compresión mamaria, 
+            con la ayuda de un control remoto y bajo la supervisión de un técnico. Al brindar mayor comodidad 
+            y confianza se obtienen imágenes más profundas y definidas, 
+            a partir de las cuales los médicos pueden realizar diagnósticos más precisos.<br /><br /><a href='/equipamiento'>Más información</a>​
                     </p>
                     
                     <img src='/images/estudios/mamografia.jpg' alt='Mamografía' />
@@ -139,8 +144,11 @@ Para saber más sobre nuestro equipamiento, ingresar <a href='/equipamiento'>aqu
 
                             <li>
                                 <div className='preg' onClick={() => this.openPregunta(7)}>¿La mamografía sirve para prevenir o tengo que tener algún síntoma para realizarme el estudio?</div>
-                                <div className={"resp "+(this.state.preguntaOpen === 7 ? 'open' : 'closed')}>La mamografía permite prevenir el cáncer de mama y anticipar en años su diagnóstico. Es decir, a partir de chequeos de rutina es posible detectarlo en sus estadíos iniciales, incluso antes de que sea palpable o se presenten síntomas.
-</div>
+                                <div className={"resp "+(this.state.preguntaOpen === 7 ? 'open' : 'closed')}>
+                                La mamografía permite anticipar en años el diagnóstico de cáncer de mama. 
+                                Es decir, a partir de chequeos de rutina es posible detectarlo en sus estadíos iniciales, 
+                                incluso antes de que sea palpable o se presenten síntomas.
+</div>  
                             </li>
 
                             <li>
