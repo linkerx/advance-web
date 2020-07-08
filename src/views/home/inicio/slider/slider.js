@@ -63,8 +63,8 @@ class WpSlider extends React.Component {
         id: 1,
         img: "/images/slider/mamografia.jpg",
         texto: "<h3>Servicio de mamografía</h3><div class='linea'></div>Realizá tus estudios de rutina con un equipamiento único en la región. Más comodidad, mejores resultados.",
-        link: "/pacientes",
-        textoLink: "Solicitar turno"
+        link: "/estudios/mamografia",
+        textoLink: "Ver más"
       },
       {
         id: 2,

@@ -36,7 +36,7 @@ class Pacientes extends React.Component {
                     <div className='turnos'>
                     <h2>Gestión de turnos</h2>
                     <p>
-                        <strong>Para solicitar turnos, contactarse de lunes a viernes de 08.00 a 20.00 horas.</strong>
+                        <strong>Para solicitar turnos, contactarse de lunes a viernes de 07.00 a 23.00 y/o sábados de 09.00 a 13.00. </strong>
                     </p>
 
                     <div className='info'>

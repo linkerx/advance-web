@@ -58,18 +58,23 @@ class EstudioResonancia extends React.Component {
         }
         
         return(
-            <section id='estudio-resonancia'>
+            <section id='estudio-mamografia'>
                 <h1>MAMOGRAFÍA</h1>
                 <div className='wrapper-central'>
-                    <p className='subtitulo'>
+                <p className='subtitulo'>
                     
                     La mamografía es el estudio radiológico de las glándulas mamarias. 
                     Permite anticipar en años el diagnóstico de cáncer de mama, 
                     ya que a partir de chequeos de rutina es posible detectarlo en sus estadíos iniciales, 
                     incluso antes de que sea palpable o se presenten síntomas.
-<br /><br />
+                    </p>
 <h4>Más comodidad. Mejores resultados.</h4>
 <br />
+<div className='boton-pdf'>
+    <a href='/files/advance_mamografia.pdf' target='_blank'><i className="far fa-file-pdf"></i>&nbsp;Más información</a>
+</div>
+<br />
+<p className='subtitulo'>
            Contamos con el equipamiento que revoluciona la mamografía a nivel mundial. 
             Se trata de Pristina Dueta de General Electric, 
             el primer mamógrafo de la industria que permite a las propias pacientes determinar el nivel de compresión mamaria, 

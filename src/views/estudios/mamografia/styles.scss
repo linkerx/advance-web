@@ -1,4 +1,4 @@
-section#estudio-resonancia h1 {
+section#estudio-mamografia h1 {
     background-color: #62c9d8;
     color: #fff;
     text-align: center;
@@ -7,11 +7,11 @@ section#estudio-resonancia h1 {
     font-weight: bold;
 }
 
-section#estudio-resonancia .wrapper-central {
+section#estudio-mamografia .wrapper-central {
     padding: 50px 0;
 }
 
-section#estudio-resonancia .wrapper-central p.subtitulo {
+section#estudio-mamografia .wrapper-central p.subtitulo {
     font-size: 1.3em;
     width:800px;
     text-align: center;
@@ -21,18 +21,45 @@ section#estudio-resonancia .wrapper-central p.subtitulo {
     max-width: 80%;
 }
 
-section#estudio-resonancia .wrapper-central img {
+section#estudio-mamografia .wrapper-central .boton-pdf {
+    color: #fff;
+    background-color: #AA0000;
+    padding:10px;
+    border-radius: 8px;
+    width: 150px;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section#estudio-mamografia .wrapper-central .boton-pdf a {
+    color: #fff;
+}
+
+section#estudio-mamografia .wrapper-central .boton-pdf:hover {
+    background-color: #CC3333;
+}
+
+section#estudio-mamografia .wrapper-central h4 {
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section#estudio-mamografia .wrapper-central img {
     width:100%;
     max-height: 400px;
     object-fit: cover;
 }
 
-section#estudio-resonancia .wrapper-central ol > li {
+section#estudio-mamografia .wrapper-central ol > li {
     list-style: decimal;
     list-style-position: inside;
 }
 
-section#estudio-resonancia .wrapper-central ol > li ul > li::before {
+section#estudio-mamografia .wrapper-central ol > li ul > li::before {
     content: "\2022";
     color: #62c9d8;
     font-weight: bold;
@@ -42,7 +69,7 @@ section#estudio-resonancia .wrapper-central ol > li ul > li::before {
     margin-left: 15px;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul > li::before {
+section#estudio-mamografia .wrapper-central .examenes ul > li.categoria > ul > li::before {
     content: "\2022";
     color: #5aa838;
     font-weight: bold;
@@ -52,18 +79,18 @@ section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul > l
     margin-left: 15px;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li {
+section#estudio-mamografia .wrapper-central .examenes ul > li {
     margin-left: 20px;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > span {
+section#estudio-mamografia .wrapper-central .examenes ul > li.categoria > span {
     font-size: 1.2em;
     color: #5aa838;
     font-weight: bold;
     cursor: pointer;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div {
+section#estudio-mamografia .wrapper-central .examenes ul > li.categoria > div {
     display: inline-block;
     position:relative;
     width: 10px;
@@ -72,7 +99,7 @@ section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div {
     margin-top: 3px;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div i {
+section#estudio-mamografia .wrapper-central .examenes ul > li.categoria > div i {
     font-size: 1.2em;
     color: #5aa838;
     font-weight: bold;
@@ -82,30 +109,30 @@ section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div i 
     cursor: pointer;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > div i.fa-sort-up {
+section#estudio-mamografia .wrapper-central .examenes ul > li.categoria > div i.fa-sort-up {
     top:8px;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.closed {
+section#estudio-mamografia .wrapper-central .examenes ul > li.categoria > ul.closed {
     display:none;
 }
 
-section#estudio-resonancia .wrapper-central .examenes ul > li.categoria > ul.open {
+section#estudio-mamografia .wrapper-central .examenes ul > li.categoria > ul.open {
     display:block;
 }
 
-section#estudio-resonancia .wrapper-central .preguntas .preg {
+section#estudio-mamografia .wrapper-central .preguntas .preg {
     font-size: 1.2em;
     color: #5aa838;
     font-weight: bold;
     cursor: pointer;    
 }
 
-section#estudio-resonancia .wrapper-central .preguntas .resp.open {
+section#estudio-mamografia .wrapper-central .preguntas .resp.open {
     display:block;
     margin: 20px;
 }
 
-section#estudio-resonancia .wrapper-central .preguntas .resp.closed {
+section#estudio-mamografia .wrapper-central .preguntas .resp.closed {
     display:none;
 }
