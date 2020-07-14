@@ -11,7 +11,8 @@ class EstudioResonancia extends React.Component {
             examenesOpen: null,
             preguntaOpen: null,
             examenes: null,
-            preguntas: null 
+            preguntas: null,
+            box_open: false
         }
 
         this.openExamenes = this.openExamenes.bind(this);
@@ -43,6 +44,12 @@ class EstudioResonancia extends React.Component {
     }
 
     render(){
+
+        var estadoBox = 'cerrado';
+        if(this.state.box_open) {
+            estadoBox = 'abierto';
+        }
+
         var classComunes = 'closed';
         var classEspeciales = 'closed';
         var classGuiados = 'closed';
@@ -70,8 +77,9 @@ class EstudioResonancia extends React.Component {
                     </p>
 <h4>Más comodidad. Mejores resultados.</h4>
 <br />
+
 <div className='boton-pdf'>
-    <a href='/files/advance_mamografia.pdf' target='_blank'><i className="far fa-file-pdf"></i>&nbsp;Más información</a>
+    <a href='https://docs.google.com/viewerng/viewer?url=http://diagnosticoadvance.com.ar/files/advance_mamografia.pdf' target='_blank'><i className="far fa-file-pdf"></i>&nbsp;Más información</a>
 </div>
 <br />
 <p className='subtitulo'>
