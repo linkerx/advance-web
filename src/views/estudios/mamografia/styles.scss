@@ -1,3 +1,5 @@
+@import 'styles/variables/mqueries.scss';
+
 section#estudio-mamografia h1 {
     background-color: #62c9d8;
     color: #fff;
@@ -47,6 +49,10 @@ section#estudio-mamografia #flotante .controles {
     height: 30px;
     text-align: center;
     z-index: 95;
+
+    @media #{$all-narrow} {
+        bottom: 80px;
+    }
 }
 
 section#estudio-mamografia #flotante .controles > button {
@@ -71,6 +77,10 @@ section#estudio-mamografia #flotante .cerrar {
     text-align: center;
     z-index: 95;
     cursor: pointer;
+    
+    @media #{$all-narrow} {
+        bottom: 60px;
+    }
 }
 
 section#estudio-mamografia #flotante .react-pdf__Document .react-pdf__Page {
