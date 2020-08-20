@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Document, Page, Outline } from 'react-pdf/dist/entry.webpack';
+
 import './styles.scss';
 
-class EstudioResonancia extends React.Component {
+class EstudioMamografia extends React.Component {
 
     constructor(props) {
         super(props);
@@ -12,11 +14,24 @@ class EstudioResonancia extends React.Component {
             preguntaOpen: null,
             examenes: null,
             preguntas: null,
-            box_open: false
+            box_open: false,
+            pdf_open: false,
+            pdf_pages: null,
+            pdf_page: 1
         }
 
         this.openExamenes = this.openExamenes.bind(this);
         this.openPregunta = this.openPregunta.bind(this);
+        this.openPDF = this.openPDF.bind(this);
+        this.closePDF = this.closePDF.bind(this);
+        this.escPDF = this.escPDF.bind(this);
+        this.pdfOnLoadSuccess = this.pdfOnLoadSuccess.bind(this);
+        this.pdfOnLoadError = this.pdfOnLoadError.bind(this);
+        this.changePage = this.changePage.bind(this);
+    }
+
+    componentDidMount() {
+        this.openPDF();
     }
 
     openExamenes(text){
@@ -43,6 +58,39 @@ class EstudioResonancia extends React.Component {
         }
     }
 
+    escPDF(event) {
+        if(event.keyCode === 27) {
+            this.closePDF();
+        }
+    }
+
+    openPDF() {
+        document.addEventListener("keydown", this.escPDF, false);
+        this.setState({
+            pdf_open: true
+        })
+    }
+
+    closePDF() {
+        document.removeEventListener("keydown", this.escPDF, false);
+        this.setState({
+            pdf_open: false
+        })
+    }
+
+    pdfOnLoadError(error) {
+        //alert('Error: ' + error.message)
+    }
+    
+    pdfOnLoadSuccess = (pdf) => {
+        console.log("PDF!!!!",pdf);
+        this.setState({pdf_pages:pdf.numPages});
+    }
+
+    changePage() {
+        this.setState({pdf_page: 3 - this.state.pdf_page});
+    }
+
     render(){
 
         var estadoBox = 'cerrado';
@@ -64,8 +112,44 @@ class EstudioResonancia extends React.Component {
             classGuiados = 'open';
         }
         
+        var estadoPDF = 'cerrado';
+        if(this.state.pdf_open) {
+            estadoPDF = 'abierto';
+        }
+
         return(
             <section id='estudio-mamografia'>
+                <div id='flotante' className={estadoPDF} >
+                    <div className='fondo' onClick={this.closePDF}></div>
+                    <div className='cerrar' onClick={this.closePDF}><i className="far fa-times-circle" ></i></div>
+                    <Document 
+                        file="/files/advance_mamografia.pdf" 
+                        onLoadError={(error) => this.pdfOnLoadError(error)}
+                        onLoadSuccess={numpages => this.pdfOnLoadSuccess(numpages)}
+                    >
+                        <Page pageNumber={this.state.pdf_page} onClick={this.changePage} height={window.innerHeight-100}/>
+                    </Document>
+                    <div className="controles">
+                        <button
+                            disabled={this.state.pdf_page <= 1}
+                            onClick={() => (this.setState({pdf_page: this.state.pdf_page-1 }))}
+                            type="button"
+                        >
+                            <i className="fas fa-angle-left"></i>
+                        </button>
+                        <span>
+                            {`Pagina ${this.state.pdf_page || (this.state.pdf_pages ? 1 : '--')} de ${this.state.pdf_pages || '--'}`}
+                        </span>
+                        <button
+                            disabled={this.state.pdf_page >= this.state.pdf_pages}
+                            onClick={() => (this.setState({pdf_page: this.state.pdf_page+1 }))}
+                            type="button"
+                        >
+                            <i className="fas fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
                 <h1>MAMOGRAFÍA</h1>
                 <div className='wrapper-central'>
                 <p className='subtitulo'>
@@ -76,21 +160,17 @@ class EstudioResonancia extends React.Component {
                     incluso antes de que sea palpable o se presenten síntomas.
                     </p>
 <h4>Más comodidad. Mejores resultados.</h4>
-<br />
-
-<div className='boton-pdf'>
-    <a href='https://docs.google.com/viewerng/viewer?url=http://diagnosticoadvance.com.ar/files/advance_mamografia.pdf' target='_blank'><i className="far fa-file-pdf"></i>&nbsp;Más información</a>
-</div>
-<br />
+<br/>
 <p className='subtitulo'>
            Contamos con el equipamiento que revoluciona la mamografía a nivel mundial. 
             Se trata de Pristina Dueta de General Electric, 
             el primer mamógrafo de la industria que permite a las propias pacientes determinar el nivel de compresión mamaria, 
             con la ayuda de un control remoto y bajo la supervisión de un técnico. Al brindar mayor comodidad 
             y confianza se obtienen imágenes más profundas y definidas, 
-            a partir de las cuales los médicos pueden realizar diagnósticos más precisos.<br /><br /><a href='/equipamiento'>Más información</a>​
+            a partir de las cuales los médicos pueden realizar diagnósticos más precisos.
                     </p>
-                    
+                    <div className='boton-pdf' onClick={this.openPDF}><i className="far fa-file-pdf"></i>&nbsp;Más información</div>
+                    <br/>
                     <img src='/images/estudios/mamografia.jpg' alt='Mamografía' />
                     <h2>Antes del estudio</h2>
                     <ol>
@@ -187,4 +267,4 @@ Para saber más sobre nuestro equipamiento, ingresar <a href='/equipamiento'>aqu
     }
 }
 
-export default EstudioResonancia;
+export default EstudioMamografia;

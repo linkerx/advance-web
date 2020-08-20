@@ -26,7 +26,7 @@ class Footer extends React.Component {
                     </div>
                     <div className='der'>
                         <div className='horarios'>
-                            <h3>Horario de atención especial por aislamiento</h3>
+                            <h3>Horario de atención</h3>
                             <div className='linea'></div>
                             <span>
                                 Lunes a viernes - 07.00 a 23.00<br/>

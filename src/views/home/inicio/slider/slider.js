@@ -248,8 +248,8 @@ class WpSlider extends React.Component {
           }
           </ul>
         </div>
-        <div className='arrowLeft' onClick={this.back}><i class="fas fa-chevron-left"></i></div>
-        <div className='arrowRight' onClick={this.next}><i class="fas fa-chevron-right"></i></div>
+        <div className='arrowLeft' onClick={this.back}><i className="fas fa-chevron-left"></i></div>
+        <div className='arrowRight' onClick={this.next}><i className="fas fa-chevron-right"></i></div>
       </div>
     )
   }
