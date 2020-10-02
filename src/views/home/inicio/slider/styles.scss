@@ -67,6 +67,10 @@ section#home-slider .slider-container .texto .linea {
     margin: 20px 0;
 }
 
+section#home-slider .slider-container.rosa .linea {
+    background-color: #f27eb0;
+}
+
 section#home-slider .slider-container .btn {
     padding: 15px;
     border-radius: 10px;
@@ -76,6 +80,10 @@ section#home-slider .slider-container .btn {
     background-color: #62c9d8;
     margin-top: 20px;
     display: inline-block;
+}
+
+section#home-slider .slider-container.rosa .btn {
+    background-color: #f27eb0;
 }
 
 section#home-slider .navigation {

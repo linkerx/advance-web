@@ -64,21 +64,24 @@ class WpSlider extends React.Component {
         img: "/images/slider/mamografia.jpg",
         texto: "<img src='/images/lazo-rosa-cancer.png' style='position:absolute;top:-100px;height: 90px;left: -10px;' /><h3>Semana de Prevención del Cáncer de Mama</h3><div class='linea'></div>Realizá tus estudios de rutina con un equipamiento único en la región. Más comodidad, mejores resultados.",
         link: "/estudios/mamografia",
-        textoLink: "Ver más"
+        textoLink: "Ver más",
+        clase: "rosa"
       },
       {
         id: 2,
         img: "/images/comp/3186.jpg",
         texto: "<h3>Servicios de vanguardia</h3><div class='linea'></div>Reservá tu lugar para estudios de Resonancia, Tomografía y Ecografía.",
         link: "/pacientes",
-        textoLink: "Solicitar turno"
+        textoLink: "Solicitar turno",
+        clase: "normal"
       },
       {
         id: 3,
         img: "/images/comp/3214.jpg",
         texto: "<h3>Tu salud en buenas manos</h3><div class='linea'></div>Trabajamos con la mejor tecnología y un equipo médico especializado en diagnóstico por imágenes para brindarte la atención que buscás.",
         link: "/institucional",
-        textoLink: "Conocenos"
+        textoLink: "Conocenos",
+        clase: "normal"
       },
       /*
       {
@@ -94,7 +97,8 @@ class WpSlider extends React.Component {
         img: "/images/slider/online.jpg",
         texto: "<h3>Mirá tus estudios desde donde estés</h3><div class='linea'></div>Accedé a tus resultados de manera exclusiva y confidencial.",
         link: "//portal.diagnosticoadvance.com.ar",
-        textoLink: "Ver mis estudios online"
+        textoLink: "Ver mis estudios online",
+        clase: "normal"
       },
     ]
 
@@ -219,8 +223,10 @@ class WpSlider extends React.Component {
             :
             this.state.current.items.map(function (item, index) {
              
+              const clsl = 'slider-container '+ item.clase;
+
               return (
-                <div className='slider-container'>
+                <div className={clsl}>
                   
                   <Parallax bgImage={item.img} strength={500}>
                   </Parallax>
