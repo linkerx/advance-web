@@ -59,6 +59,7 @@ class WpSlider extends React.Component {
   updateItems(){
 
     var items = [
+      /*
       {
         id: 1,
         img: "/images/slider/mamografia.jpg",
@@ -66,6 +67,15 @@ class WpSlider extends React.Component {
         link: "/estudios/mamografia",
         textoLink: "Ver más",
         clase: "rosa"
+      },
+      */
+     {
+      id: 1,
+      img: "/images/slider/mamografia.jpg",
+      texto: "<h3>Mamografías con la mejor tecnología</h3><div class='linea'></div>Realizá tus chequeos de rutina con seguridad.",
+      link: "/estudios/mamografia",
+      textoLink: "Ver más",
+      clase: "normal"
       },
       {
         id: 2,

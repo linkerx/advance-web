@@ -31,7 +31,7 @@ class EstudioMamografia extends React.Component {
     }
 
     componentDidMount() {
-        this.openPDF();
+        //this.openPDF();
     }
 
     openExamenes(text){
@@ -129,6 +129,7 @@ class EstudioMamografia extends React.Component {
                     >
                         <Page pageNumber={this.state.pdf_page} onClick={this.changePage} height={window.innerHeight-100}/>
                     </Document>
+                    
                     <div className="controles">
                         <button
                             disabled={this.state.pdf_page <= 1}
@@ -169,7 +170,11 @@ class EstudioMamografia extends React.Component {
             y confianza se obtienen imágenes más profundas y definidas, 
             a partir de las cuales los médicos pueden realizar diagnósticos más precisos.
                     </p>
-                    <div className='boton-pdf' onClick={this.openPDF}><i className="far fa-file-pdf"></i>&nbsp;Más información</div>
+                    { /*   <div className='boton-pdf' onClick={this.openPDF}><i className="far fa-file-pdf"></i>&nbsp;Más información</div>*/}
+                    
+                    <div className='boton-pdf'>
+                        <a href='https://docs.google.com/viewerng/viewer?url=http://diagnosticoadvance.com.ar/files/advance_mamografia.pdf' target='_blank'><i className="far fa-file-pdf"></i>&nbsp;Más información</a>
+                    </div>
                     <br/>
                     <img src='/images/estudios/mamografia.jpg' alt='Mamografía' />
                     <h2>Antes del estudio</h2>
