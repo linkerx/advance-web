@@ -114,7 +114,7 @@ class Contacto extends React.Component {
                         </div>
                         <div className='email'>
                             <i className="fas fa-envelope"></i>
-                            <span><a href='mailto:info@diagnosticoadvance.com​'>info@diagnosticoadvance.com</a></span>
+                            <span><a href='mailto:info@diagnosticoadvance.com​'>info@diagnosticoadvance.com.ar</a></span>
                         </div>
                         <div className='telefono'>
                             <i className="fas fa-phone"></i>
