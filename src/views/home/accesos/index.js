@@ -18,7 +18,7 @@ class HomeAccesos extends React.Component {
                         <Link to='/estudios/resonancia'>
                             <h2>Resonancia Magnética</h2>
                             <div className='linea'></div>
-                            <img src='/images/equipos/resonador.jpg' alt='Resonancias Magnéticas' />
+                            <img src='/images/estudios/resonancia.jpg' alt='Resonancias Magnéticas' />
                         </Link>
                     </li>
                     <li className='ecografia'>
