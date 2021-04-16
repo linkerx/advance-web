@@ -34,9 +34,12 @@ section#contacto .wrapper-central .est {
 
 section#contacto .wrapper-central .imagen img {
     width: 100%;    
-    height: 250px;
+    height: 400px;
     object-fit: cover;
-    object-position: 38%;
+    object-position: center 75%;
+    @media #{$all-narrow} {
+        height: 250px;
+    }
 }
 
 section#contacto .wrapper-central .cajas {

@@ -9,7 +9,7 @@ class ObrasSociales extends React.Component {
                 <div className='wrapper-central'>
                     <p className='subtitulo'>Trabajamos con las siguientes obras sociales, prepagas y mutuales. Estamos ampliando nuestra cartilla. Si tenés dudas, contactanos.</p>
                     <ul>
-                        <li><img src='/images/osoc/acasalud.png' /></li>
+                        <li><img src='/images/osoc/avalian.jpeg' /></li>
                         <li><img src='/images/osoc/federadasalud.png' /></li>
                         <li><img src='/images/osoc/horizonteseguros.png' /></li>
                         <li><img src='/images/osoc/ipross.png' /></li>
