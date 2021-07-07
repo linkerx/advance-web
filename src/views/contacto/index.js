@@ -101,8 +101,8 @@ class Contacto extends React.Component {
                 <div className='horarios'>
                             <div className='linea'></div>
                             <span>
-                                Lunes a viernes - 07.00 a 23.00<br/>
-                                Sábado - 09.00 a 13.00<br/>
+                                Lunes a viernes - 06.00 a 23.00<br/>
+                                Sábado - 08.00 a 13.00<br/>
                                 Domingo - Cerrado<br/>
                             </span>
                             <div className='linea'></div>
