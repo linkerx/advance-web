@@ -59,24 +59,24 @@ class WpSlider extends React.Component {
   updateItems(){
 
     var items = [
-      /*
+      
       {
         id: 1,
         img: "/images/slider/mamografia.jpg",
-        texto: "<img src='/images/lazo-rosa-cancer.png' style='position:absolute;top:-100px;height: 90px;left: -10px;' /><h3>Semana de Prevención del Cáncer de Mama</h3><div class='linea'></div>Realizá tus estudios de rutina con un equipamiento único en la región. Más comodidad, mejores resultados.",
+        texto: "<img src='/images/lazo-rosa-cancer.png' style='position:absolute;top:-100px;height: 90px;left: -10px;' /><h3>Octubre Rosa</h3><div class='linea'></div>Mes de concientización sobre el Cáncer de Mama. Recordá siempre tu control anual.",
         link: "/estudios/mamografia",
         textoLink: "Ver más",
         clase: "rosa"
       },
-      */
-     {
+      
+     /*{
       id: 1,
       img: "/images/slider/mamografia.jpg",
       texto: "<h3>Mamografías con la mejor tecnología</h3><div class='linea'></div>Realizá tus chequeos de rutina con seguridad.",
       link: "/estudios/mamografia",
       textoLink: "Ver más",
       clase: "normal"
-      },
+      },*/
       {
         id: 2,
         img: "/images/comp/3186.jpg",

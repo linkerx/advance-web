@@ -7,7 +7,7 @@ class HomeMenu extends React.Component {
         return (
             <section id='home-menu'>
                 <div className='logo'>
-                    <NavLink to='/'><img src='/images/logo.png' className="logo" alt="logo-advance" /></NavLink>
+                    <NavLink to='/'><img src='/images/logo_rosa.png' className="logo" alt="logo-advance" /></NavLink>
                 </div>
                 <div className='menu'>
                     <ul>
