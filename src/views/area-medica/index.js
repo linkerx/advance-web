@@ -118,7 +118,7 @@ class AreaMedica extends React.Component {
                     <p>
                     Estamos construyendo nuestra agenda de capacitaciones y ateneos. Para conocer
                     próximos eventos, hacer sugerencias o recibir novedades, escribinos a
-                    info​@diagnosticoadvance.com​ o dejanos tus datos.
+                    info​@diagnosticoadvance.com​.ar o dejanos tus datos.
                     </p>
 
                     <form onSubmit={this.handleSubmit}>
