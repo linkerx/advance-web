@@ -35,7 +35,7 @@ class WpSlider extends React.Component {
 
     var options = {
       autoListCount: true,
-      listCount: 3,
+      listCount: 5,
       listImgSize: 'thumbnail',
       pageCount: 1,
       pageImgSize: 'large',
@@ -59,26 +59,33 @@ class WpSlider extends React.Component {
   updateItems(){
 
     var items = [
-      
       {
         id: 1,
+        img: "/images/slider/ecodoppler.jpg",
+        texto: "<h3>Ecografía</h3><div class='linea'></div>Nuevos estudios Ecodoppler clave para la prevención y detección temprana de distintas enfermedades cardíacas.",
+        link: "/estudios/ecografia",
+        textoLink: "Ver más",
+        clase: "otro"
+        },
+      /*{
+        id: 2,
         img: "/images/slider/mamografia.jpg",
         texto: "<img src='/images/lazo-rosa-cancer.png' style='position:absolute;top:-100px;height: 90px;left: -10px;' /><h3>Octubre Rosa</h3><div class='linea'></div>Mes de concientización sobre el Cáncer de Mama. Recordá siempre tu control anual.",
         link: "/estudios/mamografia",
         textoLink: "Ver más",
         clase: "rosa"
-      },
+      },*/
       
-     /*{
-      id: 1,
+     {
+      id: 2,
       img: "/images/slider/mamografia.jpg",
-      texto: "<h3>Mamografías con la mejor tecnología</h3><div class='linea'></div>Realizá tus chequeos de rutina con seguridad.",
+      texto: "<h3>Mamografía 3D, un servicio único en Viedma</h3><div class='linea'></div>Última tecnología en la detección del cáncer de mama.",
       link: "/estudios/mamografia",
       textoLink: "Ver más",
       clase: "normal"
-      },*/
+      },
       {
-        id: 2,
+        id: 3,
         img: "/images/comp/3186.jpg",
         texto: "<h3>Servicios de vanguardia</h3><div class='linea'></div>Reservá tu lugar para estudios de Resonancia, Tomografía y Ecografía.",
         link: "/pacientes",
@@ -86,7 +93,7 @@ class WpSlider extends React.Component {
         clase: "normal"
       },
       {
-        id: 3,
+        id: 4,
         img: "/images/comp/3214.jpg",
         texto: "<h3>Tu salud en buenas manos</h3><div class='linea'></div>Trabajamos con la mejor tecnología y un equipo médico especializado en diagnóstico por imágenes para brindarte la atención que buscás.",
         link: "/institucional",
@@ -103,7 +110,7 @@ class WpSlider extends React.Component {
       },
       */
       {
-        id: 4,
+        id: 5,
         img: "/images/slider/online.jpg",
         texto: "<h3>Mirá tus estudios desde donde estés</h3><div class='linea'></div>Accedé a tus resultados de manera exclusiva y confidencial.",
         link: "//portal.diagnosticoadvance.com.ar",

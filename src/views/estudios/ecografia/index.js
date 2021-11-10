@@ -126,7 +126,7 @@ class EstudioEcografia extends React.Component {
                              </ul>
                         </li>
                         <li className='categoria' onClick={() => this.openExamenes('ecoddopler')}>
-                        <span>Ecoddopler</span>
+                        <span>Ecodoppler</span>
                         <div>
                             { this.state.examenesOpen === 'ecoddopler'
                             ?
@@ -146,6 +146,10 @@ class EstudioEcografia extends React.Component {
                                 <li>Ecodoppler venoso de miembros inferiores</li>
                                 <li>Ecodoppler con evaluación Power Doppler de articulaciones
                                 (Reumatología)</li>
+                                <li>Ecodoppler cardíaco color. Incluye Ecocardiograma bidimensional o 2D</li>
+                                <li>Ecodoppler de vasos del cuello (doppler carotídeo)</li>
+                                <li>Ecodoppler arterial de miembros inferiores</li>
+                                <li>Ecodoppler de aorta abdominal</li>
                             </ul>
                         </li>
                         <li className='categoria' onClick={() => this.openExamenes('especiales')}>

@@ -197,7 +197,7 @@ class EstudioMamografia extends React.Component {
                     <div className='examenes'>
                     <h2>Tipo de exámenes</h2>
                     <ul>
-                        <li>Mamografía Digital Directa - Tridimensional</li>
+                        <li>Mamografía Digital Directa 3D o Tomosíntesis. Última tecnología en la detección del cáncer de mama</li>
                     </ul>
                     </div>
 
