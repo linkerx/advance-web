@@ -198,20 +198,6 @@ class EstudioResonancia extends React.Component {
                                 <li>RM corporal total</li>
                             </ul>
                         </li>
-                        <li className='categoria' onClick={() => this.openExamenes('guiados')}>
-                        <span>Estudios guiados por resonancia magnética</span>
-                        <div>
-                            { this.state.examenesOpen === 'guiados'
-                            ?
-                                <i className="fas fa-sort-up"></i>
-                            :
-                                <i className="fas fa-sort-down"></i>
-                            }
-                        </div>
-                            <ul className={classGuiados}>
-                                  <li>Punción de próstata</li>  
-                            </ul>
-                        </li>
                     </ul>
                     </div>
 
