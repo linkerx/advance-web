@@ -9,8 +9,10 @@ class Footer extends React.Component {
                 <div className='wrapper-central'>
                     <div className='izq'>
                         <div className='ubicacion'>
-                            <i className="fas fa-map-marker-alt"></i>
-                            <span>Alem 1360, Viedma, Río Negro</span>
+                            <ul>
+                                <li><i className="fas fa-map-marker-alt"></i><h3>Sede Principal </h3><span>Alem 1360, Viedma, Río Negro</span></li>
+                                <li><i className="fas fa-map-marker-alt"></i><h3>Sede Centro </h3><span>25 de Mayo 174, Viedma, Río Negro</span></li>
+                            </ul>
                         </div>
                         <div className='email'>
                             <i className="fas fa-envelope"></i>
@@ -28,11 +30,22 @@ class Footer extends React.Component {
                         <div className='horarios'>
                             <h3>Horario de atención</h3>
                             <div className='linea'></div>
-                            <span>
-                                Lunes a viernes - 06.00 a 23.00<br/>
-                                Sábado - 06.00 a 13.00<br/>
-                                Domingo - Cerrado<br/>
-                            </span>
+                            <ul>
+                                <li>
+                                    <h3>Sede Principal</h3>
+                                    <span>
+                                    Lunes a viernes - 6:00 hs a 22:00<br/>
+                                    Sábados - 6:00 hs a 13:00 hs
+                                    </span>
+                                </li>
+                                <li>
+                                    <h3>Sede Centro</h3>
+                                    <span>
+                                    Lunes a viernes - 6:00 hs a 22:00<br/>
+                                    Sábados - 6:00 hs a 13:00 hs
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>             

@@ -37,15 +37,30 @@ section#footer .izq {
         position:absolute;
         top: 400px;
     }
+
+    font-size: 1.2em;
+}
+
+section#footer .izq .ubicacion ul {
+    margin: 0;
+}
+
+section#footer .izq .ubicacion li{
+    margin: 15px 0;
+}
+
+section#footer .izq .ubicacion li h3 {
+    display: inline;
+    color: #62c9d8;
+} 
+
+section#footer .izq .ubicacion li span {
+    display: block;
+    color: #ccc;
 }
 
 section#footer .izq > div {
-    margin:10px;
-}
-
-section#footer .izq > div span {
-    color: #ccc;
-    font-size: 1.2em;
+    margin: 10px 0;
 }
 
 section#footer .izq > div a {
@@ -56,7 +71,7 @@ section#footer .izq > div a {
 section#footer .izq > div i {
     color: #62c9d8;
     font-size: 20px;
-    margin:12px;
+    margin-right:12px;
 }
 
 section#footer .izq > .horarios {
@@ -100,6 +115,7 @@ section#footer .der {
         position:absolute;
         top: 0;
     }
+
 }
 
 section#footer .der .linea {
@@ -108,32 +124,31 @@ section#footer .der .linea {
     background-color: #62c9d8;
     width: 70px;
     height: 2px;
-    margin: 30px 0;
+    margin: 10px 0;
     @media #{$all-narrow} {
         margin:30px auto;
         float: none;
     }
 }
 
-section#footer .der span {
+section#footer .der ul {
     clear:both;
     display: block;
     line-height: 1.5em;
-    font-size: 1.2em;
+    margin: 0;
+}
+
+section#footer .der ul h3 {
+    margin: 5px 0;
+    color: #62c9d8;
 }
 
 section#footer .der li {
-    margin: 12px;
+    margin: 10px 0;
     list-style: none;
     margin-left:50px;
     text-align: right;
-}
-
-section#footer .der li a {
-    color: #ccc;
     font-size: 1.2em;
-    text-decoration: none;
-    line-height: 1.7em;
 }
 
 section#footer .der li.ver a {

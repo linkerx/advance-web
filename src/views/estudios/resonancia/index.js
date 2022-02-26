@@ -99,6 +99,12 @@ class EstudioResonancia extends React.Component {
                     abundante líquido (agua).</li>
                             </ul>
                         </li>
+                        <li>En caso de que deba realizarse un estudio de Resonancia Magnética Cardiovascular debe presentarse con el pecho rasurado. 
+                            Si el estudio a realizar involucra la evaluación de Perfusión por RMCV (stress, prueba de isquemia, etc.), 
+                            debe suspender 24 horas antes medicamentos Beta-Bloqueantes (atenolol, carvedilol, bisoprolol, metoprolol, propranolol, labetalol, etc.) 
+                            o Calcio-Antagonistas (Verapamil, Diltiazem); además no debe consumir café, té o cigarrillos al menos 6 horas antes del procedimiento. 
+                            En la institución se le entregará un Formulario de Consentimiento Informado para que pueda conversar acerca de sus dudas 
+                            con el profesional médico que supervisará el estudio.</li>
                         <li>El día del turno, concurrir con ropa cómoda y sin maquillaje y sin cualquier objeto metálico como: 
                             joyas, anillos, pinzas de pelo, lentes de contacto, reloj, etc.
                         </li>
@@ -153,6 +159,7 @@ class EstudioResonancia extends React.Component {
                                 <li>URO-RM con contraste</li>
                                 <li>URO-RM con contraste</li>
                                 <li>RM de testículos</li>
+                                <li>RM cardiovascular con contraste</li>
                             </ul>
                         </li>
                         <li className='categoria' onClick={() => this.openExamenes('especiales')}><span>Estudios especiales</span>
@@ -196,6 +203,10 @@ class EstudioResonancia extends React.Component {
                                 <li>RM de pelvis de ALTA RESOLUCIÓN (para estudio de recto y útero)</li>
                                 <li>RM de pelvis (PROTOCOLO PARA PROLAPSO Y DEFECOGRAFIA)</li>
                                 <li>RM corporal total</li>
+                                <li>Estudio de Perfusión Miocárdica por Resonancia Magnética</li>
+                                <li>RMCV con Mapeos Paramagnéticos</li>
+                                <li>RMCV con angiografía y análisis de Flujos 4D</li> 
+                                <li>RMCV con análisis de Strain</li>
                             </ul>
                         </li>
                     </ul>
@@ -213,8 +224,8 @@ class EstudioResonancia extends React.Component {
 
                             <li>
                                 <div className='preg' onClick={() => this.openPregunta(2)}>¿Cuanto tarda el procedimiento?</div>
-                                <div className={"resp "+(this.state.preguntaOpen === 2 ? 'open' : 'closed')}>En promedio, el procedimiento demora entre 15 y 20 minutos, dependiendo del
-estudio.</div>
+                                <div className={"resp "+(this.state.preguntaOpen === 2 ? 'open' : 'closed')}>En promedio, el procedimiento demora entre 15 y 20 minutos, dependiendo del estudio. 
+                                En el caso del estudio Perfusión por RMCV demora entre 30 y 60 minutos, según el protocolo requerido.</div>
                             </li>
 
                             <li>
@@ -286,6 +297,23 @@ distorsionar las imágenes de la cara o el cerebro</li></ul>
                             <li>
                                 <div className='preg' onClick={() => this.openPregunta(8)}>¿Las mujeres en período de lactancia pueden realizarse resonancias?</div>
                                 <div className={'resp '+(this.state.preguntaOpen === 8 ? 'open' : 'closed')}>Sí, las mujeres en período de lactancia pueden realizar el estudio.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(9)}>¿El estudio de Perfusión por RMCV requiere algún tipo de preparación previa?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 9 ? 'open' : 'closed')}>Si el estudio a realizar involucra la evaluación de Perfusión por RMCV (stress, prueba de isquemia, etc.), 
+                                debe suspender 24 horas antes medicamentos Beta-Bloqueantes (atenolol, carvedilol, bisoprolol, metoprolol, propranolol, labetalol, etc.) o Calcio-Antagonistas (Verapamil, Diltiazem); 
+                                además no debe consumir café, té o cigarrillos al menos 6 horas antes del procedimiento. 
+                                En la institución se le entregará un Formulario de Consentimiento Informado para que pueda conversar acerca de sus dudas con el profesional médico que supervisará el estudio.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(10)}>¿El estudio de Perfusión miocárdica utiliza algún tipo de medicamento como apremio farmacológico?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 10 ? 'open' : 'closed')}>Se utilizan vasodilatadores, principalmente Dipiridamol, 
+                                que ocasionan como efectos deseados sensación pasajera de falta de aire y calor en varias regiones del cuerpo. 
+                                No suelen utilizarse en personas con Asma o EPOC muy severos porque puede ocasionar un acceso de tos.</div>
+                            </li>
+                            <li>
+                                <div className='preg' onClick={() => this.openPregunta(11)}>¿Debo llevar algo al examen de Perfusión por RMCV?</div>
+                                <div className={'resp '+(this.state.preguntaOpen === 11 ? 'open' : 'closed')}>Es indispensable concurrir con un Electrocardiograma (ECG) de menos de 30 días previos a la fecha del estudio; y traer todos los estudios cardiovasculares previos.</div>
                             </li>
                         </ul>
                     </div>

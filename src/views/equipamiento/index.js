@@ -54,7 +54,28 @@ class Equipamiento extends React.Component {
                     </div>
 
                 </li>
+                <li>
+                    <img src='/images/equipos/signa_explorer.jpg' />
 
+                    <div className='info'>
+
+                    <h3>RESONADOR
+                    SIGNA EXPLORER de 1.5 Tesla.</h3>
+                    <strong>
+                    General Electric. Año 2021
+                    </strong>
+
+                    <ul>
+                        <li>Equipado con un software específico de procesamiento avanzado.</li>
+<li>Calidad de imagen excepcional y un alto rendimiento.</li>
+<li>Mayor comodidad para las y los pacientes.</li>
+<li>Niveles de ruido reducido.</li>
+<li>Posibilidad de bajar la altura de la mesa para facilitar el acceso.</li>
+<li>Admite una amplia gama de tipos de cuerpo, entre otros detalles innovadores.</li>
+
+                    </ul>
+                    </div>
+                </li>
                 <li>
 
                 <img src='/images/comp/3072.jpg' />
