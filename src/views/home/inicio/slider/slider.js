@@ -60,6 +60,14 @@ class WpSlider extends React.Component {
 
     var items = [
       {
+        id: 0,
+        img: "/images/slider/nuevo-espacio.jpg",
+        texto: "<h3>Nueva sede en el centro de Viedma</h3><div class='linea'></div>Un Servicio de Resonancia Cardiovascular sin precedentes en la región.",
+        link: "/contacto",
+        textoLink: "Ver más",
+        clase: "normal"
+      },
+      {
         id: 1,
         img: "/images/slider/ecodoppler.jpg",
         texto: "<h3>Ecografía</h3><div class='linea'></div>Nuevos estudios Ecodoppler clave para la prevención y detección temprana de distintas enfermedades cardíacas.",

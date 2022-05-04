@@ -113,7 +113,7 @@ class Contacto extends React.Component {
                                     <ul>
                                         <li>
                                     <i className="fas fa-map-marker-alt"></i>
-                                    <h3>Sede Principal</h3>
+                                    <h3>Sede Central</h3>
                                     <span><strong>Alem 1360, Viedma, Río Negro</strong></span>
                                     <span>
                                         Lunes a viernes - 6:00 hs a 22:00<br />
@@ -122,7 +122,7 @@ class Contacto extends React.Component {
                                     </li>
                                     <li>
                                     <i className="fas fa-map-marker-alt"></i>
-                                    <h3>Sede Centro</h3>
+                                    <h3>Sucursal</h3>
                                     <span><strong>25 de Mayo 174, Viedma, Río Negro</strong></span>
                                     <span>
                                         Lunes a viernes - 6:00 hs a 22:00<br />

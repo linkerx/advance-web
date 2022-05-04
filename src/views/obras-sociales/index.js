@@ -22,6 +22,7 @@ class ObrasSociales extends React.Component {
                         <li><img src='/images/osoc/osuthgra.png' /></li>
                         <li><img src='/images/osoc/prevart.png' /></li>
                         <li><img src='/images/osoc/sancor.png' /></li>
+                        <li><img src='/images/osoc/swiss.png' /></li>
                     </ul>
 
                 </div>
