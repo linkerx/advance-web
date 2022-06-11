@@ -14,11 +14,11 @@ class WpSlider extends React.Component {
 
     this.state = {
       options: this.prepareOptions(options),
-      items: null,
+      items: this.loadItems(),
       current: null,
       timer: null,
     }
-    this.updateItems = this.updateItems.bind(this);
+
     this.show = this.show.bind(this);
     this.start = this.start.bind(this);
     this.next = this.next.bind(this);
@@ -53,14 +53,21 @@ class WpSlider extends React.Component {
   }
 
   componentDidMount(){
-      this.updateItems();
+      this.start();
   }
 
-  updateItems(){
-
+  loadItems(){
     var items = [
       {
         id: 0,
+        img: "/images/slider/cancer-prostata.jpg",
+        texto: "<h3>Mes de la prevención del cáncer de próstata</h3><div class='linea'></div>Un diagnóstico temprano aumenta la probabilidades de curación.",
+        link: "/contacto",
+        textoLink: "Conocenos",
+        clase: "normal"
+      },
+      {
+        id: 1,
         img: "/images/slider/nuevo-espacio.jpg",
         texto: "<h3>Nueva sede en el centro de Viedma</h3><div class='linea'></div>Un Servicio de Resonancia Cardiovascular sin precedentes en la región.",
         link: "/contacto",
@@ -68,7 +75,7 @@ class WpSlider extends React.Component {
         clase: "normal"
       },
       {
-        id: 1,
+        id: 2,
         img: "/images/slider/ecodoppler.jpg",
         texto: "<h3>Ecografía</h3><div class='linea'></div>Nuevos estudios Ecodoppler clave para la prevención y detección temprana de distintas enfermedades cardíacas.",
         link: "/estudios/ecografia",
@@ -85,7 +92,7 @@ class WpSlider extends React.Component {
       },*/
       
      {
-      id: 2,
+      id: 3,
       img: "/images/slider/mamografia.jpg",
       texto: "<h3>Mamografía 3D, un servicio único en Viedma</h3><div class='linea'></div>Última tecnología en la detección del cáncer de mama.",
       link: "/estudios/mamografia",
@@ -93,7 +100,7 @@ class WpSlider extends React.Component {
       clase: "normal"
       },
       {
-        id: 3,
+        id: 4,
         img: "/images/comp/3186.jpg",
         texto: "<h3>Servicios de vanguardia</h3><div class='linea'></div>Reservá tu lugar para estudios de Resonancia, Tomografía y Ecografía.",
         link: "/pacientes",
@@ -101,7 +108,7 @@ class WpSlider extends React.Component {
         clase: "normal"
       },
       {
-        id: 4,
+        id: 5,
         img: "/images/comp/3214.jpg",
         texto: "<h3>Tu salud en buenas manos</h3><div class='linea'></div>Trabajamos con la mejor tecnología y un equipo médico especializado en diagnóstico por imágenes para brindarte la atención que buscás.",
         link: "/institucional",
@@ -118,7 +125,7 @@ class WpSlider extends React.Component {
       },
       */
       {
-        id: 5,
+        id: 6,
         img: "/images/slider/online.jpg",
         texto: "<h3>Mirá tus estudios desde donde estés</h3><div class='linea'></div>Accedé a tus resultados de manera exclusiva y confidencial.",
         link: "//portal.diagnosticoadvance.com.ar",
@@ -126,13 +133,7 @@ class WpSlider extends React.Component {
         clase: "normal"
       },
     ]
-
-    this.setState({
-        options: this.state.options,
-        items: items,
-        current: null,
-        timer: setTimeout(function(){this.start()}.bind(this),0)
-     });
+    return items;
   }
 
   validPage(page){
@@ -163,16 +164,17 @@ class WpSlider extends React.Component {
   }
 
   show(page){
-    console.log("mostrando slide",page);
+    console.log("mostrando slide",page, this.state.timer);
+    clearTimeout(this.state.timer);
     this.setState(function() {
       return {
         options: this.state.options,
         items: this.state.items,
         current: {
           items: this.getPageItems(page),
-          page: page,
-          timer: setTimeout(function(){this.next()}.bind(this),10000)
-        }
+          page: page
+        },
+        timer: setTimeout(function(){this.next()}.bind(this),8000)
       }
     }.bind(this));
   }
@@ -182,7 +184,6 @@ class WpSlider extends React.Component {
   }
 
   change(page){
-    clearTimeout(this.state.timer);
     this.show(page);
   }
 
@@ -253,7 +254,7 @@ class WpSlider extends React.Component {
               return (
                 <div className={clsl}>
                   
-                  <Parallax bgImage={item.img} strength={500}>
+                  <Parallax bgImage={item.img}>
                   </Parallax>
 
                   <div className='texto'>
