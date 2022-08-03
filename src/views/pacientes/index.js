@@ -10,11 +10,12 @@ class Pacientes extends React.Component {
         this.state = {
             estudiosVideo: false
         }
-
+/*
         this.verVideo = this.verVideo.bind(this);
-        this.ocultarVideo = this.ocultarVideo.bind(this);        
+        this.ocultarVideo = this.ocultarVideo.bind(this);
+*/
     }
-
+/*
     verVideo(){
         this.setState({
             estudiosVideo: true
@@ -26,7 +27,7 @@ class Pacientes extends React.Component {
             estudiosVideo: false
         });
     }
-    
+*/
     render(){
         var classPlano='btn plano';
         return(
@@ -124,7 +125,7 @@ class Pacientes extends React.Component {
                                     cualquier dispositivo móvil, estés donde estés.
                                     </p>
                                     <a href='http://portal.diagnosticoadvance.com.ar/portal/WebLogin.aspx?ReturnUrl=/portal/default.aspx' target='_blank' className='btn'>VER MIS ESTUDIOS</a>
-                                    <a href='javascript:void(0)' onClick={this.verVideo} className='btn'>TUTORIAL</a>
+                                    {/*<a href='javascript:void(0)' onClick={this.verVideo} className='btn'>TUTORIAL</a>*/}
                                 </div>
                             </div>
                         :
@@ -133,6 +134,16 @@ class Pacientes extends React.Component {
                                 <a href='javascript:void(0)' onClick={this.ocultarVideo} ><i className='fa fa-times'></i></a>
                             </div>
                         }
+                            <div className='abajo'>
+                                <div className='video'>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/V19llofmpxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <h3>¿Cómo ver mis estudios?</h3>
+                                </div>
+                                <div className='video'>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/uzscxVmn2Uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <h3>¿Cómo recuperar mi contraseña?</h3>
+                                </div>
+                            </div>
                     </div>
 
                     <div className='preguntas'>

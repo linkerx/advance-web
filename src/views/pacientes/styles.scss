@@ -152,6 +152,18 @@ section#pacientes .wrapper-central .caja .tutorial a {
     right: 0px;
 }
 
+section#pacientes .wrapper-central .caja > .abajo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+section#pacientes .wrapper-central .caja > .abajo .video iframe {
+    width: 350px;
+    height: 200px;
+}
+
 section#pacientes .wrapper-central .preguntas {
     margin-top:50px;
     text-align:center;
