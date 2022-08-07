@@ -130,17 +130,17 @@ class Pacientes extends React.Component {
                             </div>
                         :
                             <div className='tutorial'>
-                                <iframe src="https://www.youtube-nocookie.com/embed/osAl97ZemGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube-nocookie.com/embed/osAl97ZemGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen;" ></iframe>
                                 <a href='javascript:void(0)' onClick={this.ocultarVideo} ><i className='fa fa-times'></i></a>
                             </div>
                         }
                             <div className='abajo'>
                                 <div className='video'>
-                                    <iframe src="https://www.youtube-nocookie.com/embed/V19llofmpxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/V19llofmpxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen;"></iframe>
                                     <h3>¿Cómo ver mis estudios?</h3>
                                 </div>
                                 <div className='video'>
-                                    <iframe src="https://www.youtube-nocookie.com/embed/uzscxVmn2Uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/uzscxVmn2Uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen;" ></iframe>
                                     <h3>¿Cómo recuperar mi contraseña?</h3>
                                 </div>
                             </div>
