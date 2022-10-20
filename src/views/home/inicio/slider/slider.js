@@ -58,14 +58,14 @@ class WpSlider extends React.Component {
 
   loadItems(){
     var items = [
-      /*{
+      {
         id: 0,
-        img: "/images/slider/cancer-prostata.jpg",
-        texto: "<h3>Mes de la prevención del cáncer de próstata</h3><div class='linea'></div>Un diagnóstico temprano aumenta la probabilidades de curación.",
-        link: "/contacto",
-        textoLink: "Conocenos",
-        clase: "normal"
-      },*/
+        img: "/images/slider/cancer-de-mama-2022.jpg",
+        texto: "<h3>Mes de concientización sobre el cáncer de mama</h3><div class='linea'></div>Tu salud está en tus manos, controlate.",
+        link: "/pacientes",
+        textoLink: "Solicitar turno",
+        clase: "rosa"
+      },
       {
         id: 1,
         img: "/images/slider/nuevo-espacio.jpg",
